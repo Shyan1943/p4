@@ -25,3 +25,15 @@ sqlparse==0.3.1
 ```
 pip3 install -r requirements.txt
 ```
+### 5. Create `.env` file to store the passwords and security-sensitive information.
+### 6. Create `.gitignore` file to git ignore the environment variables file, which are never committed to the repository.
+```
+db.sqlite3
+__pycache__
+.env
+```
+### 7. take note to keep debug on any error messages prompt in Gitpod to ensure the use Python code that is consistent in style and conforms to the PEP8 style guide and validated HTML and CSS code.
+
+### 8. Setting up new Django Project
+    i. At the Gitpod terminal type `django-admin startproject DGReviewsProject .` to create a new Django project. 
+    ii. At settings.py file, `ALLOWED_HOSTS = ["*"]` & saved to allow all server to run this Django project.  
