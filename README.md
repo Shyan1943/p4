@@ -120,5 +120,12 @@ __pycache__
     iii. Create a `update_dg.template.html` to display the update form
     iv. Inside "dgs/urls.py" file, create the url path
     v. Test
-    vi. Inside "dgs/views.py" file, modify the view function to carter for update
+    vi. Inside "dgs/views.py" file, modify the update_dg function to carter for update
     vii. Inside "dgs/dg.template.html" file, add the link to update route 
+
+### 17. Create CRU"D" Route for Dgs 
+    i. Inside "dgs/views.py" file, define the view function for delete
+    ii. Create a `delete_dg.template.html` to display the delete form
+    iii. Test
+    iv. Inside "dgs/views.py" file, implement the delete_dg funtion
+    v. Inside "dgs/dg.template.html" file, add the link to delete route

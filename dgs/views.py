@@ -47,3 +47,12 @@ def update_dg(request, dg_id):
         })
 
 
+def delete_dg(request, dg_id):
+    dg_to_delete = get_object_or_404(Dg, pk=dg_id)
+    if request.method == "POST":
+        dg_to_delete.delete()
+        return redirect(index)
+    else:
+        return render(request, "dgs/delete_dg.template.html", {
+            "dg": dg_to_delete
+        })

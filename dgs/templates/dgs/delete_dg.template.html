@@ -9,22 +9,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <title>DG</title>
+    <title>Delete DG</title>
   </head>
   <body>
-    <div class="container">    
-        <h1>Let's learn & share DG experience here!!</h1>
-        {% for d in dgs %}
-        <div class="card mt-3">      
-            <h5 class="card-header">{{d.title}}</h5>
-            <div class="card-body">
-                <h5 class="card-title">{{d.example}}</h5>
-                <p class="card-text">{{d.prohibited_reason}}</p>
-                <a href="{% url 'update_dg_route' dg_id=d.id %}" class="btn btn-primary">Update</a>
-                <a href="{% url 'delete_dg_route' dg_id=d.id %}" class="btn btn-danger">Delete</a>
-            </div>
-        </div>
-        {% endfor %}
+    <div class="container">
+        <h1>Deleting your DG "{{dg.title}}" share with us? </h1>
+        <p> Are you sure?</p>
+        <form method="POST">
+            {% csrf_token %}
+            <!-- {{ dg.as_p }} -->
+            <input type="submit" class="btn btn-danger" value="Yes"/>    
+            <a href="{% url 'show_dg_route' %}">No</a>
+        </form>
     </div>
 
     <!-- Optional JavaScript -->
