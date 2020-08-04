@@ -73,3 +73,20 @@ __pycache__
                     ```
     v. Test Run Django server by adding `/dg` at the end of the browser url link
 
+### 11. Create Templates  
+    i. Create a templates folder in the <dgs> app.
+    ii. Inside the templates folder, create another folder named <dgs>
+    iii. Create the template named <dg.template.html>
+    iv. Change the view function in "views.py" to render the template
+
+### 12. Set up static styles.css file
+    i. Create static folder, which must be in the same folder as the project folder
+    ii. Inform Django where to find static files by adding below code at "settings.py" & save 
+        ```
+            STATICFILES_DIRS = [
+                os.path.join(BASE_DIR, "static")
+            ] 
+        ```
+    iii. Create <styles.css> file inside the static folder
+    iv. To use the static function inside Django templates by including `{%load static %}` CSS file inside the template 
+    v. At the template, link stylesheet by including {% static 'styles.css' %}
