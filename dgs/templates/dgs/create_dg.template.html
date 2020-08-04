@@ -9,21 +9,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <title>DG</title>
+    <title>Share DG</title>
   </head>
   <body>
-    <div class="container">    
-        <h1>Let's learn & share DG experience here!!</h1>
-        {% for d in dgs %}
-        <div class="card mt-3">      
-            <h5 class="card-header">{{d.title}}</h5>
-            <div class="card-body">
-                <h5 class="card-title">{{d.example}}</h5>
-                <p class="card-text">{{d.prohibited_reason}}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        {% endfor %}
+    <div class="container">
+        <h1>Let's share your DG experience with us</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-primary"/>    
+        </form>
     </div>
 
     <!-- Optional JavaScript -->

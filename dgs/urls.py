@@ -4,4 +4,5 @@ import dgs.views
 
 urlpatterns = [
     path('', dgs.views.index),
+    path('create', dgs.views.create_dg, name="create_dg_route")
 ]

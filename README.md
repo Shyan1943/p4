@@ -103,3 +103,13 @@ __pycache__
     ii. Inside dgs/views.py, change the index() route
     iii. Inside dgs/dg.template.html, use for loop to pull the data
 
+### 15. Create "C"RUD Route for Dgs 
+    i. Create a file named "forms.py" inside the dgs app folder.
+    ii. Inside "dgs/forms.py" file, import the <Dg> model by entering `from .models import Dg` and add a Form class
+    iii. Inside "dgs/views.py" file, import the <DgForm> form by entering `from .forms import DgForm` and add in function
+    iv. Create new template `create_dg.template.html`
+    v. Inside "dgs/urls.py" file, add a URL for the view function
+    vi. Go to browser "/dgs/create" and see if the form shows up.
+    vii. To adding a new dg experience, back to the "dgs/views.py" file :
+        * we need to import in the reverse and redirect functions from Django
+        * modify the create_dg function
