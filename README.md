@@ -90,3 +90,11 @@ __pycache__
     iii. Create <styles.css> file inside the static folder
     iv. To use the static function inside Django templates by including `{%load static %}` CSS file inside the template 
     v. At the template, link stylesheet by including {% static 'styles.css' %}
+
+### 13. Create models 
+    i. Create a <Dg> model inside the "dgs/models.py"
+    ii. At Gitpod terminal, enter `python3 manage.py makemigrations` to make migrations
+    iii. At Gitpod terminal, enter `python3 manage.py migrate` to migrate
+    iv. Register the model at dgs/admin.py
+    v. Log into the brower admin page, should see the <Dgs> model in the admin section
+
