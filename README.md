@@ -37,3 +37,15 @@ __pycache__
 ### 8. Setting up new Django Project
     i. At the Gitpod terminal type `django-admin startproject DGReviewsProject .` to create a new Django project. 
     ii. At settings.py file, `ALLOWED_HOSTS = ["*"]` & saved to allow all server to run this Django project.  
+
+### 9. To create A Superuser : 
+    i. At the Gitpod Terminal :
+        * Enter `python3 manage.py migrate`, 
+        * Enter `python3 manage.py createsuperuser`, 
+        * create an admin username, email, password and do remember the details. 
+        * Enter `python3 manage.py runserver 8080` to test run Django server 
+        * A blue button should appear at the right bottom & to click: "Open Browser".
+
+    ii. At the browser : 
+        * enter `/admin` at the end of the url 
+        * Enter in the Username & password, which just created at the above step & press enter.
