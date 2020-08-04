@@ -113,3 +113,12 @@ __pycache__
     vii. To adding a new dg experience, back to the "dgs/views.py" file :
         * we need to import in the reverse and redirect functions from Django
         * modify the create_dg function
+
+### 16. Create CR"U"D Route for Dgs 
+    i.  Inside "dgs/views.py" file, import in get_object_or_404 function
+    ii. Create a View Function for updating dgs
+    iii. Create a `update_dg.template.html` to display the update form
+    iv. Inside "dgs/urls.py" file, create the url path
+    v. Test
+    vi. Inside "dgs/views.py" file, modify the view function to carter for update
+    vii. Inside "dgs/dg.template.html" file, add the link to update route 
