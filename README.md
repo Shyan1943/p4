@@ -49,3 +49,27 @@ __pycache__
     ii. At the browser : 
         * enter `/admin` at the end of the url 
         * Enter in the Username & password, which just created at the above step & press enter.
+
+### 10. To create and install a new App : 
+    i. At the Gitpod Terminal :
+        * Enter `ls -l` to make sure we can see the "manage.py" at our current working directory.
+        * Enter `django-admin startapp <app name>` to create a new apps
+    ii. In the file *setting.py*, install the app & save 
+    iii. Create a new function in "views.py" apps file
+    iv. Setup the URLs to the view function: 
+        a) At "urls.py" which inside the master project folder :
+            * import `include` 
+            * add in new path  `path('dg/', include('dgs.urls'))`
+        b) Go "dgs" app :
+            * right click to create new file "urls.py"
+                    ```
+                    from django.contrib import admin
+                    from django.urls import path, include
+                    import dgs.views
+
+                    urlpatterns = [
+                        path('', dgs.views.index),
+                    ]
+                    ```
+    v. Test Run Django server by adding `/dg` at the end of the browser url link
+
