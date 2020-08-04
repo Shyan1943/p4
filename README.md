@@ -96,5 +96,10 @@ __pycache__
     ii. At Gitpod terminal, enter `python3 manage.py makemigrations` to make migrations
     iii. At Gitpod terminal, enter `python3 manage.py migrate` to migrate
     iv. Register the model at dgs/admin.py
-    v. Log into the brower admin page, should see the <Dgs> model in the admin section
+    v. Log into the brower admin page, should see the <Dgs> model in the admin 
+    
+### 14. Create C"R"UD Route for Dgs 
+    i. Inside dgs/views.py, import the <Dg> model `from .models import Dg`
+    ii. Inside dgs/views.py, change the index() route
+    iii. Inside dgs/dg.template.html, use for loop to pull the data
 
