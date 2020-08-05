@@ -1,0 +1,13 @@
+{% extends "base.template.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Share Review{% endblock %}
+
+{% block content %}
+    <h1>Let's share your review with us</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" class="btn btn-primary"/>    
+    </form>
+{% endblock %}

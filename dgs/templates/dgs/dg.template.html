@@ -18,6 +18,7 @@
             <p class="card-text">{{d.prohibited_reason}}</p>
             <a href="{% url 'update_dg_route' dg_id=d.id %}" class="btn btn-primary">Update</a>
             <a href="{% url 'delete_dg_route' dg_id=d.id %}" class="btn btn-danger">Delete</a>
+            
         </div>
     </div>
     {% endfor %}
