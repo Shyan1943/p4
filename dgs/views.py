@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth.decorators import login_required
 from .models import Dg
 from .forms import DgForm
 
@@ -18,7 +18,9 @@ def create_dg(request):
         create_form = DgForm(request.POST)
 
         if create_form.is_valid():
-            create_form.save()
+            create_dg = create_form.save(commit=False)
+            create_dg.user = request.user
+            create_dg.save()
             messages.success(request, "New post has been created")
             return redirect(reverse(index))
         else:

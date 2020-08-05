@@ -189,6 +189,12 @@ __pycache__
 ### 23. Create Reviews App + CRUD 
     i. See step 10, to create and install a new "reviews" App 
     ii. See step 13, to create `Review` models
-    iii. See step 15, to create "C"RUD Route for Review
+    iii. See step 15, to create "C"RUD Route for Reviews
 
-
+### Associating Dgs with Users
+    i. Inside "dgs/models.py", import `from django.contrib.auth.models import User` and the relationship to the Dg model
+    ii. `python3 manage.py makemigrations` & `python3 manage.py migrate`
+    iii. Inside "dgs/forms.py", add the relationship field to the Dgform (for testing purpose)
+    iv. At browser, test creating a new post with an user
+    v. Inside "dgs/forms.py", modify create_dg view function
+    vi. Inside "dgs/forms.py", remove the relationship field to the Dgform

@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 # Create your models here.
@@ -16,6 +17,7 @@ class Dg(models.Model):
     prohibited_reason = models.TextField(blank=False)
     imdg_code = models.ForeignKey(IMDGCode,
                                   on_delete=models.SET_NULL, null=True)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.title
