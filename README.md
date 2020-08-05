@@ -129,3 +129,11 @@ __pycache__
     iii. Test
     iv. Inside "dgs/views.py" file, implement the delete_dg funtion
     v. Inside "dgs/dg.template.html" file, add the link to delete route
+
+### 18. Create a One to Many Relationships (IMDGCode)
+    i. Inside "dgs/models.py" file, define the IMDGCode model
+    ii. and, define the relationship in the Dg Model
+    iii. Inside "dgs/admin.py" file, register IMDGCode model
+    iv. At Gitpod terminal, make migrations and migrate (see step 13th ii & iii.)
+    v. Inside "dgs/forms.py" file, allow the user to select IMDGCode for Dg
+
