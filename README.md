@@ -186,4 +186,5 @@ __pycache__
             * set the template pack to be Bootstrap 4 `CRISPY_TEMPLATE_PACK = 'bootstrap4'`
     iii. Render form using Crispy Form by loading `{% load crispy_forms_tags %}` & `{{ form|crispy}}`
 
+### 23. To create and install a new "reviews" App (see step 10) 
 
