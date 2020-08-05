@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required, permission_required
 from .models import Dg
 from .forms import DgForm
@@ -18,6 +19,7 @@ def create_dg(request):
 
         if create_form.is_valid():
             create_form.save()
+            messages.success(request, "New post has been created")
             return redirect(reverse(index))
         else:
             return render(request, "dgs/create_dg.template.html", {
@@ -36,6 +38,9 @@ def update_dg(request, dg_id):
         dg_form = DgForm(request.POST, instance=dg_being_updated)
         if dg_form.is_valid:
             dg_form.save()
+            messages.success(
+                request,
+                f'Post "{dg_being_updated.title}" has been updated')
             return redirect(reverse(index))
         else:
             return render(request, "dgs/update_dg.template.html", {
@@ -52,6 +57,9 @@ def delete_dg(request, dg_id):
     dg_to_delete = get_object_or_404(Dg, pk=dg_id)
     if request.method == "POST":
         dg_to_delete.delete()
+        messages.success(
+                request,
+                f'Post "{dg_to_delete.title}" has been deleted')
         return redirect(index)
     else:
         return render(request, "dgs/delete_dg.template.html", {

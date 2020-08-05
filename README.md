@@ -171,7 +171,10 @@ __pycache__
     v. Inside "DGReviewsProject/settings.py" file, tell Django where to find the master template and the overridden templates
     vi. Test : Update the "dgs/dg.template.html" to use the base template
 
-
-
-
-
+### 24. Flashing messages
+    i. Inside "dgs/views.py" : 
+            * import `from django.contrib import messages`
+            * input flash message `messages.success()` method when a CUD is done successfully
+    ii. Insert `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'` into "DGReviewsProject/settings.py" file to enable flash messages
+    iii. Inside "base.template.html" add in flash messages
+    iv. Test by creating a new book
