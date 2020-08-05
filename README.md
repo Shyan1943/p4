@@ -167,7 +167,7 @@ __pycache__
     ii. Right click the "templates" folder, to create "base.template.html" file
     ii. Right click the "templates" folder, to create "allauth" folder
     iii. At Gitpod terminal, enter `cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* templates/allauth`
-    iv. Setup the "base.template.html"
+    iv. Setup the "base.template.html" including load static & link stylesheet
     v. Inside "DGReviewsProject/settings.py" file, tell Django where to find the master template and the overridden templates
     vi. Test : Update the "dgs/dg.template.html" to use the base template
 
