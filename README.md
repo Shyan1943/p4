@@ -80,7 +80,7 @@ __pycache__
     iv. Change the view function in "views.py" to render the template
 
 ### 12. Set up static styles.css file
-    i. Create static folder, which must be in the same folder as the project folder
+    i. Create static folder, which must be in the same folder as manage.py
     ii. Inform Django where to find static files by adding below code at "settings.py" & save 
         ```
             STATICFILES_DIRS = [
@@ -161,6 +161,15 @@ __pycache__
     viii. Inside "dgs/views.py" to protect a view function by :-
             * import `from django.contrib.auth.decorators import login_required, permission_required`
             * add `@login_required` before the view function that you want to restrict
+
+### 20. Master Templates and Overriding Templates
+    i. Create "templates" folder, which must be in the same folder as manage.py
+    ii. Right click the "templates" folder, to create "base.template.html" file
+    ii. Right click the "templates" folder, to create "allauth" folder
+    iii. At Gitpod terminal, enter `cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* templates/allauth`
+    iv. Setup the "base.template.html"
+    v. Inside "DGReviewsProject/settings.py" file, tell Django where to find the master template and the overridden templates
+    vi. Test : Update the "dgs/dg.template.html" to use the base template
 
 
 
