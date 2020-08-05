@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib.auth.decorators import login_required, permission_required
 from .models import Dg
 from .forms import DgForm
 
@@ -10,7 +11,7 @@ def index(request):
         "dgs": dgs
     })
 
-
+@login_required
 def create_dg(request):
     if request.method == "POST":
         create_form = DgForm(request.POST)
@@ -28,7 +29,7 @@ def create_dg(request):
                 "form": create_form
         })
 
-
+@login_required
 def update_dg(request, dg_id):
     dg_being_updated = get_object_or_404(Dg, pk=dg_id)
     if request.method == "POST":
@@ -46,7 +47,7 @@ def update_dg(request, dg_id):
             "form": dg_form
         })
 
-
+@login_required
 def delete_dg(request, dg_id):
     dg_to_delete = get_object_or_404(Dg, pk=dg_id)
     if request.method == "POST":

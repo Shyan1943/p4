@@ -54,7 +54,7 @@ __pycache__
     i. At the Gitpod Terminal :
         * Enter `ls -l` to make sure we can see the "manage.py" at our current working directory.
         * Enter `django-admin startapp <app name>` to create a new apps
-    ii. In the file *setting.py*, install the app & save 
+    ii. In the file *settings.py*, install the app & save 
     iii. Create a new function in "views.py" apps file
     iv. Setup the URLs to the view function: 
         a) At "urls.py" which inside the master project folder :
@@ -136,4 +136,33 @@ __pycache__
     iii. Inside "dgs/admin.py" file, register IMDGCode model
     iv. At Gitpod terminal, make migrations and migrate (see step 13th ii & iii.)
     v. Inside "dgs/forms.py" file, allow the user to select IMDGCode for Dg
+
+### 19. Setting up User Authentication
+    i. At Gitpod terminal, install allauth `pip3 install django-allauth`
+    11. Update "DGReviewsProject/settings.py" file
+    iii. Go admin panel to add initial settings. 
+            * Go to Email Addresses (under Accounts)
+            * Click on the superuser email, 
+            * Check the Primary and Verified checkbox,
+            * Ensure that the superuser email is verified and is the primary email
+    iv. Stay on th admin panel to update site settings 
+            * Admin Home page and then select Sites
+            * Select the first site in the list, and update it to:
+            * Domain name: <your browser urls> 
+            * Display Name: DG Review Site
+    v. Inside the "DGReviewsProject/urls.py" file, import Django `include` & setup
+    vi. At the browser, `/accounts/logout` to logout first, then test log in `/accounts/login`
+            ```
+                To sign up, go to the accounts/signup URL
+                To log out, go to the accounts/logout URL
+                To log in, go to the accounts/login URL
+            ```
+    vii. Inside "dgs/dg.template.html" file, display the current logged in user
+    viii. Inside "dgs/views.py" to protect a view function by :-
+            * import `from django.contrib.auth.decorators import login_required, permission_required`
+            * add `@login_required` before the view function that you want to restrict
+
+
+
+
 
