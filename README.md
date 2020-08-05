@@ -171,10 +171,19 @@ __pycache__
     v. Inside "DGReviewsProject/settings.py" file, tell Django where to find the master template and the overridden templates
     vi. Test : Update the "dgs/dg.template.html" to use the base template
 
-### 24. Flashing messages
+### 21. Flashing messages
     i. Inside "dgs/views.py" : 
             * import `from django.contrib import messages`
             * input flash message `messages.success()` method when a CUD is done successfully
     ii. Insert `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'` into "DGReviewsProject/settings.py" file to enable flash messages
     iii. Inside "base.template.html" add in flash messages
     iv. Test by creating a new book
+
+### 22. Django Crispy Forms
+    i. At Gitpod terminal, enter `pip3 install django-crispy-forms` to install Django Crispy Forms 
+    ii. To enable the Django Crispy Forms, inside "DGReviewsProject/settings.py" file :
+            * Add `crispy_forms` to INSTALLED_APPS 
+            * set the template pack to be Bootstrap 4 `CRISPY_TEMPLATE_PACK = 'bootstrap4'`
+    iii. Render form using Crispy Form by loading `{% load crispy_forms_tags %}` & `{{ form|crispy}}`
+
+
