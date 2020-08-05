@@ -1,0 +1,15 @@
+{% extends "base.template.html" %}
+
+{% block title %}View DG{% endblock %}
+
+{% block content %}
+    <h1>View DG post details</h1>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{dg.title}}</h5>
+            <p class="card-text">{{dg.example}}</p>
+            <p class="card-text">{{dg.prohibited_reason}}</p>
+            <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-primary">Add a review</a>
+        </div>
+    </div>
+{% endblock %}

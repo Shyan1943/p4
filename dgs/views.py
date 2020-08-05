@@ -12,6 +12,14 @@ def index(request):
         "dgs": dgs
     })
 
+
+def view_dg(request, dg_id):
+    dg_being_view = get_object_or_404(Dg, pk=dg_id)
+    return render(request, "dgs/details_dg.template.html", {
+        "dg": dg_being_view
+    })
+
+
 @login_required
 def create_dg(request):
     if request.method == "POST":

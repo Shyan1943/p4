@@ -191,10 +191,26 @@ __pycache__
     ii. See step 13, to create `Review` models
     iii. See step 15, to create "C"RUD Route for Reviews
 
-### 24. Associating Dgs with Users
+### 24. Associating Dgs with User
     i. Inside "dgs/models.py", import `from django.contrib.auth.models import User` and the relationship to the Dg model
     ii. `python3 manage.py makemigrations` & `python3 manage.py migrate`
     iii. Inside "dgs/forms.py", add the relationship field to the Dgform (for testing purpose)
     iv. At browser, test creating a new post with an user
     v. Inside "dgs/views.py", modify create_dg view function
-    vi. Inside "dgs/forms.py", remove the relationship field to the Dgform
+    vi. Inside "dgs/forms.py", remove the relationship field from the Dgform
+
+### 25. Create C"R"UD Route for One Dg_id & its details 
+    i. Inside "dgs/views.py" add in a route function to view a dg's details
+    ii. Create "dgs/details_dg.template.html" template 
+    iii. Inside "dgs/urls.py", create details path, id & route name
+    iv. Go "dg.template.html" to add link href to "view_dg_route"
+    v. Test browser. On all dgs page, you should able to click href to "dgs/details_dg.template.html" page
+
+### 26. Associating One Dg_id with reviews
+    i. Inside "reviews/views.py" :
+            * import `from dgs.models import Dg`
+            * go to "create_review" function, `dg = get_object_or_404(Dg, pk=dg_id)`
+            * process the saving of the review
+    ii. Inside "reviews/urls.py" update the create_review_route and give it an id & name
+    iii. Inside "reviews/forms.py", remove the "dg" relationship field from the Reviewform
+    iv. Inside "reviews/create_review.template.html", pull the dg.title
