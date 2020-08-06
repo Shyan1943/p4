@@ -20,7 +20,7 @@
             <h5 class="card-title">{{r.title}}</h5>
             <p class="card-text">{{r.content}}</p>
             <div class="card-footer text-muted">by {{r.user}} on {{r.date}}</div>
-            <a href="#" class="btn btn-primary">Add a comment</a>
+            <a href="{% url 'create_comment_route' review_id=r.id %}" class="btn btn-primary btn-sm">Leave a comment</a>
         </div>
     </div>
     {% endfor %}
