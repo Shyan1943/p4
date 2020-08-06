@@ -214,3 +214,10 @@ __pycache__
     ii. Inside "reviews/urls.py" update the create_review_route and give it an id & name
     iii. Inside "reviews/forms.py", remove the "dg" relationship field from the Reviewform
     iv. Inside "reviews/create_review.template.html", pull the dg.title
+    v. Go "dgs/details_dg.template.html", use `{% for r in dg.review_set.all %}` to pull 
+        all reviews from Review model, which related to a book
+    ii. 
+
+
+
+### Add comment (see from point 35 )

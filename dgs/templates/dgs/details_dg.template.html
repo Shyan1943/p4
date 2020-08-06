@@ -12,4 +12,16 @@
             <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-primary">Add a review</a>
         </div>
     </div>
+
+    <h1>Reviews</h1>
+    {% for r in dg.review_set.all %}
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">{{r.title}}</h5>
+            <p class="card-text">{{r.content}}</p>
+            <div class="card-footer text-muted">by {{r.user}} on {{r.date}}</div>
+            <a href="#" class="btn btn-primary">Add a comment</a>
+        </div>
+    </div>
+    {% endfor %}
 {% endblock %}
