@@ -227,3 +227,6 @@ __pycache__
             * Update the index view function to do the search
     iii. Create "dgs/home.template.html"
     iv. At "dgs/urls.py" create home path
+
+### 29. Create Home App 
+    i. Step 10 to create new app and set up url route 
