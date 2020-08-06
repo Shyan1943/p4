@@ -219,3 +219,11 @@ __pycache__
 ### 27. Create CRUD comments & associating its to review 
     i. Step 13~17 to create Comments Model & CUD 
     ii. Step 26 to create "R" route & associate One review_id with comments
+
+### 28. Search engine
+    i.  Inside "dgs/forms.py", creata a SearchForm
+    ii. Inside "dgs/views.py" :
+            * import `from django.db.models import Q` 
+            * Update the index view function to do the search
+    iii. Create "dgs/home.template.html"
+    iv. At "dgs/urls.py" create home path

@@ -1,0 +1,27 @@
+{% extends "base.template.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Landing page</h1>
+    {% if request.user.is_authenticated  %}
+    <p>Welcome {{request.user}}</p>
+    {% else %}
+    <p>Please <a href="accounts/login">Login</a></p>
+    {%endif%}
+
+    <form method="GET">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="Submit" value="Search"/>
+    </form>
+
+    <h2 class="mt-5">Topic related</h2>
+    <ul>
+    {%for d in dgs %}
+        <li>{{d.title}} ({{d.imdg_code.chemical_name}})</li>
+    {%endfor%}
+    </ul>
+
+{% endblock %}
