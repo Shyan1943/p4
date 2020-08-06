@@ -221,12 +221,11 @@ __pycache__
     ii. Step 26 to create "R" route & associate One review_id with comments
 
 ### 28. Search engine
-    i.  Inside "dgs/forms.py", creata a SearchForm
-    ii. Inside "dgs/views.py" :
+    i. See Step 10 to create new "home" app and set up it's url route 
+    ii.  Create "home/forms.py", creata a SearchForm
+    iii. Inside "home/views.py" :
             * import `from django.db.models import Q` 
             * Update the index view function to do the search
-    iii. Create "dgs/home.template.html"
-    iv. At "dgs/urls.py" create home path
-
-### 29. Create Home App 
-    i. Step 10 to create new app and set up url route 
+    iv. Create "home/home.template.html"
+    v. At "home/urls.py" create home path
+    

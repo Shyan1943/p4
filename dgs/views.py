@@ -3,39 +3,10 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from .models import Dg
-from .forms import DgForm, SearchForm
+from .forms import DgForm
 
 
 # Create your views here.
-def index(request):
-    form = SearchForm(request.GET)
-
-    if request.GET:
-        query = ~Q(pk__in=[])
-
-        if "title" in request.GET and request.GET["title"]:
-            title = request.GET["title"]
-            query = query & Q(title__icontains=title)
-
-        if "imdg_code" in request.GET and request.GET["imdg_code"]:
-            imdg_code_id = request.GET['imdg_code']
-            query = query & Q(imdg_code=imdg_code_id)
-
-        dgs = Dg.objects.all()
-        dgs = dgs.filter(query)
-
-        return render(request, 'dgs/home.template.html', {
-            "form": form,
-            "dgs": dgs
-        })
-    else:
-        dgs = Dg.objects.all()
-        return render(request, 'dgs/home.template.html', {
-            "form": form,
-            "dgs": dgs
-        })
-
-
 def all_dg(request):
     dgs = Dg.objects.all()
     return render(request, "dgs/dg.template.html", {
