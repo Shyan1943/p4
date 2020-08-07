@@ -1,0 +1,29 @@
+{% extends "base.template.html" %}
+
+{% block title %}Programs{% endblock %}
+
+{% block content %}
+    <h1>Upgrade your skill</h1>
+    {% if request.user.is_authenticated  %}
+    <p>Welcome {{request.user}}</p>
+    {% else %}
+    <p>Please <a href="accounts/login">Login</a></p>
+    {%endif%}
+
+    {% for p in programs %}
+    <div class="card mt-3">      
+        <h5 class="card-header">{{p.title}}</h5>
+        <div class="card-body">
+            <h5 class="card-title">Date : {{p.date}}</h5>
+            <p class="card-text">Who should attend : {{p.who_should_attend}}</p>
+            <p class="card-text">Outline : {{p.outline}}</p>
+            <p class="card-text">Objectives : {{p.objectives}}</p>
+            <p class="card-text">Accreditation & Examination : {{p.accreditation_and_examination}}</p>
+            <p class="card-text">Fees : {{p.fees}}</p>
+            
+            <a href="#" class="btn btn-primary">Register</a>
+        
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}
