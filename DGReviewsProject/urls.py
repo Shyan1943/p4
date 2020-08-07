@@ -22,5 +22,4 @@ urlpatterns = [
     path('', include('home.urls')),
     path('dg/', include('dgs.urls')),
     path('review/', include('reviews.urls')),
-    path('course/', include('courses.urls')),
 ]
