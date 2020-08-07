@@ -230,4 +230,4 @@ __pycache__
     v. At "home/urls.py" create home path
 
 ### 29. Create "Courses" App, Model & CRUD 
-    i. Step 10 to create "Courses" new app
+    i. Step 10, 13 to create "Courses" app, models, forms in admin
