@@ -2,7 +2,7 @@ from django import forms
 from .models import Program
 
 
-class CourseForm(forms.ModelForm):
+class ProgramForm(forms.ModelForm):
     class Meta:
         model = Program
         fields = ("title", "date", "who_should_attend", "outline",
