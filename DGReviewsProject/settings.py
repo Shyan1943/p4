@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'home',
     'dgs',
     'reviews',
+    'programs',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
