@@ -237,3 +237,4 @@ __pycache__
     ii. Create "C" Cart Route to add program to cart (see step 15 & NOTE need the argument program_id)
     iii. Create "R" view cart route (see step 14 & NOTE need have cart array [] in view function)
     iv. Create "D" items route from cart (see step 17 & NOTE to use cart = request.session["shopping_cart"])
+    v. Create "U" items route on cart (see step 16 & NOTE to use cart = request.session["shopping_cart"])
