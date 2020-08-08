@@ -1,0 +1,21 @@
+{% extends "base.template.html" %}
+
+{% block title %}My Shopping cart{% endblock %}
+
+{% block content %}
+    <h1>My Shopping cart</h1>
+    {% if request.user.is_authenticated  %}
+    <p>Welcome {{request.user}}</p>
+    {% else %}
+    <p>Please <a href="accounts/login">Login</a></p>
+    {%endif%}
+
+    <ul>
+        {% for key, c in cart.items %}
+        <li>
+            {{c.title}} on {{c.date}} (${{c.fees}}) x {{c.qty}}<br/>
+            Total Cost: ${{c.total_fees}}  <br/>       
+        </li>
+        {%endfor%}
+    </ul>
+{% endblock %}

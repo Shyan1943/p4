@@ -235,4 +235,4 @@ __pycache__
 ### 30. Add "Cart" to a shopping cart
     i. Create "carts" app (see step 10)
     ii. Create "C" Cart Route to add program to cart (see step 15 & NOTE need the argument program_id)
-    iii. 
+    iii. Create "R" view cart route (see step 14 & NOTE need have cart array [] in view function)
