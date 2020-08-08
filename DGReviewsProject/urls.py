@@ -23,4 +23,5 @@ urlpatterns = [
     path('dg/', include('dgs.urls')),
     path('review/', include('reviews.urls')),
     path('program/', include('programs.urls')),
+    path('cart/', include('cart.urls')),
 ]
