@@ -239,7 +239,7 @@ __pycache__
     iv. Create "D" items route from cart (see step 17 & NOTE to use cart = request.session["shopping_cart"])
     v. Create "U" items route on cart (see step 16 & NOTE to use cart = request.session["shopping_cart"])
 
-### 31. Uploading images using Cloudinary
+### 31. Setting up Cloudinary for Uploading images 
     i. Sign up <a href="https://cloudinary.com">Cloudinary</a>
     ii. Save the cloud name, API Key & API Secret in .env file. 
     NOTE : Ensure we did inclulde `.env` in `.gitignore`
@@ -263,4 +263,16 @@ __pycache__
             * import `from cloudinary.models import CloudinaryField`
             * insert `cover = CloudinaryField()` inside Dg model
     vii. At Gitpod terminal, makemigrations & migrate & testing at backend admin site
-    viii.
+ 
+### 31. Allow user to "C" images  
+    i. At "dgs/forms.py" :
+            * import `from cloudinary.forms import CloudinaryJsFileField`
+            * add in "cover" inside the form's fields.
+            * insert `cover = CloudinaryJsFileField()` at the end of the class Form & ensure its align with the `class Meta:`
+    ii. Upgrade <a href="https://code.jquery.com/">jQuery CDN</a> minified version by replacing the jQuery <script> inside base.template.html
+    iii. At "dgs/create_dg.template.html" : 
+            * load `{% load cloudinary %}` & `{% load static %}`
+            * use `enctype="multipart/form-data" id="form"`
+            * Code JQuery script  
+
+    
