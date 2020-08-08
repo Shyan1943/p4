@@ -21,7 +21,7 @@
             <p class="card-text">Accreditation & Examination : {{p.accreditation_and_examination}}</p>
             <p class="card-text">Fees : {{p.fees}}</p>
             
-            <a href="#" class="btn btn-primary">Register</a>
+            <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-primary">Book</a>
         
         </div>
     </div>
