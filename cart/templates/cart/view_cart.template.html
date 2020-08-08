@@ -13,8 +13,9 @@
     <ul>
         {% for key, c in cart.items %}
         <li>
-            {{c.title}} on {{c.date}} (${{c.fees}}) x {{c.qty}}<br/>
+            {{c.title}} (${{c.fees}}) x {{c.qty}}<br/>
             Total Cost: ${{c.total_fees}}  <br/>       
+            <a href="{% url 'remove_from_cart' program_id=c.id %}" class="btn btn-danger btn-sm">Remove from cart</a>
         </li>
         {%endfor%}
     </ul>

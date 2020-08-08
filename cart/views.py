@@ -18,7 +18,7 @@ def add_to_cart(request, program_id):
         cart[program_id] = {
             "id": program_id,
             "title": program.title,
-            "date": program.date,
+            # "date": program.date,
             "fees": float(program.fees),
             "qty": 1,
             "total_fees": float(program.fees)
@@ -29,3 +29,12 @@ def add_to_cart(request, program_id):
         cart[program_id]["qty"] += 1
     request.session["shopping_cart"] = cart
     return redirect(reverse(view_cart))
+
+
+def remove_from_cart(request, program_id):
+    cart = request.session["shopping_cart"]
+    if program_id in cart:
+        del cart[program_id]
+        request.session["shipping_cart"] = cart
+        messages.success(request, "The program has been removed")
+    return redirect(reverse("view_cart"))

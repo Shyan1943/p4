@@ -232,7 +232,8 @@ __pycache__
 ### 29. Create "Program" App, Model & CR
     i. Step 10, 13~15 to create "Program" app, models & CR route
 
-### 30. Add "Cart" to a shopping cart
+### 30. Create "Cart" App & CRUD item from the cart
     i. Create "carts" app (see step 10)
     ii. Create "C" Cart Route to add program to cart (see step 15 & NOTE need the argument program_id)
     iii. Create "R" view cart route (see step 14 & NOTE need have cart array [] in view function)
+    iv. Create "D" items route from cart (see step 17 & NOTE to use cart = request.session["shopping_cart"])
