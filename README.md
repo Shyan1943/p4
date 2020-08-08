@@ -238,3 +238,29 @@ __pycache__
     iii. Create "R" view cart route (see step 14 & NOTE need have cart array [] in view function)
     iv. Create "D" items route from cart (see step 17 & NOTE to use cart = request.session["shopping_cart"])
     v. Create "U" items route on cart (see step 16 & NOTE to use cart = request.session["shopping_cart"])
+
+### 31. Uploading images using Cloudinary
+    i. Sign up <a href="https://cloudinary.com">Cloudinary</a>
+    ii. Save the cloud name, API Key & API Secret in .env file. 
+    NOTE : Ensure we did inclulde `.env` in `.gitignore`
+    iii. At Gitpod terminal, enter : 
+            * `pip3 install cloudinary`
+            * `pip3 install python-dotenv`
+    iv. Inside "settings.py", add 
+            * `from dotenv import load_dotenv`, which instruct Django to load the environment file
+            * `load_dotenv(os.path.join(BASE_DIR, '.env'))` tell Django where is the .env file located
+            * Register the cloudinary app in the INSTALLED_APPS list
+            * At bottom of "setting.py", add the following to retrieve the cloud info from the .env file
+                    ```
+                        CLOUDINARY = {
+                            'cloud_name': os.environ.get("CLOUDINARY_CLOUD_NAME"),
+                            'api_key': os.environ.get("CLOUDINARY_API_KEY"),
+                            'api_secret': os.environ.get("CLOUDINARY_API_SECRET"),
+                        }
+                    ```
+    v. Runserver, go to admin site, delete all dgs
+    vi. At "dgs/models.py" :
+            * import `from cloudinary.models import CloudinaryField`
+            * insert `cover = CloudinaryField()` inside Dg model
+    vii. At Gitpod terminal, makemigrations & migrate & testing at backend admin site
+    viii.

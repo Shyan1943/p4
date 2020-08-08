@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 
 # Create your models here.
@@ -18,6 +19,7 @@ class Dg(models.Model):
     imdg_code = models.ForeignKey(IMDGCode,
                                   on_delete=models.SET_NULL, null=True)
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    cover = CloudinaryField()
 
     def __str__(self):
         return self.title

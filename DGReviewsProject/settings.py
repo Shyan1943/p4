@@ -11,10 +11,12 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'crispy_forms',
+    'cloudinary',
     'home',
     'dgs',
     'reviews',
@@ -152,3 +155,9 @@ STATICFILES_DIRS = [
 ]
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+CLOUDINARY = {
+    'cloud_name': os.environ.get("CLOUDINARY_CLOUD_NAME"),
+    'api_key': os.environ.get("CLOUDINARY_API_KEY"),
+    'api_secret': os.environ.get("CLOUDINARY_API_SECRET"),
+}
