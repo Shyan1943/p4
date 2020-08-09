@@ -327,6 +327,11 @@ __pycache__
     * log into Heroku using  `heroku login`
     * create a new app  `heroku create <app_name>` 
     * add new remote `git remote -v`
+* Go to the <a href="https://www.heroku.com">Heroku</a> Site :
+    * click on your project 
+    * ciick on Setting
+    * click on Reveal Config Vars
+    * save all your environment variables (in .env file) into Reveal Config Vars
 * At the folder, create a new file `Procfile`
 * Save `web: gunicorn <PROJECT_FOLDER>.wsgi:application` inside the `Procfile`file
 * At "settings.py", update ALLOWED_HOSTS with deployed url without https:// 
@@ -345,22 +350,12 @@ __pycache__
 * At Gitpod terminal : 
     * enter `python3 manage.py migrate` to migrate database
     * enter `python3 manage.py createsuperuser`to create a superuser as we have switched to a new POSTGRES database
-
-
-
-* Go to the <a href="https://www.heroku.com">Heroku</a> Site :
+    * enter `git add .`
+    * enter `git commit -m "<Commit Message>"` to commit everything 
+    * enter `git push heroku master` push to heroku 
+* At Heroku Site : 
     * click on your project 
-    * ciick on Setting
-    * click on Reveal Config Vars
-    * save all your environment variables (in .env file) into Reveal Config Vars 
     * at the top left, cilck on "Open App" 
 * Done publication!!
 * Test to ensure it matches the development version 
 * Ensure that ﬁnal deployed site has no broken internal links
-
-### To update the Heroku deployed site 
-* At Gitpod terminal : 
-    * log into Heroku using  `heroku login`
-    * `git add .`
-    * commit everything `git commit -m "<Commit Message>"`
-    * push to heroku using `git push heroku master`
