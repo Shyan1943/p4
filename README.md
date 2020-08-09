@@ -282,7 +282,7 @@ __pycache__
             * Code JQuery script  
     iv. At display template, load {% load cloudinary %} & insert {% cloudinary dg.image %} to show the image 
 
-### 34. Setup online payment 
+### 34. Setup Stripe (online payment) settings
     i. On "https://stripe.com/en-sg" :
             * Sign up an account
             * Click on "Developers" on the left bar 
@@ -300,4 +300,6 @@ __pycache__
                 STRIPE_PUBLISHABLE_KEY = os.environ.get('STRIPE_PUBLISHABLE_KEY')
                 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
             ```
-    
+
+### 35. Create "Checkout" App for online payment 
+    i. Create "Checkout" app (see step 10)
