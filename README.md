@@ -239,7 +239,13 @@ __pycache__
     iv. Create "D" items route from cart (see step 17 & NOTE to use cart = request.session["shopping_cart"])
     v. Create "U" items route on cart (see step 16 & NOTE to use cart = request.session["shopping_cart"])
 
-### 31. Setting up Cloudinary for Uploading images 
+### 31. Show the number of cart items on every page
+    i. Create a "cart/contexts.py" file and write a function to it. 
+    ii. At "settings.py" insert `cart.contexts.cart_contents` to register the context_processors
+    iii. Go "base.template.html" to show the number of cart items
+
+
+### 32. Setting up Cloudinary for Uploading images 
     i. Sign up <a href="https://cloudinary.com">Cloudinary</a>
     ii. Save the cloud name, API Key & API Secret in .env file. 
     NOTE : Ensure we did inclulde `.env` in `.gitignore`
@@ -264,7 +270,7 @@ __pycache__
             * insert `cover = CloudinaryField()` inside Dg model
     vii. At Gitpod terminal, makemigrations & migrate & testing at backend admin site
  
-### 31. Allow user to "CR" images  
+### 33. Allow user to "CR" images  
     i. At "dgs/forms.py" :
             * import `from cloudinary.forms import CloudinaryJsFileField`
             * add in "cover" inside the form's fields.

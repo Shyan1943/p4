@@ -13,7 +13,12 @@
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-    <div class="container">
+        <div class="container">
+            <div class="header">
+                <a href="{% url 'view_cart' %}">Shopping Cart : {{number_of_items}}</a>
+            </div>
+        </div>
+
         {% if messages %}
         <div class="alert alert-success">
             <div>{% for m in messages %}  {{m}}  {% endfor %}</div>
