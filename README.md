@@ -313,6 +313,7 @@ __pycache__
     iv. At "checkout/urls.py" to set up the path
 
 ## C) PUBLICATION
+### Deploying to Heroku
 * Implement manual test procedures to assess functionality, usability, responsiveness and data management within the Full Stack web application before publication
 * Sign up for a <a href="https://www.heroku.com">Heroku</a> account
 * Install dependencies, at Gitpod terminal : 
@@ -332,6 +333,34 @@ __pycache__
 * At Gitpod terminal, generate requirements file `pip3 freeze --local > requirements.txt`
 * At "settings.py", add `STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')` for Whitenoise to work 
 * At Gitpod terminal : 
+    * `git add .`
+    * commit everything `git commit -m "<Commit Message>"`
+    * push to heroku using `git push heroku master`
+
+### Setting up the Database
+* At Gitpod terminal : 
+    * Enter `heroku config`
+    * Copy down the DATABASE_URL & save it in `.env` file
+* At "settings.py", import `import dj_database_url`. NOTE : after set the database to POSTGRES, We won't have access to old database unless revert the changes to orignal database setting
+* At Gitpod terminal : 
+    * enter `python3 manage.py migrate` to migrate database
+    * enter `python3 manage.py createsuperuser`to create a superuser as we have switched to a new POSTGRES database
+
+
+
+* Go to the <a href="https://www.heroku.com">Heroku</a> Site :
+    * click on your project 
+    * ciick on Setting
+    * click on Reveal Config Vars
+    * save all your environment variables (in .env file) into Reveal Config Vars 
+    * at the top left, cilck on "Open App" 
+* Done publication!!
+* Test to ensure it matches the development version 
+* Ensure that ﬁnal deployed site has no broken internal links
+
+### To update the Heroku deployed site 
+* At Gitpod terminal : 
+    * log into Heroku using  `heroku login`
     * `git add .`
     * commit everything `git commit -m "<Commit Message>"`
     * push to heroku using `git push heroku master`
