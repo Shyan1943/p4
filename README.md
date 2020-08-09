@@ -3,12 +3,12 @@
 ## b) PRODUCTION
 
 ### 1. Setting up Github Pages
-    i. Sign up <a href="https://github.com/" target="_blank">Github</a>
+    i. Sign up Github at https://github.com/
     ii. Log in to GitHub
     iii. Create a new GitHub Repository
 
 ### 2. Launch a workspace container at Gitpod
-    i. Click to install <a href="https://www.gitpod.io/docs/browser-extension/" target="_blank">Gitpod Browser Extension </a>on browser in you are using Chrome or Firefox for convenient
+    i. Go https://www.gitpod.io/docs/browser-extension/, click to install Gitpod Browser Extension on browser in you are using Chrome or Firefox for convenient
     ii. Use `Ctrl+F5` on your Github Repository Page to refresh the browser
     iii. You will see a Gitpod button (Green color) is added to GitHub that does the prefixing for your convenience. And click on that button 
     iv. A workspace is creating as easy as prefixing any GitHub URL with gitpod.io/#.
@@ -246,7 +246,7 @@ __pycache__
 
 
 ### 32. Setting up Cloudinary for Uploading images 
-    i. Sign up <a href="https://cloudinary.com">Cloudinary</a>
+    i. Sign up Cloudinary account at https://cloudinary.com
     ii. Save the cloud name, API Key & API Secret in .env file. 
     NOTE : Ensure we did inclulde `.env` in `.gitignore`
     iii. At Gitpod terminal, enter : 
@@ -275,7 +275,7 @@ __pycache__
             * import `from cloudinary.forms import CloudinaryJsFileField`
             * add in "cover" inside the form's fields.
             * insert `cover = CloudinaryJsFileField()` at the end of the class Form & ensure its align with the `class Meta:`
-    ii. Upgrade <a href="https://code.jquery.com/">jQuery CDN</a> minified version by replacing the jQuery <script> inside base.template.html
+    ii. Upgrade jQuery CDN minified version at https://code.jquery.com/ by replacing the jQuery <script> inside base.template.html
     iii. At "dgs/create_dg.template.html" : 
             * load `{% load cloudinary %}` & `{% load static %}`
             * use `enctype="multipart/form-data" id="form"`
@@ -283,26 +283,21 @@ __pycache__
     iv. At display template, load {% load cloudinary %} & insert {% cloudinary dg.image %} to show the image 
 
 ### 34. Setup online payment 
-    i. Sign up an account with <a href="https://stripe.com/en-sg">Stripe</a>
-
-2| Obtain the Stripe API keys
-Sign into your Stripe Account, and inside the search box, type in "API Keys", and click on "Developers > API Keys"
-
-
-
-3| Copy and paste the Stripe Public and Secret Key into your .bashrc
-
-
-Copy the two keys and make sure to export them in your .env file.
-
-export STRIPE_PUBLISHABLE_KEY='your_publishable_key'
-export STRIPE_SECRET_KEY='your_secret_key'
-
-4| Install Stripe
-In your bash terminal, install Stripe with:
-
-pip3 install stripe
-
-5| Add your Stripe Keys to settings.py
-Inside your settings.py, add your two Stripes keys (we can just put them at the bottom of the page):
-
+    i. On "https://stripe.com/en-sg" :
+            * Sign up an account
+            * Click on "Developers" on the left bar 
+            * Click on "API Key"
+            * Obtain the Stripe API Publishable & secret keys save it in .env file. 
+    ii. Back to Gitpod, copy & paste the two keys and save in .env file.
+        NOTE : Ensure we did inclulde `.env` in `.gitignore`
+            ```
+                export STRIPE_PUBLISHABLE_KEY='your_publishable_key'
+                export STRIPE_SECRET_KEY='your_secret_key'
+            ```
+    iii. At Gitpod terminal, install Stripe by entering `pip3 install stripe`
+    vi. At bottom of "setting.py", add the following to retrieve the Stripe keys from the .env file
+            ```
+                STRIPE_PUBLISHABLE_KEY = os.environ.get('STRIPE_PUBLISHABLE_KEY')
+                STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+            ```
+    
