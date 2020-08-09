@@ -342,7 +342,7 @@ __pycache__
     * commit everything `git commit -m "<Commit Message>"`
     * push to heroku using `git push heroku master`
 
-### Setting up the Database
+### Setting up the POSTGRES Database
 * At Gitpod terminal : 
     * Enter `heroku config`
     * Copy down the DATABASE_URL & save it in `.env` file
