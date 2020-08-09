@@ -282,4 +282,27 @@ __pycache__
             * Code JQuery script  
     iv. At display template, load {% load cloudinary %} & insert {% cloudinary dg.image %} to show the image 
 
-    
+### 34. Setup online payment 
+    i. Sign up an account with <a href="https://stripe.com/en-sg">Stripe</a>
+
+2| Obtain the Stripe API keys
+Sign into your Stripe Account, and inside the search box, type in "API Keys", and click on "Developers > API Keys"
+
+
+
+3| Copy and paste the Stripe Public and Secret Key into your .bashrc
+
+
+Copy the two keys and make sure to export them in your .env file.
+
+export STRIPE_PUBLISHABLE_KEY='your_publishable_key'
+export STRIPE_SECRET_KEY='your_secret_key'
+
+4| Install Stripe
+In your bash terminal, install Stripe with:
+
+pip3 install stripe
+
+5| Add your Stripe Keys to settings.py
+Inside your settings.py, add your two Stripes keys (we can just put them at the bottom of the page):
+
