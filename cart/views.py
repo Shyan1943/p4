@@ -9,7 +9,7 @@ def view_cart(request):
 
     total = 0
     for k, v in cart.items():
-        total += float(v["fees"])
+        total += float(v["fees"]) * int(v["qty"])
 
     return render(request, "cart/view_cart.template.html", {
         "cart": cart,
