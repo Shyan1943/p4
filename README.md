@@ -301,5 +301,13 @@ __pycache__
                 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
             ```
 
-### 35. Create "Checkout" App for online payment 
+### 35. Setup "Checkout" App for online payment 
     i. Create "Checkout" app (see step 10)
+    ii. At "checkout/views.py" create a view function to generate the charge. NOTE import the following :- 
+            ```
+                `from django.contrib.sites.models import Site`
+                `from django.conf import settings`
+                `import stripe`
+            ```
+    iii. Create "checkout/checkout.template.html" and bring in Stripe Javastript 
+    iv. At "checkout/urls.py" to set up the path
