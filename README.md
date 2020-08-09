@@ -1,6 +1,6 @@
 # DEPLOYMENT
 
-## b) PRODUCTION
+## B) PRODUCTION
 
 ### 1. Setting up Github Pages
     i. Sign up Github at https://github.com/
@@ -311,3 +311,43 @@ __pycache__
             ```
     iii. Create "checkout/checkout.template.html" and bring in Stripe Javastript 
     iv. At "checkout/urls.py" to set up the path
+
+## C) PUBLICATION
+* Implement manual test procedures to assess functionality, usability, responsiveness and data management within the Full Stack web application before publication
+* Sign up for a <a href="https://www.heroku.com">Heroku</a> account
+* Install dependencies, at Gitpod terminal : 
+    * `pip3 install gunicorn`
+    * `pip3 install psycopg2`
+    * `pip3 install Pillow`
+    * `pip3 install whitenoise` & go "settings.py" file, insert `'whitenoise.middleware.WhiteNoiseMiddleware'` into `MIDDLEWARE` Array
+    * `pip3 install dj_database_url` 
+* Update ".gitignore" file content as per this link http://gitignore.io/api/django
+* At Gitpod terminal : 
+    * log into Heroku using  `heroku login`
+    * create a new app  `heroku create <app_name>` 
+    * add new remote `git remote -v`
+* At the folder, create a new file `Procfile`
+* Save `web: gunicorn <PROJECT_FOLDER>.wsgi:application` inside the `Procfile`file
+* At "settings.py", update ALLOWED_HOSTS with deployed url without https:// 
+* At Gitpod terminal, generate requirements file `pip3 freeze --local > requirements.txt`
+* At "settings.py", add `STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')` for Whitenoise to work 
+* At Gitpod terminal : 
+    * `git add .`
+    * commit everything `git commit -m "<Commit Message>"`
+    * push to heroku using `git push heroku master`
+* Go the <a href="https://www.heroku.com">Heroku</a> Site :
+    * click on your project 
+    * ciick on Setting
+    * click on Reveal Config Vars
+    * save all your environment variables (in .env file) into Reveal Config Vars 
+    * at the top left, cilck on "Open App" 
+* Done publication!!
+* Test to ensure it matches the development version 
+* Ensure that ﬁnal deployed site has no broken internal links
+
+### To update the Heroku deployed site 
+* At Gitpod terminal : 
+    * log into Heroku using  `heroku login`
+    * `git add .`
+    * commit everything `git commit -m "<Commit Message>"`
+    * push to heroku using `git push heroku master`
