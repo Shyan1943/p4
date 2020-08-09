@@ -1,4 +1,5 @@
 {% extends "base.template.html" %}
+{% load cloudinary %}
 
 {% block title %}View DG{% endblock %}
 
@@ -6,6 +7,8 @@
     <h1>View DG post details</h1>
     <div class="card">
         <div class="card-body">
+            {% cloudinary dg.image %}
+
             <h5 class="card-title">{{dg.title}}</h5>
             <p class="card-text">{{dg.example}}</p>
             <p class="card-text">{{dg.prohibited_reason}}</p>
