@@ -335,19 +335,3 @@ __pycache__
     * `git add .`
     * commit everything `git commit -m "<Commit Message>"`
     * push to heroku using `git push heroku master`
-* Go the <a href="https://www.heroku.com">Heroku</a> Site :
-    * click on your project 
-    * ciick on Setting
-    * click on Reveal Config Vars
-    * save all your environment variables (in .env file) into Reveal Config Vars 
-    * at the top left, cilck on "Open App" 
-* Done publication!!
-* Test to ensure it matches the development version 
-* Ensure that ﬁnal deployed site has no broken internal links
-
-### To update the Heroku deployed site 
-* At Gitpod terminal : 
-    * log into Heroku using  `heroku login`
-    * `git add .`
-    * commit everything `git commit -m "<Commit Message>"`
-    * push to heroku using `git push heroku master`
