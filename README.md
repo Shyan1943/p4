@@ -312,6 +312,10 @@ __pycache__
     iii. Create "checkout/checkout.template.html" and bring in Stripe Javastript 
     iv. At "checkout/urls.py" to set up the path
 
+### 36. Static CCS styling
+* Take note to check the site is responsiveness on every new styling input
+* Import <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true">Google Font</a>
+
 ## C) PUBLICATION
 ### Deploying to Heroku
 * Implement manual test procedures to assess functionality, usability, responsiveness and data management within the Full Stack web application before publication
