@@ -315,6 +315,7 @@ __pycache__
 ### 36. Static CCS styling
 * Take note to check the site is responsiveness on every new styling input
 * Import <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true">Google Font</a>
+* Added <a href="https://getbootstrap.com/docs/4.0/components/navbar/">Bootstrap fixed top navigation bar</a>
 
 ## C) PUBLICATION
 ### Deploying to Heroku

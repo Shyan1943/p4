@@ -4,11 +4,6 @@
 
 {% block content %}
     <h1>Let's learn & share DG experience here!!</h1>
-    {% if request.user.is_authenticated  %}
-    <p>Welcome {{request.user}}</p>
-    {% else %}
-    <p>Please <a href="accounts/login">Login</a></p>
-    {%endif%}
 
     {% for d in dgs %}
     <div class="card mt-3">      
