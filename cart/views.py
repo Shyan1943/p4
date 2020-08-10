@@ -1,12 +1,13 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from programs.models import Program
+# import json
+# from django.core.serializers.json import DjangoJSONEncoder
 
 
 # Create your views here.
 def view_cart(request):
     cart = request.session["shopping_cart"]
-
     total = 0
     for k, v in cart.items():
         total += float(v["fees"]) * int(v["qty"])
@@ -21,6 +22,7 @@ def add_to_cart(request, program_id):
     cart = request.session.get("shopping_cart", {})
     if program_id not in cart:
         program = get_object_or_404(Program, pk=program_id)
+        # program.date = json.dumps(Program.date, cls=DjangoJSONEncoder)
         cart[program_id] = {
             "id": program_id,
             "title": program.title,
