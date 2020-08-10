@@ -22,41 +22,35 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Learn <span class="sr-only">(learn)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Share <span class="sr-only">(share)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Upgrade skills <span class="sr-only">(upgrade skills)</span></a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{% url 'view_cart' %}">Shopping Cart : {{number_of_items}} <span class="sr-only">(your shopping cart)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'view_cart' %}">Cart : {{number_of_items}} <span class="sr-only">(your shopping cart)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="{% url 'account_signup' %}">Register <span class="sr-only">(register))</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             {% if request.user.is_authenticated  %}
-                                <p>Welcome {{request.user}}</p>
+                                <a class="nav-link active" href="{% url 'account_logout' %}">Welcome {{request.user}}<span class="sr-only">(Welcome {{request.user}})</span></a>
+                        </li>
+                        <li class="nav-item">
                                 <a class="nav-link" href="{% url 'account_logout' %}">Sign Out <span class="sr-only">(sign out)</span></a>
                             {% else %}
                                 <a class="nav-link" href="{% url 'account_login' %}">Sign in <span class="sr-only">(sign in)</span></a>
                             {%endif%}
                         </li>
-
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownProfile" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile Ads</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownProfile">
-                                <a class="dropdown-item" href="#">Create</a>
-                                <a class="dropdown-item" href="#">View all Profile Ads</a>
-                            </div>
-                        </li> -->
                     </ul>
                 </div>
             </nav>

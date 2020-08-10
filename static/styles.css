@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
 body {
-    background-color: aliceblue;
     font-family: "Open Sans", sans-serif;
+}
+
+.navbar-light {
+    background-color: aliceblue;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #3b464f !important;
+    font-size: 130%;
 }
