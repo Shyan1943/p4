@@ -18,5 +18,9 @@
         </li>
         {%endfor%}
     </ul>
-    <h3>Cart total: ${{total}}</h3>
+    <h3>Cart total: ${{total}}
+        <a href="{% url 'checkout' %}" target="_blank" class="btn btn-primary">Checkout</a>
+    </h3>
+
+
 {% endblock %}

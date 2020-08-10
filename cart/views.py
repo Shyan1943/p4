@@ -9,7 +9,7 @@ from programs.models import Program
 # Create your views here.
 @ login_required
 def view_cart(request):
-    cart = request.session["shopping_cart"]
+    cart = request.session.get("shopping_cart", {})
     total = 0
     for k, v in cart.items():
         total += float(v["fees"]) * int(v["qty"])
