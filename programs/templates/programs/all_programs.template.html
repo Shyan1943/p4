@@ -4,12 +4,6 @@
 
 {% block content %}
     <h1>Upgrade your skill</h1>
-    {% if request.user.is_authenticated  %}
-    <p>Welcome {{request.user}}</p>
-    {% else %}
-    <p>Please <a href="accounts/login">Login</a></p>
-    {%endif%}
-
     {% for p in programs %}
     <div class="card mt-3">      
         <h5 class="card-header">{{p.title}}</h5>

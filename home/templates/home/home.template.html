@@ -4,13 +4,6 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <h1>Landing page</h1>
-    {% if request.user.is_authenticated  %}
-    <p>Welcome {{request.user}}</p>
-    {% else %}
-    <p>Please <a href="accounts/login">Login</a></p>
-    {%endif%}
-
     <form method="GET">
         {% csrf_token %}
         {{ form|crispy }}
