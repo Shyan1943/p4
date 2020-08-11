@@ -71,7 +71,7 @@ def delete_dg(request, dg_id):
         messages.success(
                 request,
                 f'Post "{dg_to_delete.title}" has been deleted')
-        return redirect(index)
+        return redirect(reverse(all_dg))
     else:
         return render(request, "dgs/delete_dg.template.html", {
             "dg": dg_to_delete

@@ -270,7 +270,7 @@ __pycache__
             * insert `cover = CloudinaryField()` inside Dg model
     vii. At Gitpod terminal, makemigrations & migrate & testing at backend admin site
  
-### 33. Allow user to "CR" images  
+### 33. Allow user to "CRD" images  
     i. At "dgs/forms.py" :
             * import `from cloudinary.forms import CloudinaryJsFileField`
             * add in "cover" inside the form's fields.
@@ -281,6 +281,7 @@ __pycache__
             * use `enctype="multipart/form-data" id="form"`
             * Code JQuery script  
     iv. At display template, load {% load cloudinary %} & insert {% cloudinary dg.image %} to show the image 
+    v. At "dgs/delete_dg.template.html" to show the image & test on delete
 
 ### 34. Setup Stripe (online payment) settings
     i. On "https://stripe.com/en-sg" :
