@@ -385,6 +385,12 @@ __pycache__
 * Test to ensure it matches the development version 
 * Ensure that ﬁnal deployed site has no broken internal links
 
+### Ensure that Stripes still work
+* Set up the url Sites correctly
+    * Log into deployed site admin, go to Sites and edit the domain there to match heroku domain (with https:// in front and ending with a slash)
+* Create new webhook endpoint with heroku url & SIGNING_SECRET at stripes.com
+    * Add in a web hook with heroku app domain name for checkout.session.completed event. Make sure to set the signing key correctly.
+        
 ### To update the Heroku deployed site
 * At Gitpod terminal, log into Heroku using  `heroku login`
 * Update environment variables key (if any)
@@ -398,3 +404,6 @@ __pycache__
     * `git add .`
     * commit everything `git commit -m "<Commit Message>"`
     * push to heroku using `git push heroku master`
+* Done publication!!
+* Test to ensure it matches the development version
+* Ensure that ﬁnal deployed site has no broken internal links
