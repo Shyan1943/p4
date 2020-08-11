@@ -55,13 +55,16 @@ def update_dg(request, dg_id):
             return redirect(reverse(all_dg))
         else:
             return render(request, "dgs/update_dg.template.html", {
-                "form": dg_form
+                "form": dg_form,
+                "dg": dg_being_updated
             })
     else:
         dg_form = DgForm(instance=dg_being_updated)
         return render(request, "dgs/update_dg.template.html", {
-            "form": dg_form
+            "form": dg_form,
+            "dg": dg_being_updated
         })
+
 
 @login_required
 def delete_dg(request, dg_id):

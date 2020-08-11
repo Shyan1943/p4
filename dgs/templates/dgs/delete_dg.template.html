@@ -8,7 +8,6 @@
     <p> Are you sure?</p>
     <form method="POST">
         {% csrf_token %}
-        <!-- {{ dg.as_p }} -->
         <div class="card">
             <div class="card-body">
                 {% cloudinary dg.image %}
