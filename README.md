@@ -312,7 +312,11 @@ __pycache__
     iii. Create "checkout/checkout.template.html" and bring in Stripe Javastript 
     iv. At "checkout/urls.py" to set up the path
 
-### 36. Order Completion Webhook
+### 36. Empty the Cart after Checkout
+    i. At "checkout/views.py", change the checkout_success function
+    ii. use `request.session['shopping_cart'] = {}` to empty the shopping cart
+
+### 37. Order Completion Webhook
     i. At checkout/views.py, create the new route & import the exempt_csrf decorator `from django.views.decorators.csrf import csrf_exempt`
     ii. set up its' checkout/urls.py 
     iii. test this URL in web browser. if error msg "HTTP_STRIPE_SIGNATURE", means in order, can continue the below steps.
@@ -328,7 +332,7 @@ __pycache__
     vii. Test Checkout
     viii. At "checkout" app, create "Purchase" model, makemigrations, migrate, register it at admin.py to store the Purchase information 
 
-### 37. Static CCS styling
+### 38. Static CCS styling
 * Take note to check the site is responsiveness on every new styling input
 * Import <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true">Google Font</a>
 * Added <a href="https://getbootstrap.com/docs/4.0/components/navbar/">Bootstrap fixed top navigation bar</a>

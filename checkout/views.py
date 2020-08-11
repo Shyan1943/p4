@@ -1,6 +1,7 @@
-from django.shortcuts import render, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib.sites.models import Site
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib import messages
 from django.conf import settings
 import stripe
 from programs.models import Program
@@ -44,8 +45,11 @@ def checkout(request):
         "public_key": settings.STRIPE_PUBLISHABLE_KEY
     })
 
+
 def checkout_success(request):
-    return HttpResponse("checkout success")
+    request.session["shopping_cart"] = {}
+    messages.success(request, "Your purchases been completed")
+    return redirect(reverse('all_programs_route'))
 
 
 def checkout_cancelled(request):
