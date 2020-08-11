@@ -384,3 +384,17 @@ __pycache__
 * Done publication!!
 * Test to ensure it matches the development version 
 * Ensure that ﬁnal deployed site has no broken internal links
+
+### To update the Heroku deployed site
+* At Gitpod terminal, log into Heroku using  `heroku login`
+* Update environment variables key (if any)
+    * Go to the <a href="https://www.heroku.com">Heroku</a> Site
+    * click on your project 
+    * ciick on Setting
+    * click on Reveal Config Vars
+    * save all your environment variables (in .env file) into Reveal Config Vars
+* At "settings.py", delete ["*"] at the ALLOWED_HOSTS 
+* At Gitpod terminal : 
+    * `git add .`
+    * commit everything `git commit -m "<Commit Message>"`
+    * push to heroku using `git push heroku master`
