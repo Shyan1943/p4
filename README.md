@@ -332,6 +332,21 @@ __pycache__
     vii. Test Checkout
     viii. At "checkout" app, create "Purchase" model, makemigrations, migrate, register it at admin.py to store the Purchase information 
 
+### Setting up Emails
+* Sign up for a <a href="https://mail.google.com">Gmail account</a>
+    * Click on the settings gear icon at the upper right corner
+    * Click on the button [See all Settings]
+    * Go to "Accounts & Import"
+    * Click on "Other Google Account Settings"
+    * Click on "Security" tab on the left bar and turns on two-step verification
+    * click on "App Passwords"
+    * Creating a new Mail App password 
+    * Select "mail" under Select app, and "other" under Select device
+    * When requested for a name, type in "django"
+    * Save the 16-characters password and save it into .env file as EMAIL_HOST_PASS
+* Back to Gitpod, update .env and settings.py file
+* Try to get a <a href="https://temp-mail.org/en/">temp email</a> and use that to sign up as a new user for testing
+
 ### 38. Static CCS styling
 * Take note to check the site is responsiveness on every new styling input
 * Import <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true">Google Font</a>
@@ -390,7 +405,7 @@ __pycache__
     * Log into deployed site admin, go to Sites and edit the domain there to match heroku domain (with https:// in front and ending with a slash)
 * Create new webhook endpoint with heroku url & SIGNING_SECRET at stripes.com
     * Add in a web hook with heroku app domain name for checkout.session.completed event. Make sure to set the signing key correctly.
-        
+
 ### To update the Heroku deployed site
 * At Gitpod terminal, log into Heroku using  `heroku login`
 * Update environment variables key (if any)
