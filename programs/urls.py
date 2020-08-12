@@ -6,5 +6,7 @@ urlpatterns = [
     path('create/', programs.views.create_program,
          name="create_program_route"),
     path('update/<program_id>', programs.views.update_program,
-         name="update_program_route")
+         name="update_program_route"),
+    path('delete/<program_id>', programs.views.delete_program,
+         name="delete_program_route")
 ]

@@ -229,8 +229,9 @@ __pycache__
     iv. Create "home/home.template.html"
     v. At "home/urls.py" create home path
 
-### 29. Create "Program" App, Model & CRU
-    i. Step 10, 13~16 to create "Program" app, models & CRU route
+### 29. Create "Program" App, Model & CRUD
+    i. See Step 10, 13~17 to create "Program" app, models & CRUD route
+    ii See last step of Step 39 to set up permission for admin to access only 
 
 ### 30. Create "Cart" App & CRUD item from the cart
     i. Create "carts" app (see step 10)

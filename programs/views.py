@@ -67,3 +67,22 @@ def update_program(request, program_id):
             "form": program_form,
             "program": program_being_updated
         })
+
+
+@login_required
+def delete_program(request, program_id):
+    if request.user.groups.filter(name='customer').exists():
+        messages.error(request, "You are not a Site administrator")
+        return redirect(reverse(all_programs))
+
+    program_to_delete = get_object_or_404(Program, pk=program_id)
+    if request.method == "POST":
+        program_to_delete.delete()
+        messages.success(
+                request,
+                f'Post "{program_to_delete.title}" has been deleted')
+        return redirect(reverse(all_programs))
+    else:
+        return render(request, "programs/delete_program.template.html", {
+            "program": program_to_delete
+        })
