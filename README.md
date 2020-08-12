@@ -333,7 +333,7 @@ __pycache__
     vii. Test Checkout
     viii. At "checkout" app, create "Purchase" model, makemigrations, migrate, register it at admin.py to store the Purchase information 
 
-### Setting up Emails
+### 38. Setting up Emails
 * Sign up for a <a href="https://mail.google.com">Gmail account</a>
     * Click on the settings gear icon at the upper right corner
     * Click on the button [See all Settings]
@@ -348,7 +348,10 @@ __pycache__
 * Back to Gitpod, update .env and settings.py file
 * Try to get a <a href="https://temp-mail.org/en/">temp email</a> and use that to sign up as a new user for testing
 
-### 38. Static CCS styling
+### 39. User Group
+* `django-admin startapp accounts` set up new "accounts" app 
+
+### 40. Static CCS styling
 * Take note to check the site is responsiveness on every new styling input
 * Import <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true">Google Font</a>
 * Added <a href="https://getbootstrap.com/docs/4.0/components/navbar/">Bootstrap fixed top navigation bar</a>
