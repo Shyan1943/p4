@@ -4,6 +4,7 @@
 
 {% block content %}
     <h1>Upgrade your skill</h1>
+    <a href="{% url 'create_program_route' %}" class="btn btn-primary">Create a new program</a>
     {% for p in programs %}
     <div class="card mt-3">      
         <h5 class="card-header">{{p.title}}</h5>
@@ -16,7 +17,8 @@
             <p class="card-text">Fees : {{p.fees}}</p>
             
             <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-primary">Book</a>
-        
+            <a href="{% url 'update_program_route' program_id=p.id %}" class="btn btn-primary">Update</a>
+                    
         </div>
     </div>
     {% endfor %}

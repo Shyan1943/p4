@@ -42,6 +42,7 @@ def create_dg(request):
                 "form": create_form
         })
 
+
 @login_required
 def update_dg(request, dg_id):
     dg_being_updated = get_object_or_404(Dg, pk=dg_id)
