@@ -161,7 +161,9 @@ __pycache__
     viii. Inside "dgs/views.py" to protect a view function by :-
             * import `from django.contrib.auth.decorators import login_required, permission_required`
             * add `@login_required` before the view function that you want to restrict
-    ix. At template insert `{% if request.user == d.user %} {% endif %}` to only allow the same user to edit or delete for their post 
+    ix. At template insert :-
+            * `{% if request.user == d.user %} {% endif %}` to only allow the same user to click on the UD button for their post 
+            * `{% if request.user.is_superuser %} {% endif %}`to only allow the superuser to click on the CUD for program
 
 ### 20. Master Templates and Overriding Templates
     i. Create "templates" folder, which must be in the same folder as manage.py
