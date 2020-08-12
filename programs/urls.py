@@ -8,5 +8,7 @@ urlpatterns = [
     path('update/<program_id>', programs.views.update_program,
          name="update_program_route"),
     path('delete/<program_id>', programs.views.delete_program,
-         name="delete_program_route")
+         name="delete_program_route"),
+    path('details/<program_id>', programs.views.view_program,
+         name="view_program_route")
 ]

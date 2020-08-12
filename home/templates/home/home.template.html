@@ -25,7 +25,7 @@
     <ul class="mt-3">
     {%for p in programs %}
         <li>{{p.title}} on {{p.date}} 
-            <a href="{% url 'all_programs_route' %}" class="btn btn-primary btn-sm">Learn more</a>
+            <a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Learn more</a>
         </li>
     {%endfor%}
     </ul>

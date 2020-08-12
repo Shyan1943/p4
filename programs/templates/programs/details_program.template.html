@@ -1,11 +1,9 @@
 {% extends "base.template.html" %}
 
-{% block title %}Programs{% endblock %}
+{% block title %}View Program{% endblock %}
 
 {% block content %}
-    <h1>Upgrade your skill</h1>
-    <a href="{% url 'create_program_route' %}" class="btn btn-primary">Create a new program</a>
-    {% for p in programs %}
+    <h1>View program details</h1>
     <div class="card mt-3">      
         <h5 class="card-header">{{p.title}}</h5>
         <div class="card-body">
@@ -17,11 +15,9 @@
             <p class="card-text">Fees : {{p.fees}}</p>
             
             <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-primary btn-sm">Book</a>
-            <a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Learn more</a>
             <a href="{% url 'update_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Update</a>
             <a href="{% url 'delete_program_route' program_id=p.id %}" class="btn btn-danger btn-sm">Delete</a>
                                 
         </div>
     </div>
-    {% endfor %}
 {% endblock %}
