@@ -351,6 +351,8 @@ __pycache__
 ### 39. User Group
 * At Gitpod terminal, enter `django-admin startapp accounts` set up new "accounts" app 
 * At Gitpod left bar, right click on "accounts" app to create new file "forms.py"
+* At "settings.py", install 'accounts" app & insert `ACCOUNT_SIGNUP_FORM_CLASS = 'accounts.forms.SignupForm'`
+* At "acccounts/forms.py", create a SignupForm & test on broswer
 
 ### 40. Static CCS styling
 * Take note to check the site is responsiveness on every new styling input

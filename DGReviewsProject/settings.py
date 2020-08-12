@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'crispy_forms',
     'cloudinary',
+    'accounts',
     'home',
     'dgs',
     'reviews',
@@ -99,6 +100,7 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
+ACCOUNT_SIGNUP_FORM_CLASS = 'accounts.forms.SignupForm'
 
 WSGI_APPLICATION = 'DGReviewsProject.wsgi.application'
 
