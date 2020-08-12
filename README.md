@@ -352,7 +352,9 @@ __pycache__
 * At Gitpod terminal, enter `django-admin startapp accounts` set up new "accounts" app 
 * At Gitpod left bar, right click on "accounts" app to create new file "forms.py"
 * At "settings.py", install 'accounts" app & insert `ACCOUNT_SIGNUP_FORM_CLASS = 'accounts.forms.SignupForm'`
-* At "acccounts/forms.py", create a SignupForm & test on broswer
+* At "accounts/forms.py", create a SignupForm & test on broswer
+* At "accounts/models.py", create a Profile model, makemigrations & migrate
+* At "accounts/forms.py", import `from django.contrib.auth.models import Group` and add the user to group
 
 ### 40. Static CCS styling
 * Take note to check the site is responsiveness on every new styling input
