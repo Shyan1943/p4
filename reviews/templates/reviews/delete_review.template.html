@@ -1,0 +1,19 @@
+{% extends "base.template.html" %}
+
+{% block title %}Delete reivew{% endblock %}
+
+{% block content %}
+    <p> Deleting..? Are you sure?</p>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">{{reivew.title}} for Dg "{{reivew.dg.title}}"</h5>
+                <p class="card-text">{{reivew.content}}</p>
+                <div class="card-footer text-muted">by {{reivew.user}} on {{reivew.date}}</div>
+            </div>
+        </div>
+        <input type="submit" class="btn btn-danger" value="Yes"/>    
+        <a href="#">No</a>
+    </form>
+{% endblock %}

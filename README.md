@@ -192,6 +192,7 @@ __pycache__
     iii. See step 15, to create "C"RUD Route for Reviews
     iv. See step 14, to create C"R"UD Route for Reviews
     v. See step 16, to create CR"U"D Route for Reviews    
+    vi. See step 17, to create CRU"D" Route for Reviews   
 
 ### 24. Associating Dgs with User
     i. Inside "dgs/models.py", import `from django.contrib.auth.models import User` and the relationship to the Dg model

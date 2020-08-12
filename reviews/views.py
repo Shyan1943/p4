@@ -131,3 +131,19 @@ def update_review(request, review_id):
             "form": review_form,
             "review": review_being_updated,
         })
+
+
+@login_required
+def delete_review(request, review_id):
+    # retrieve the data that we want to update review
+    review = get_object_or_404(Review, pk=review_id)
+
+    # if the form is submitted
+    if request.method == "POST":
+        review.delete()
+        return redirect(reverse(reviews))
+    else:
+        # if no form is submitted (that is, just to see the confirmation)
+        return render(request, 'reviews/delete_review.template.html', {
+            'review': review
+        })
