@@ -1,7 +1,5 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
-# from django.db.models import Q
-from django.contrib.auth.decorators import login_required
 from .models import Program
 from .forms import ProgramForm
 
@@ -14,8 +12,11 @@ def all_programs(request):
     })
 
 
-@ login_required
 def create_program(request):
+    if request.user.groups.filter(name='customer').exists():
+        messages.error(request, "You are not a Site administrator")
+        return redirect(reverse(all_programs))
+
     if request.method == "POST":
         form = ProgramForm(request.POST)
         if form.is_valid():

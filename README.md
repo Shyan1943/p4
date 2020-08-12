@@ -355,6 +355,12 @@ __pycache__
 * At "accounts/forms.py", create a SignupForm & test on broswer
 * At "accounts/models.py", create a Profile model, makemigrations & migrate
 * At "accounts/forms.py", import `from django.contrib.auth.models import Group` and add the user to group
+* At "programs/views.py", insert as following for Site that not allow customer group to go in. 
+    ```
+    if request.user.groups.filter(name='customer').exists():
+        messages.error(request, "You are not a Site administrator")
+        return redirect(reverse(all_programs))
+    ```
 
 ### 40. Static CCS styling
 * Take note to check the site is responsiveness on every new styling input
