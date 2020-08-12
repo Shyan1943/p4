@@ -10,12 +10,22 @@
         <input type="Submit" value="Search"/>
     </form>
 
-    <h2 class="mt-5">Dg dicussion related </h2>
+    <h2 class="mt-5">Dg dicussions related </h2>
     <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">Explore all Dg discussion</a>
     <ul class="mt-3">
     {%for d in dgs %}
         <li>{{d.title}} ({{d.imdg_code.chemical_name}}) 
             <a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-primary btn-sm">Learn more</a>
+        </li>
+    {%endfor%}
+    </ul>
+
+    <h2 class="mt-5">Program related </h2>
+    <a href="{% url 'all_programs_route' %}" class="btn btn-primary btn-sm">Explore all Programs</a>
+    <ul class="mt-3">
+    {%for p in programs %}
+        <li>{{p.title}} on {{p.date}} 
+            <a href="{% url 'all_programs_route' %}" class="btn btn-primary btn-sm">Learn more</a>
         </li>
     {%endfor%}
     </ul>
