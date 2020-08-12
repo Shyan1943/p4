@@ -14,8 +14,9 @@
     <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">Explore all Dg discussion</a>
     <ul class="mt-3">
     {%for d in dgs %}
-        <li>{{d.title}} ({{d.imdg_code.chemical_name}}) 
+        <li class="mt-3">
             <a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-primary btn-sm">Learn more</a>
+            {{d.title}} ({{d.imdg_code.chemical_name}})
         </li>
     {%endfor%}
     </ul>
@@ -24,8 +25,10 @@
     <a href="{% url 'all_programs_route' %}" class="btn btn-primary btn-sm">Explore all Programs</a>
     <ul class="mt-3">
     {%for p in programs %}
-        <li>{{p.title}} on {{p.date}} 
+        <li class="mt-3">
+            <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-primary btn-sm">Book</a>
             <a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Learn more</a>
+            {{p.title}} on {{p.date}} 
         </li>
     {%endfor%}
     </ul>
