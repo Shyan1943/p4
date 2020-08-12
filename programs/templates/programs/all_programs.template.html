@@ -4,7 +4,11 @@
 
 {% block content %}
     <h1>Upgrade your skill</h1>
+
+    {% if request.user == is_superuser %}
     <a href="{% url 'create_program_route' %}" class="btn btn-primary">Create a new program</a>
+    {%endif%}
+
     {% for p in programs %}
     <div class="card mt-3">      
         <h5 class="card-header">{{p.title}}</h5>
@@ -20,7 +24,7 @@
             <a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Learn more</a>
             <a href="{% url 'update_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Update</a>
             <a href="{% url 'delete_program_route' program_id=p.id %}" class="btn btn-danger btn-sm">Delete</a>
-                                
+                               
         </div>
     </div>
     {% endfor %}
