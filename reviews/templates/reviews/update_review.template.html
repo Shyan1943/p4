@@ -1,0 +1,14 @@
+{% extends "base.template.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Update your review{% endblock %}
+
+{% block content %}
+    <h1>Updating your review "{{review.title}}" on Dg "{{review.dg.title}}"</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" class="btn btn-primary"/> 
+    </form>
+
+{% endblock %}

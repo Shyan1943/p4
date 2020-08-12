@@ -93,3 +93,41 @@ def create_comment(request, review_id):
             "review": review
         })
 
+
+@login_required
+def update_review(request, review_id):
+    if request.user.groups.filter(name='customer').exists():
+        messages.error(request, "You are not a Site administrator")
+        return redirect(reverse(reviews))
+
+    # retrieve the data that we want to update review
+    review_being_updated = get_object_or_404(Review, pk=review_id)
+
+    # if the user has submitted the form, process the update
+    if request.method == "POST":
+
+        # the user has submitted data by extracting it from the request.POST
+        # and passing it to the form
+        review_form = ReviewForm(request.POST,
+                                 instance=review_being_updated)
+        if review_form.is_valid:
+            review_form.save()
+            messages.success(
+                request,
+                f'Post "{review_being_updated.title}" has been updated')
+            return redirect(reverse(reviews))
+        else:
+            # if the form submitted is invalid, then we display the form
+            return render(request, "reviews/update_review.template.html", {
+                "form": review_form,
+                "review": review_being_updated
+            })
+    else:
+        # if there is no form submitted, then we display the form
+
+        # populate the form with the existing data from the review
+        review_form = ReviewForm(instance=review_being_updated)
+        return render(request, "reviews/update_review.template.html", {
+            "form": review_form,
+            "review": review_being_updated,
+        })
