@@ -349,7 +349,8 @@ __pycache__
 * Try to get a <a href="https://temp-mail.org/en/">temp email</a> and use that to sign up as a new user for testing
 
 ### 39. User Group
-* `django-admin startapp accounts` set up new "accounts" app 
+* At Gitpod terminal, enter `django-admin startapp accounts` set up new "accounts" app 
+* At Gitpod left bar, right click on "accounts" app to create new file "forms.py"
 
 ### 40. Static CCS styling
 * Take note to check the site is responsiveness on every new styling input
