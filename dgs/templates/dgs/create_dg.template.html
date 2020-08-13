@@ -10,7 +10,8 @@
     <form method="POST" enctype="multipart/form-data" id="form">
         {% csrf_token %}
         {{ form|crispy }}
-        <input type="submit" class="btn btn-primary"/>    
+        <input type="submit" class="btn btn-primary btn-sm"/>
+        <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">Explore all discussions</a>    
     </form>
 
     <!-- Optional -->
