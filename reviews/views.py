@@ -39,8 +39,10 @@ def create_review(request, dg_id):
             messages.success(request,
                              "New review has been created successfully!!")
 
-            # redirect back to the DG details review page function
-            return redirect(reverse(reviews))
+            # redirect back to that DG details page function
+            return render(request, "dgs/details_dg.template.html", {
+                "dg": dg
+            })
         else:
             return render(request, "reviews/create_review.template.html", {
                 "form": create_form
