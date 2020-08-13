@@ -9,6 +9,6 @@ urlpatterns = [
          name='create_comment_route'),
     path('update/<dg_id>/<review_id>', reviews.views.update_review,
          name='update_review_route'),
-    path('delete/<review_id>', reviews.views.delete_review,
+    path('delete/<dg_id>/<review_id>', reviews.views.delete_review,
          name='delete_review_route')
 ]

@@ -26,7 +26,7 @@
             <a href="{% url 'create_comment_route' review_id=r.id %}" class="btn btn-primary btn-sm">Leave a comment</a>
             {% if request.user == r.user %}
             <a href="{% url 'update_review_route' review_id=r.id dg_id=r.dg_id %}" class="btn btn-primary btn-sm">Edit</a>
-            <a href="{% url 'delete_review_route' review_id=r.id %}" class="btn btn-danger btn-sm">Delete</a>
+            <a href="{% url 'delete_review_route' review_id=r.id dg_id=r.dg_id %}" class="btn btn-danger btn-sm">Delete</a>
             {% endif %}
         </div>
     </div>

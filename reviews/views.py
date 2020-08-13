@@ -114,8 +114,7 @@ def update_review(request, dg_id, review_id):
             messages.success(
                 request,
                 f'Post "{review_being_updated.title}" has been updated')
-            # return redirect(reverse(reviews))
-            # return details dg page
+            # return back to that particular DG details page
             return render(request, "dgs/details_dg.template.html", {
                 "dg": dg_being_view
             })
@@ -137,14 +136,18 @@ def update_review(request, dg_id, review_id):
 
 
 @login_required
-def delete_review(request, review_id):
+def delete_review(request, dg_id, review_id):
     # retrieve the data that we want to update review
     review = get_object_or_404(Review, pk=review_id)
+    dg_being_view = get_object_or_404(Dg, pk=dg_id)
 
     # if the form is submitted
     if request.method == "POST":
         review.delete()
-        return redirect(reverse(reviews))
+        # return back to that particular DG details page
+        return render(request, "dgs/details_dg.template.html", {
+            "dg": dg_being_view
+        })
     else:
         # if no form is submitted (that is, just to see the confirmation)
         return render(request, 'reviews/delete_review.template.html', {
