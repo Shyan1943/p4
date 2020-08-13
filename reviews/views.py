@@ -86,6 +86,7 @@ def update_review(request, dg_id, review_id):
         return render(request, "reviews/update_review.template.html", {
             "form": review_form,
             "review": review_being_updated,
+            "dg": dg_being_view
         })
 
 
@@ -105,5 +106,6 @@ def delete_review(request, dg_id, review_id):
     else:
         # if no form is submitted (that is, just to see the confirmation)
         return render(request, 'reviews/delete_review.template.html', {
-            'review': review
+            'review': review,
+            "dg": dg_being_view
         })

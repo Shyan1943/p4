@@ -8,7 +8,8 @@
     <form method="POST">
         {% csrf_token %}
         {{ form|crispy }}
-        <input type="submit" class="btn btn-primary"/> 
+        <input type="submit" class="btn btn-primary btn-sm"/>
+        <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-primary btn-sm">No, Thanks</a>
     </form>
 
 {% endblock %}
