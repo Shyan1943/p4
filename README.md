@@ -92,7 +92,7 @@ __pycache__
     v. At the template, link stylesheet by including {% static 'styles.css' %}
 
 ### 13. Create models 
-    i. Create a <Dg> model inside the "dgs/models.py"
+    i. Create a <Dg> model inside the "dgs/models.py" and use `date = models.DateField(auto_now_add=True)`
     ii. At Gitpod terminal, enter `python3 manage.py makemigrations` to make migrations
     iii. At Gitpod terminal, enter `python3 manage.py migrate` to migrate
     iv. Register the model at dgs/admin.py

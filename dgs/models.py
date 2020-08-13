@@ -18,6 +18,7 @@ class Dg(models.Model):
     prohibited_reason = models.TextField(blank=False)
     imdg_code = models.ForeignKey(IMDGCode,
                                   on_delete=models.SET_NULL, null=True)
+    date = models.DateField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     image = CloudinaryField()
 
