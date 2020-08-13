@@ -194,7 +194,7 @@ __pycache__
     ii. See step 13, to create `Review` models
     iii. See step 15, to create "C"RUD Route for Reviews
     iv. See step 14, to create C"R"UD Route for Reviews
-    v. See step 16, to create CR"U"D Route for Reviews    
+    v. See step 16, to create CR"U"D Route for Reviews and use path('update/<dg_id>/<review_id>') at reviews/urls.py
     vi. See step 17, to create CRU"D" Route for Reviews   
 
 ### 24. Associating Dgs with User

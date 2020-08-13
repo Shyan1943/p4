@@ -97,13 +97,10 @@ def create_comment(request, review_id):
 
 
 @login_required
-def update_review(request, review_id):
-    if request.user.groups.filter(name='customer').exists():
-        messages.error(request, "You are not a Site administrator")
-        return redirect(reverse(reviews))
-
+def update_review(request, dg_id, review_id):
     # retrieve the data that we want to update review
     review_being_updated = get_object_or_404(Review, pk=review_id)
+    dg_being_view = get_object_or_404(Dg, pk=dg_id)
 
     # if the user has submitted the form, process the update
     if request.method == "POST":
@@ -117,7 +114,11 @@ def update_review(request, review_id):
             messages.success(
                 request,
                 f'Post "{review_being_updated.title}" has been updated')
-            return redirect(reverse(reviews))
+            # return redirect(reverse(reviews))
+            # return details dg page
+            return render(request, "dgs/details_dg.template.html", {
+                "dg": dg_being_view
+            })
         else:
             # if the form submitted is invalid, then we display the form
             return render(request, "reviews/update_review.template.html", {
