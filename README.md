@@ -222,10 +222,6 @@ __pycache__
     iv. Inside "reviews/create_review.template.html", pull the dg.title
     v. Go "dgs/details_dg.template.html", use `{% for r in dg.review_set.all %}` to pull all reviews from Review model, which related to a book
 
-### 27. Create CRUD comments & associating its to review 
-    i. Step 13~17 to create Comments Model & CUD 
-    ii. Step 26 to create "R" route & associate One review_id with comments
-
 ### 28. Search engine
     i. See Step 10 to create new "home" app and set up it's url route 
     ii.  Create "home/forms.py", creata a SearchForm
