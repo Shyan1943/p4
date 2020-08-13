@@ -11,7 +11,8 @@
             <h5 class="card-title">{{dg.title}}</h5>
             <p class="card-text">{{dg.example}}</p>
             <p class="card-text">{{dg.prohibited_reason}}</p>
-            <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-primary">Add a review</a>
+            <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-primary btn-sm">Add a review</a>
+            <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">Explore all discussions</a>    
         </div>
     </div>
 
