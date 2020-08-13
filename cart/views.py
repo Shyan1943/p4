@@ -50,7 +50,11 @@ def add_to_cart(request, program_id):
 
     # save the shopping cart back to session
     request.session["shopping_cart"] = cart
-    return redirect(reverse(view_cart))
+    # after add to cart, let customer stay at all programs page
+    programs = Program.objects.all()
+    return render(request, "programs/all_programs.template.html", {
+        "programs": programs
+    })
 
 
 @ login_required
