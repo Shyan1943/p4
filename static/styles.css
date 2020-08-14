@@ -5,6 +5,18 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+h1 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+a, a:hover{
+    color: black;
+}
+
 /* header */
 .navbar-light {
     background-color: white;
@@ -32,4 +44,41 @@ body {
 
 .btn {
     margin-bottom: 3px;
+}
+
+figure img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+figure img:hover {
+    box-shadow: 20px 20px 40px 0px #3b464f;
+}
+
+.jumbotron {
+    margin-bottom: 0rem;
+}
+
+.jumbotron .col-lg.text{
+    align-self: center;
+    padding: 20px 30px 0px 30px;
+}
+
+.jumbotron.one {
+    background-color: white;
+}
+
+.jumbotron.three {
+    background-color: #e6c0aa;
+}
+
+/* This swaps the position for create an event for mobile responsive */
+@media screen and (max-width:990px){
+.jumbotron .row{
+  text-align: center;
+}
+
+#swap{
+  flex-direction: column-reverse;
+  text-align: center;
 }

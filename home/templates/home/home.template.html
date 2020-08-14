@@ -1,5 +1,5 @@
 {% extends "base.template.html" %}
-<!-- {% load crispy_forms_tags %} -->
+{% load static %}
 
 {% block title %}Home{% endblock %}
 
@@ -17,7 +17,49 @@
         </div>
     </main>
 
-    <div id="homepage_img"></div>
+    <figure>
+        <div class="jumbotron one">
+            <a href="{% url 'create_dg_route' %}">
+                <div class="row">
+                    <div class="col-lg-2.5 mx-auto"> 
+                        <img src="{% static 'images/createpost.jpg' %}" class="img-fluid" alt="Create a post"/>
+                    </div>
+                    <div class="col-lg text">
+                        <h1>Create post & share for free</h1>
+                        <h3>Face problem on handling DG goods? Need helps!!? Let share your experience by pose questions or start a DG topic of conversation with our community.</h3>
+                    </div>
+                </div>
+             </a>    
+        </div>
+        <div class="jumbotron">
+            <a href="{% url 'show_dg_route' %}">
+                <div class="row" id=swap>
+                    <div class="col-lg text">
+                        <h1>Free Community Discussion Forum</h1>
+                        <h3>Our lovely members can join the conversation and discussions to share tips, offer their help and support</h3>
+                    </div>
+                    <div class="col-lg-2.5 mx-auto"> 
+                        <img src="{% static 'images/discussion.jpg' %}" class="img-fluid" alt="Create a post"/>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="jumbotron three">
+            <a href="{% url 'all_programs_route' %}">
+                <div class="row">
+                    <div class="col-lg-2.5 mx-auto"> 
+                        <img src="{% static 'images/elearning.jpg' %}" class="img-fluid" alt="Create a post"/>
+                    </div>
+                    <div class="col-lg text">
+                        <h1>24/7 Access to help for your studies</h1>
+                        <h3>Upgrade your skills? Dangerous Goods training allows the appreciation of the risks involved and the understanding of the regulations for a safe transportation.</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </figure>
+
+
     
     <h2 class="mt-5">Dg dicussions related </h2>
     <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">Explore all Dg discussion</a>
