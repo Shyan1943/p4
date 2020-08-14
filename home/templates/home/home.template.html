@@ -1,20 +1,23 @@
 {% extends "base.template.html" %}
-{% load crispy_forms_tags %}
-{% load static %}
+<!-- {% load crispy_forms_tags %} -->
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <main>
-        <div id="landingpage">
+    <main id="landingpage">
+        <div class="col">
+            <h1>Be the Dangerous Goods (DG) Expert</h1>
             <form method="GET">
                 {% csrf_token %}
-                {{ form|crispy }}
-                <input type="Submit" value="Search"/>
+                {{ form.as_p }} 
+                <a class="btn btn-info" href="{% url 'show_dg_route' %}" role="button">Explore</a>
+                <a class="btn btn-info" href="{% url 'all_programs_route' %}" role="button">Upgrade Skills</a>
+                <input class="btn btn-info" type="Submit" value="Search"/>
             </form>
         </div>
-    </main> 
+    </main>
 
+    <div id="homepage_img"></div>
     
     <h2 class="mt-5">Dg dicussions related </h2>
     <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">Explore all Dg discussion</a>
