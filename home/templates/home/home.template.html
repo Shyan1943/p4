@@ -1,15 +1,21 @@
 {% extends "base.template.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <form method="GET">
-        {% csrf_token %}
-        {{ form|crispy }}
-        <input type="Submit" value="Search"/>
-    </form>
+    <main>
+        <div id="landingpage">
+            <form method="GET">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="Submit" value="Search"/>
+            </form>
+        </div>
+    </main> 
 
+    
     <h2 class="mt-5">Dg dicussions related </h2>
     <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">Explore all Dg discussion</a>
     <ul class="mt-3">
