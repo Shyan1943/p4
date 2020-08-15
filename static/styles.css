@@ -17,6 +17,10 @@ a, a:hover{
     color: black;
 }
 
+.btn {
+    font-size: 1.2vw;
+}
+
 /* header */
 .navbar-light {
     background-color: white;
@@ -46,6 +50,10 @@ a, a:hover{
     margin-bottom: 3px;
 }
 
+figure {
+    margin: 0 0 0rem;
+}
+
 figure img {
     max-width: 250px;
     max-height: 250px;
@@ -64,12 +72,28 @@ figure img:hover {
     padding: 20px 30px 0px 30px;
 }
 
-.jumbotron.one {
+.jumbotron.white {
     background-color: white;
 }
 
-.jumbotron.three {
+.jumbotron.skin {
     background-color: #e6c0aa;
+}
+
+.jumbotron.aliceblue {
+    background-color: aliceblue;
+}
+
+th {
+    font-size: 2vw;
+}
+
+td {
+    font-size: 1.5vw;
+}
+
+td.right {
+    text-align: -webkit-right;
 }
 
 /* This swaps the position for create an event for mobile responsive */
