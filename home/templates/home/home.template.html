@@ -58,23 +58,23 @@
         </div>
     </figure>
 
-            <form method="GET">
-                {% csrf_token %}
-                {{ form }} 
-                <input class="btn btn-info" type="Submit" value="Search"/>
-            </form>
-
     <section>
-        <div id="search" class="jumbotron white table-responsive-lg">
+        <div class="jumbotron white table-responsive-lg">
+            <div>
+                <form id="search" method="GET">
+                    {% csrf_token %}
+                    {{ form }} 
+                    <input class="btn btn-info" type="Submit" value="Search"/>
+                </form>
+            </div>
+
             <div class="row justify-content-center">
-                <h1><u>Programs related</u></h1>
             </div>
             <table class="table table-striped table-bordered table-hover table-sm">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Date</th>
-                        <th scope="col">Programs</th>
-                        <th></th>
+                        <th scope="col"><a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm">Explore all Programs</a> Programs </th>
                         <th></th>
                     </tr>
                 </thead>
@@ -83,29 +83,17 @@
                     <tr>
                         <td>{{p.date}}</td>
                         <td>{{p.title}}</td>
-                        <td class="right"><a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm">Book</a></td>
-                        <td class="right"><a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-info btn-sm">Learn more</a></td>
+                        <td class="right"><a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm mr-2">Book</a><a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-info btn-sm">Learn more</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
-            <div class="row justify-content-center">            
-                <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm">Explore all Programs</a>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div id="search" class="jumbotron aliceblue table-responsive-lg">
-            <div class="row justify-content-center">
-                <h1><u>DG Discussion Related</u></h1>
-            </div>
 
             <table class="table table-striped table-bordered table-hover table-sm">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">IMDG Code</th>
-                        <th scope="col">DG Discussion Topic</th>
+                        <th scope="col"><a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm ">Explore all Dg discussion</a> DG Discussion Topic </th>
                         <th></th>
                     </tr>
                 </thead>
@@ -119,9 +107,6 @@
                     {% endfor %}
                 </tbody>
             </table>
-            <div class="row justify-content-center">            
-                <a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm">Explore all Dg discussion</a>
-            </div>
         </div>
     </section>
 {% endblock %}

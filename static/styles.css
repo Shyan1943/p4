@@ -84,6 +84,11 @@ figure img:hover {
     background-color: aliceblue;
 }
 
+#search {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 th {
     font-size: 2vw;
 }
