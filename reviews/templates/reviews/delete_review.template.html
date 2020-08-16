@@ -8,7 +8,7 @@
         {% csrf_token %}
         <div class="card mt-3">
             <div class="card-body">
-                <h5 class="card-title">{{reivew.title}} for Dg "{{reivew.dg.title}}"</h5>
+                <h5 class="card-title">{{reivew.title}} for Dg "{{reivew.dg.topic}}"</h5>
                 <p class="card-text">{{reivew.content}}</p>
                 <div class="card-footer text-muted">by {{reivew.user}} on {{reivew.date}}</div>
             </div>

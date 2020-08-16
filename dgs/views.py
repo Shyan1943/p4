@@ -70,7 +70,7 @@ def update_dg(request, dg_id):
             dg_form.save()
             messages.success(
                 request,
-                f'Post "{dg_being_updated.title}" has been updated')
+                f'Post "{dg_being_updated.topic}" has been updated')
             return redirect(reverse(all_dg))
         else:
             # if the user didn't submit the form
@@ -97,7 +97,7 @@ def delete_dg(request, dg_id):
         dg_to_delete.delete()
         messages.success(
                 request,
-                f'Post "{dg_to_delete.title}" has been deleted')
+                f'Post "{dg_to_delete.topic}" has been deleted')
         return redirect(reverse(all_dg))
     else:
         # if no form is submitted (that is, just to see the confirmation

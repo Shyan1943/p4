@@ -4,7 +4,7 @@
 {% block title %}Update your review{% endblock %}
 
 {% block content %}
-    <h1>Updating your review "{{review.title}}" on Dg "{{review.dg.title}}"</h1>
+    <h1>Updating your review "{{review.title}}" on Dg "{{review.dg.topic}}"</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form|crispy }}

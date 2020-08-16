@@ -4,7 +4,7 @@
 {% block title %}Share Review{% endblock %}
 
 {% block content %}
-    <h1>Creating a new review for {{dg.title}}</h1>
+    <h1>Creating a new review for {{dg.topic}}</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form|crispy }}

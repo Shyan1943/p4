@@ -13,7 +13,7 @@ class IMDGCode(models.Model):
 
 
 class Dg(models.Model):
-    title = models.CharField(blank=False, max_length=255)
+    topic = models.CharField(blank=False, max_length=255)
     example = models.TextField(blank=False)
     prohibited_reason = models.TextField(blank=False)
     imdg_code = models.ForeignKey(IMDGCode,
@@ -23,4 +23,4 @@ class Dg(models.Model):
     image = CloudinaryField()
 
     def __str__(self):
-        return self.title
+        return self.topic
