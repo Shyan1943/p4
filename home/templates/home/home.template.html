@@ -60,8 +60,7 @@
 
             <form method="GET">
                 {% csrf_token %}
-                {{ form.as_p }} 
-
+                {{ form }} 
                 <input class="btn btn-info" type="Submit" value="Search"/>
             </form>
 
