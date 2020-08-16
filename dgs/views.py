@@ -66,7 +66,7 @@ def update_dg(request, dg_id):
     # if the user has submitted the form
     if request.method == "POST":
         dg_form = DgForm(request.POST, instance=dg_being_updated)
-        if dg_form.is_valid:
+        if dg_form.is_valid():
             dg_form.save()
             messages.success(
                 request,

@@ -1,14 +1,14 @@
 {% extends "base.template.html" %}
 {% load crispy_forms_tags %}
-<!-- {% load cloudinary %}
-{% load static %} -->
+{% load cloudinary %}
+{% load static %}
 
 
 {% block title %}Update DG{% endblock %}
 
 {% block content %}
     <h1>Updating your DG experience with us</h1>
-    <!-- {% cloudinary dg.image %} -->
+    {% cloudinary dg.image %}
     <form method="POST" enctype="multipart/form-data" id="form">
         {% csrf_token %}
         {{ form|crispy }}
@@ -16,16 +16,16 @@
         <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">No</a>
     </form>
 
-    <!-- Optional
+    Optional
     <div class="status">
 		<h2>Status</h2>
 		<span class="status_value">Idle</span>
 	</div>
-	<div class="uploaded_info_holder"></div> -->
+	<div class="uploaded_info_holder"></div>
 
 {% endblock %}
 
-<!-- {% block js %}
+{% block js %}
 	{% cloudinary_includes %}
 	{% cloudinary_js_config %}
 	<script>
@@ -65,4 +65,4 @@
         }) // end $(function
     </script>
 
-{% endblock %} -->
+{% endblock %}
