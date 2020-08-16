@@ -9,10 +9,11 @@ class SearchForm(forms.Form):
 
     # the requried is `False` so that if the user leaves it blank
     # it will return all the information
-    title = forms.CharField(max_length=100, required=False,
-                            label="Title",
-                            widget=forms.TextInput(
-                                attrs={'placeholder': "Any keywords"}))
+    anykeyword = forms.CharField(max_length=100, required=False,
+                                 # do not sure label
+                                 label="",
+                                 widget=forms.TextInput(
+                                     attrs={'placeholder': "Any keywords"}))
 
     # IMDGCode.objects.all() is eqv to "SELECT * FROM IMDGCode"
     # take the results of IMDGCode.objects.all and populate the <select>

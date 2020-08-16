@@ -114,7 +114,7 @@
                     {% for d in dgs %}
                     <tr>
                         <td>{{d.imdg_code.chemical_name}}</td>
-                        <td>{{d.title}}</td>
+                        <td>{{d.topic}}</td>
                         <td class="right"><a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Learn more</a></td>
                     </tr>
                     {% endfor %}
