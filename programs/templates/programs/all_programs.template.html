@@ -3,31 +3,39 @@
 {% block title %}Programs{% endblock %}
 
 {% block content %}
-    <h1>Upgrade your skill</h1>
-
-    {% if request.user.is_superuser %}
-    <a href="{% url 'create_program_route' %}" class="btn btn-primary">Create a new program</a>
-    {%endif%}
-
-    {% for p in programs %}
-    <div class="card mt-3">      
-        <h5 class="card-header">{{p.title}}</h5>
-        <div class="card-body">
-            <h5 class="card-title">Date : {{p.date}}</h5>
-            <p class="card-text">Who should attend : {{p.who_should_attend}}</p>
-            <p class="card-text">Outline : {{p.outline}}</p>
-            <p class="card-text">Objectives : {{p.objectives}}</p>
-            <p class="card-text">Accreditation & Examination : {{p.accreditation_and_examination}}</p>
-            <p class="card-text">Fees : {{p.fees}}</p>
-            
-            <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-primary btn-sm">Book</a>
-            <a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Learn more</a>
+    <div class="jumbotron aliceblue" id="all_programs">    
+        <div class="row programs"><h1>Upgrade your skill</h1></div>
+        <div class="row programs">
+            <!-- only allow superuser have the right to create new program -->
             {% if request.user.is_superuser %}
-            <a href="{% url 'update_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Update</a>
-            <a href="{% url 'delete_program_route' program_id=p.id %}" class="btn btn-danger btn-sm">Delete</a>
-            {% endif %}
-                               
+            <a href="{% url 'create_program_route' %}" class="btn btn-primary btn-sm">Create a new program</a>
+            {%endif%}
         </div>
     </div>
-    {% endfor %}
+
+    <acticle>
+        <div class="row" id="profile">
+            {% for p in programs %}
+            <div class="card-deck col-lg-2.5 mx-auto">
+                <div class="card mt-3">      
+                    <h5 class="card-header">{{p.title}}</h5>
+                    <div class="card-body">
+                        <p class="card-text">Who should attend : {{p.who_should_attend}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm">Book</a>
+                        <a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-info btn-sm">Learn more</a>
+                    </div>
+
+                    <!-- only allow superuser have the right to Update & Delete program -->
+                    {% if request.user.is_superuser %}
+                    <a href="{% url 'update_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Update</a>
+                    <a href="{% url 'delete_program_route' program_id=p.id %}" class="btn btn-danger btn-sm">Delete</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </acticle>
+               
 {% endblock %}

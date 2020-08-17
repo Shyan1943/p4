@@ -102,7 +102,7 @@ td.right {
 }
 
 /* dg.template.html */
-#all_dg.jumbotron {
+#all_dg.jumbotron, #all_programs.jumbotron {
     padding-top: 120px;
 }
 
@@ -147,7 +147,10 @@ td.right {
     height: 2.8rem;
 }
 
-
+/* programs/all_programs.template.html */
+.row.programs {
+    justify-content: space-evenly;
+}
 
 /* This swaps the position for create an event for mobile responsive */
 @media screen and (max-width:990px){
