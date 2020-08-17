@@ -152,6 +152,14 @@ td.right {
     justify-content: space-evenly;
 }
 
+.line-clamp {
+    height: 120px;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
 /* This swaps the position for create an event for mobile responsive */
 @media screen and (max-width:990px){
 .jumbotron .row{

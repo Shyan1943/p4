@@ -22,7 +22,7 @@
                     <h5 class="card-header d-inline-block text-truncate">{{p.title}}</h5>
                     <div class="card-body">
                         <h6>Who should attend ? </h6>
-                        <p class="card-text">{{p.who_should_attend}}</p>
+                        <p class="card-text line-clamp">{{p.who_should_attend}}</p>
                     </div>
                     <div class="card-footer">
                         <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm">Book</a>
