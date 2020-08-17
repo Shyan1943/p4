@@ -101,6 +101,54 @@ td.right {
     text-align: -webkit-right;
 }
 
+/* dg.template.html */
+#all_dg.jumbotron {
+    padding-top: 120px;
+}
+
+#all_dg h1 {
+    text-align: -webkit-center;
+}
+
+.card-deck {
+    display: block;
+}
+
+.card {
+    width: 15rem;
+    height: 18rem;
+    margin: 3rem;
+}
+
+.card:hover {
+    height: 90%;
+    box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.5);
+}
+
+.card-img-top, .card-img-top img{
+    height: 8rem;
+    text-align-last: center;
+}
+
+.card-body {
+    height: 8rem;
+    font-size: x-small;
+}
+
+.card-title, a {
+    color: #544f63;
+}
+
+.card-title {
+    margin-bottom: .1rem;
+}
+
+.card-text {
+    height: 2.8rem;
+}
+
+
+
 /* This swaps the position for create an event for mobile responsive */
 @media screen and (max-width:990px){
 .jumbotron .row{
