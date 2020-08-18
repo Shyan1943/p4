@@ -11,21 +11,6 @@ a, a:hover{
     color: black;
 }
 
-.line-clamp-1 {
-    height: 1.4rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-}
-
-.line-clamp-3 {
-    height: 4rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-}
 
 /* header */
 .navbar-light {
@@ -137,8 +122,24 @@ td.right {
     margin-bottom: .1rem;
 }
 
-.card-text {
+#all_dg .card-text {
     height: 2.8rem;
+}
+
+.line-clamp-1 {
+    height: 1.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    height: 4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 
 /* dgs/details_dg.template.html */
@@ -160,15 +161,7 @@ td.right {
     text-align: -webkit-center;
 }
 
-#details_dg .card-title {
-    height: 2rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-}
-
-#details_dg .card-text {
+.line-clamp-6 {
     padding-top: 10px;
     height: 7.8rem;
     display: -webkit-box;
@@ -182,12 +175,8 @@ td.right {
     justify-content: center;
 }
 
-.line-clamp {
-    height: 120px;
-    display: -webkit-box;
-    -webkit-line-clamp: 8;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
+#profile .card-header {
+    height: 2.1rem;
 }
 
 /* programs/details_program.template.html */
