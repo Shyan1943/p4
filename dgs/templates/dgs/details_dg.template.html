@@ -5,8 +5,14 @@
 {% block title %}View DG{% endblock %}
 
 {% block content %}
-    <h1 class="ml-5">Public Q&A</h1>
-    <div class="card" id="details_dg">
+    <!-- show that particular DG details  -->
+<div id="details_dg">
+    <div class="row">
+        <h1 class="ml-5">Public Q&A</h1>
+        <a href="{% url 'create_dg_route' %}" class="btn btn-info btn-sm mr-5">Create a post</a>
+    </div>
+
+    <div class="card">
         <div class="card-body">
             <div class="row">
                 <div class="col-3">
@@ -44,4 +50,5 @@
         </div>
     </div>
     {% endfor %}
+</div>
 {% endblock %}

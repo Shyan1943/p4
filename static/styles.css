@@ -37,6 +37,7 @@ a, a:hover{
 
 .btn {
     margin-bottom: 3px;
+    align-self: center;
 }
 
 figure {
@@ -125,7 +126,12 @@ td.right {
 }
 
 /* dgs/details_dg.template.html */
-#details_dg.card {
+#details_dg .row {
+    justify-content: space-between;
+    padding: 0px 30px 0px 15px;
+}
+
+#details_dg .card {
     width: 70rem;
     height: 18rem;
     margin: 3rem;
