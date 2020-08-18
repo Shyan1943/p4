@@ -7,34 +7,30 @@
 {% block content %}
     <div class="jumbotron aliceblue" id="all_dg">
         <h1>Let's explore & share DG experience here!!</h1>
+    
+
+        <acticle>
+            <div class="row" id="profile">
+                <div class="card-deck col-lg-2.5 mx-auto">
+                    {% for d in dgs %}
+                    <div class="card mt-3">
+                        <div class="card-img-top">{% cloudinary d.image %}</div>
+                        <h5 class="card-header">{{d.imdg_code}}</h5>
+                        <div class="card-body">
+                            <h6 class="card-title line-clamp-1">{{d.topic}}</h6>
+                            <p class="card-text line-clamp-3">{{d.description}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Learn..</a>
+                            {% if request.user == d.user %} 
+                            <a href="{% url 'update_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Edit</a>
+                            <a href="{% url 'delete_dg_route' dg_id=d.id %}" class="btn btn-danger btn-sm">Del..</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </acticle>
     </div>
-
-    <acticle>
-        <div class="row" id="profile">
-            <div class="card-deck col-lg-2.5 mx-auto">
-                {% for d in dgs %}
-                <div class="card mt-3">
-                    <div class="card-img-top">{% cloudinary d.image %}</div>
-                    <h5 class="card-header">{{d.imdg_code}}</h5>
-                </div>
-            </div>
-
-            <div class="card-deck col-lg-2.5 mx-auto">
-                <div class="card mt-3">
-                    <div class="card-body">
-                        <h6 class="card-title d-inline-block text-truncate">{{d.topic}}</h6>
-                        <p class="card-text">{{d.description}</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-primary">Learn more</a>
-                        {% if request.user == d.user %} 
-                        <a href="{% url 'update_dg_route' dg_id=d.id %}" class="btn btn-primary">Update</a>
-                        <a href="{% url 'delete_dg_route' dg_id=d.id %}" class="btn btn-danger">Delete</a>
-                        {% endif %}
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </acticle>
 {% endblock %}

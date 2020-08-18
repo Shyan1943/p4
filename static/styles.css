@@ -11,6 +11,22 @@ a, a:hover{
     color: black;
 }
 
+.line-clamp-1 {
+    height: 1.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    height: 4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
 /* header */
 .navbar-light {
     background-color: white;
