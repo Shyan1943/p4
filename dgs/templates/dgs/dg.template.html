@@ -2,19 +2,20 @@
 {% extends "base.template.html" %}
 {% load cloudinary %}
 
-{% block title %}DG{% endblock %}
+{% block title %}All Q&A{% endblock %}
 
 {% block content %}
-    <div class="jumbotron aliceblue" id="all_dgs">
-        <h1 class="title ml-5">Public Q&A</h1>
+    <div class="container" id="all_dgs">
+
+        <!--Page title-->
+        <h1 class="title ml-5">All Public Q&A</h1>
         <a href="{% url 'create_dg_route' %}" class="btn btn-info btn-sm btn-create">Create a post</a>
-    
+
+        <!--All Q&A cards-->
         {% for d in dgs %}
         <acticle>
-            
             <div class="row">
                 <div class="col-lg-2.5 card-deck mx-auto">
-                <!-- <div class="col-4 card-deck mx-auto"> -->
                     <div class="card">
 
                         <!--Card image-->
@@ -28,8 +29,12 @@
                             <h6 class="card-title line-clamp-1">{{d.topic}}</h6>
                             <p class="card-text line-clamp-5">{{d.description}}</p>
                         </div>
+
+                        <!--Card footer-->
                         <div class="card-footer">
                             <a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Learn..</a>
+
+                            <!--Only allow same user to "UD"-->
                             {% if request.user == d.user %} 
                             <a href="{% url 'update_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Edit</a>
                             <a href="{% url 'delete_dg_route' dg_id=d.id %}" class="btn btn-danger btn-sm">Del..</a>
@@ -38,7 +43,6 @@
                     </div>
                 </div>
             </div>
-            
         </acticle>
         {% endfor %}
 
