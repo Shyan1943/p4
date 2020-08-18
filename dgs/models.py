@@ -14,8 +14,7 @@ class IMDGCode(models.Model):
 
 class Dg(models.Model):
     topic = models.CharField(blank=False, max_length=255)
-    example = models.TextField(blank=False)
-    prohibited_reason = models.TextField(blank=False)
+    description = models.TextField(blank=False)
     imdg_code = models.ForeignKey(IMDGCode,
                                   on_delete=models.SET_NULL, null=True)
     date = models.DateField(auto_now_add=True)

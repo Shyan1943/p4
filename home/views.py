@@ -24,8 +24,7 @@ def index(request):
         if "anykeyword" in request.GET and request.GET["anykeyword"]:
             anykeyword = request.GET["anykeyword"]
             query = query & Q(topic__icontains=anykeyword) | Q(
-                example__icontains=anykeyword) | Q(
-                prohibited_reason__icontains=anykeyword)
+                description__icontains=anykeyword)
 
         if "imdg_code" in request.GET and request.GET["imdg_code"]:
             imdg_code_id = request.GET['imdg_code']

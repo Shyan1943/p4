@@ -5,33 +5,31 @@
 {% block title %}DG{% endblock %}
 
 {% block content %}
-<div class="jumbotron aliceblue" id="all_dg">
-    <h1>Let's explore & share DG experience here!!</h1>
-</div>
+    <div class="jumbotron aliceblue" id="all_dg">
+        <h1>Let's explore & share DG experience here!!</h1>
+    </div>
+
     <acticle>
-        <!-- <div class="jumbotron"> -->
-            <div class="row" id="profile">
-                <div class="card-deck col-lg-2.5 mx-auto">
-                    {% for d in dgs %}
-                    <div class="card mt-3">
-                        <div class="card-img-top">{% cloudinary d.image %}</div>
-                        <!-- <img class="card-img-top" src="% cloudinary d.image %" alt="Member Company name"/>       -->
-                        <h5 class="card-header">{{d.imdg_code}}</h5>
-                        <div class="card-body">
-                            <h6 class="card-title d-inline-block text-truncate">{{d.topic}}</h6>
-                            <p class="card-text">{{d.prohibited_reason}}</p>
-                        <div>
-                        <div class="card-footer">
-                            <a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-primary">Learn more</a>
-                            {% if request.user == d.user %} 
-                            <a href="{% url 'update_dg_route' dg_id=d.id %}" class="btn btn-primary">Update</a>
-                            <a href="{% url 'delete_dg_route' dg_id=d.id %}" class="btn btn-danger">Delete</a>
-                            {% endif %}
-                        </div>
+        <div class="row" id="profile">
+            <div class="card-deck col-lg-2.5 mx-auto">
+                {% for d in dgs %}
+                <div class="card mt-3">
+                    <div class="card-img-top">{% cloudinary d.image %}</div>
+                    <h5 class="card-header">{{d.imdg_code}}</h5>
+                    <div class="card-body">
+                        <h6 class="card-title d-inline-block text-truncate">{{d.topic}}</h6>
+                        <p class="card-text">{{d.description}</p>
+                    <div>
+                    <div class="card-footer">
+                        <a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-primary">Learn more</a>
+                        {% if request.user == d.user %} 
+                        <a href="{% url 'update_dg_route' dg_id=d.id %}" class="btn btn-primary">Update</a>
+                        <a href="{% url 'delete_dg_route' dg_id=d.id %}" class="btn btn-danger">Delete</a>
+                        {% endif %}
                     </div>
-                    {% endfor %}
                 </div>
+                {% endfor %}
             </div>
-        <!-- </div> -->
+        </div>
     </acticle>
 {% endblock %}

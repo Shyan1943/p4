@@ -3,6 +3,8 @@
 /* base.template.htmlbase.template.html */
 body {
     font-family: "Open Sans", sans-serif;
+    padding-top: 90px;
+    background-color: aliceblue;
 }
 
 a, a:hover{
@@ -25,7 +27,7 @@ a, a:hover{
     width: 100%;
     background-color: #f0f8ff;
     object-fit: contain;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
 }
 
@@ -80,11 +82,7 @@ td.right {
     text-align: -webkit-right;
 }
 
-/* dg.template.html */
-#all_dg.jumbotron, .all_programs.jumbotron {
-    padding-top: 120px;
-}
-
+/* dgs/dg.template.html */
 #all_dg h1 {
     text-align: -webkit-center;
 }
@@ -124,6 +122,17 @@ td.right {
 
 .card-text {
     height: 2.8rem;
+}
+
+/* dgs/details_dg.template.html */
+#details_dg.card {
+    width: 70rem;
+    height: 18rem;
+    margin: 3rem;
+}
+
+#details_dg .col-3 {
+    text-align: -webkit-center;
 }
 
 /* programs/all_programs.template.html */

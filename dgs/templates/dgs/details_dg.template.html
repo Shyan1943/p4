@@ -5,20 +5,26 @@
 {% block title %}View DG{% endblock %}
 
 {% block content %}
-    <h1>View DG post details</h1>
-    <div class="card">
+    <h1 class="ml-5">Public Q&A</h1>
+    <div class="card" id="details_dg">
         <div class="card-body">
-            {% cloudinary dg.image %}
-            <h5 class="card-title">{{dg.topic}}</h5>
-            <p class="card-text">{{dg.example}}</p>
-            <p class="card-text">{{dg.prohibited_reason}}</p>
-            <div class="card-footer text-muted">Written by {{dg.user}} on {{dg.date}}</div>
-            <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-primary btn-sm">Add a review</a>
-            <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">Explore all discussions</a>
-            {% if request.user == dg.user %}
-            <a href="{% url 'update_dg_route' dg_id=dg.id %}" class="btn btn-primary btn-sm">Edit</a>
-            <a href="{% url 'delete_dg_route' dg_id=dg.id %}" class="btn btn-danger btn-sm">Delete</a>
-            {% endif %}    
+            <div class="row">
+                <div class="col-3">
+                    {% cloudinary dg.image %}
+                    <h5 class="card-title center">{{dg.imdg_code}}</h5>
+                </div>
+                <div class="col-9">
+                    <h5 class="card-title">{{dg.topic}}</h5>
+                    <p class="card-text">{{dg.description}}</p>
+                    <div class="card-footer text-muted mb-3">Written by {{dg.user}} on {{dg.date}}</div>
+                    <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-primary btn-sm">Add a review</a>
+                    <a href="{% url 'show_dg_route' %}" class="btn btn-primary btn-sm">Explore all discussions</a>
+                    {% if request.user == dg.user %}
+                    <a href="{% url 'update_dg_route' dg_id=dg.id %}" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="{% url 'delete_dg_route' dg_id=dg.id %}" class="btn btn-danger btn-sm">Delete</a>
+                    {% endif %}    
+                </div>
+            </div>
         </div>
     </div>
 
