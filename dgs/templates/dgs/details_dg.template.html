@@ -1,5 +1,6 @@
 <!doctype html>
 {% extends "base.template.html" %}
+{% load crispy_forms_tags %}
 {% load cloudinary %}
 
 {% block title %}View DG{% endblock %}
@@ -48,5 +49,6 @@
         </div>
     </div>
     {% endfor %}
+    <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-create">Add a review for topic "{{dg.topic}}"</a>
 </div>
 {% endblock %}
