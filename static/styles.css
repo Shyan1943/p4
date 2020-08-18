@@ -89,9 +89,9 @@ td.right {
     text-align: -webkit-center;
 }
 
-/* .card-deck {
+.card-deck {
     display: block;
-} */
+}
 
 #all_dgs .card {
     width: 15rem;

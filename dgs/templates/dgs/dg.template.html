@@ -6,17 +6,24 @@
 
 {% block content %}
     <div class="jumbotron aliceblue" id="all_dgs">
-        <h1>Let's explore & share DG experience here!!</h1>
+        <h1 class="title ml-5">Public Q&A</h1>
+        <a href="{% url 'create_dg_route' %}" class="btn btn-info btn-sm btn-create">Create a post</a>
     
-
+        {% for d in dgs %}
         <acticle>
-            {% for d in dgs %}
+            
             <div class="row">
-                <div class="card-deck col-lg-2.5 mx-auto">
+                <div class="col-lg-2.5 card-deck mx-auto">
                 <!-- <div class="col-4 card-deck mx-auto"> -->
                     <div class="card">
+
+                        <!--Card image-->
                         <div class="card-img-top">{% cloudinary d.image %}</div>
+
+                        <!--Card header-->
                         <h5 class="card-header">{{d.imdg_code}}</h5>
+
+                        <!--Card content-->
                         <div class="card-body">
                             <h6 class="card-title line-clamp-1">{{d.topic}}</h6>
                             <p class="card-text line-clamp-5">{{d.description}}</p>
@@ -31,7 +38,9 @@
                     </div>
                 </div>
             </div>
-            {% endfor %}
+            
         </acticle>
+        {% endfor %}
+
     </div>
 {% endblock %}
