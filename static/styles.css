@@ -5,20 +5,8 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-h1 {
-    font-size: 3vw;
-}
-
-/* h3 {
-    font-size: 3vw;
-} */
-
 a, a:hover{
     color: black;
-}
-
-.btn {
-    font-size: 1.5vw;
 }
 
 /* header */
@@ -43,7 +31,6 @@ a, a:hover{
 
 #landingpage h1 {
     margin-bottom: 100px;
-    font-size: 3vw;
 }
 
 .btn {
@@ -87,14 +74,6 @@ figure img:hover {
 #search {
     text-align: center;
     margin-bottom: 2rem;
-}
-
-th {
-    font-size: 2vw;
-}
-
-td {
-    font-size: 1.5vw;
 }
 
 td.right {
@@ -179,4 +158,8 @@ td.right {
 #swap{
   flex-direction: column-reverse;
   text-align: center;
+}
+
+h3 {
+    font-size: 1.30rem;
 }

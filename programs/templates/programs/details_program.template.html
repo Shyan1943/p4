@@ -7,7 +7,7 @@
 {% block content %}
     <img class="img-fluid" src="{% static 'images/aircargo.jpg' %}" alt="update_your_skill"> 
     <div class="jumbotron aliceblue">    
-        <div class="row programs"><h1>Program : <u>{{p.title}}</u></h1></div>
+        <div class="row programs"><h3>Program : <u>{{p.title}}</u></h3></div>
         <div class="row programs">
             <!-- only allow superuser have the right to CUD program -->
             {% if request.user.is_superuser %}
