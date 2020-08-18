@@ -135,6 +135,23 @@ td.right {
     text-align: -webkit-center;
 }
 
+#details_dg .card-title {
+    height: 2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+#details_dg .card-text {
+    padding-top: 10px;
+    height: 7.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
 /* programs/all_programs.template.html */
 .row.programs {
     justify-content: center;
