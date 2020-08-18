@@ -9,16 +9,16 @@ h1 {
     font-size: 3vw;
 }
 
-h3 {
-    font-size: 2vw;
-}
+/* h3 {
+    font-size: 3vw;
+} */
 
 a, a:hover{
     color: black;
 }
 
 .btn {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 /* header */
@@ -102,7 +102,7 @@ td.right {
 }
 
 /* dg.template.html */
-#all_dg.jumbotron, #all_programs.jumbotron {
+#all_dg.jumbotron, .all_programs.jumbotron {
     padding-top: 120px;
 }
 
@@ -149,7 +149,7 @@ td.right {
 
 /* programs/all_programs.template.html */
 .row.programs {
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .line-clamp {
@@ -158,6 +158,16 @@ td.right {
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+}
+
+/* programs/details_program.template.html */
+.img-fluid {
+    width: 100%;
+    max-height: 450px;
+}
+
+#details_program div {
+    margin-bottom: 40px;
 }
 
 /* This swaps the position for create an event for mobile responsive */

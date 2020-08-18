@@ -1,27 +1,49 @@
 <!doctype html>
 {% extends "base.template.html" %}
+{% load static %}
 
 {% block title %}View Program{% endblock %}
 
 {% block content %}
-    <h1>View program details</h1>
-    <div class="card mt-3">      
-        <h5 class="card-header">{{p.title}}</h5>
-        <div class="card-body">
-            <h5 class="card-title">Date : {{p.date}}</h5>
-            <p class="card-text">Who should attend : {{p.who_should_attend}}</p>
-            <p class="card-text">Outline : {{p.outline}}</p>
-            <p class="card-text">Objectives : {{p.objectives}}</p>
-            <p class="card-text">Accreditation & Examination : {{p.accreditation_and_examination}}</p>
-            <p class="card-text">Fees : {{p.fees}}</p>
-            
+    <img class="img-fluid" src="{% static 'images/aircargo.jpg' %}" alt="update_your_skill"> 
+    <div class="jumbotron aliceblue">    
+        <div class="row programs"><h1>Program : <u>{{p.title}}</u></h1></div>
+        <div class="row programs">
+            <!-- only allow superuser have the right to CUD program -->
+            {% if request.user.is_superuser %}
+            <a href="{% url 'create_program_route' %}" class="btn btn-primary btn-sm mr-3">Create a new program</a>
+            <a href="{% url 'update_program_route' program_id=p.id %}" class="btn btn-primary btn-sm mr-3">Update</a>
+            <a href="{% url 'delete_program_route' program_id=p.id %}" class="btn btn-danger btn-sm">Delete</a>
+            {%endif%}
+        </div>
+    </div>
+
+    <div class="container" id="details_program">      
+        <div>
+            <h5 class="mt-5"><strong>Date : </strong>{{p.date}}</h5>
+        </div>
+        <div>
+            <h5><strong>Who should attend : </strong></h5>
+            <p>{{p.who_should_attend}}</p>
+        </div>
+        <div>
+            <h5><strong>Outline : </strong></h5>
+            <p>{{p.outline}}</p>
+        </div>
+        <div>
+            <h5><strong>Objectives : </strong></h5>
+            <p>{{p.objectives}}</p>
+        </div>
+        <div>
+            <h5><strong>Accreditation & Examination : </strong></h5>
+            <p>{{p.accreditation_and_examination}}</p>
+        </div>
+        <div>
+            <h5><strong>Fees : SGD</strong>{{p.fees}}</h5>
+        </div>
+        <div>
             <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-primary btn-sm">Book</a>
             <a href="{% url 'all_programs_route' %}" class="btn btn-primary btn-sm">View All Programs</a> 
-            {% if request.user.is_superuser %}
-            <a href="{% url 'update_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Update</a>
-            <a href="{% url 'delete_program_route' program_id=p.id %}" class="btn btn-danger btn-sm">Delete</a>
-            {% endif %}
-           
         </div>
     </div>
 {% endblock %}
