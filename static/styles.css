@@ -3,7 +3,7 @@
 /* base.template.htmlbase.template.html */
 body {
     font-family: "Open Sans", sans-serif;
-    padding-top: 90px;
+    /* padding-top: 90px; */
     background-color: aliceblue;
 }
 
@@ -126,9 +126,12 @@ td.right {
 }
 
 /* dgs/details_dg.template.html */
-#details_dg .row {
-    justify-content: space-between;
-    padding: 0px 30px 0px 15px;
+#details_dg .title {
+    padding: 90px 0px 0px 15px;
+}
+
+.btn-create {
+    margin-left: 65px;
 }
 
 #details_dg .card {
