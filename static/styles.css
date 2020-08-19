@@ -92,6 +92,10 @@ td.right {
     padding: 90px 0px 0px 15px;
 }
 
+p.title {
+    padding: 0px 0px 0px 15px;
+}
+
 .card-deck {
     display: block;
 }
