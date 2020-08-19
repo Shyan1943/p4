@@ -11,6 +11,9 @@ a, a:hover{
     color: black;
 }
 
+form {
+    padding: 60px;
+}
 
 /* header */
 .navbar-light {
@@ -85,7 +88,7 @@ td.right {
 }
 
 /* dgs/dg.template.html */
-#all_dgs .title {
+.title {
     padding: 90px 0px 0px 15px;
 }
 
