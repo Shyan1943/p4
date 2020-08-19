@@ -17,7 +17,7 @@
     <header>
         <div class="container">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="{% url 'home' %}">DGClass</a>
+                <a class="navbar-brand" href="{% url 'home' %}"><u>DGE</u>xpert</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,13 +28,16 @@
                             <a class="nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'show_dg_route' %}">Explore <span class="sr-only">(learn)</span></a>
+                            <a class="nav-link" href="{% url 'create_dg_route' %}">Create<span class="sr-only">(create)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'create_dg_route' %}">Share <span class="sr-only">(share)</span></a>
+                            <a class="nav-link" href="{% url 'show_dg_route' %}">Explore<span class="sr-only">(learn)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'all_programs_route' %}">Program <span class="sr-only">(upgrade skills)</span></a>
+                            <a class="nav-link" href="{% url 'all_programs_route' %}">Upgrade<span class="sr-only">(upgrade skills)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#search">Search<span class="sr-only">(search)</span></a>
                         </li>
                     </ul>
 
@@ -65,7 +68,6 @@
     {% endif %}
     
     {% block content %}{% endblock %}
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
