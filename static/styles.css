@@ -170,7 +170,7 @@ p.title {
 
 #details_dg .card {
     width: 70rem;
-    height: 18rem;
+    height: fit-content;
     margin: 3rem;
 }
 
@@ -185,13 +185,9 @@ p.title {
     max-height: 14rem;
 }
 
-.line-clamp-6 {
+#details_dg .card-text{
     padding-top: 10px;
-    height: 7.8rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
+    height: fit-content;
 }
 
 /* programs/all_programs.template.html */
