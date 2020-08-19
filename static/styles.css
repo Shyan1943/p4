@@ -70,6 +70,14 @@ form {
     text-transform: uppercase;
 }
 
+#landingpage .fa {
+    color: white;
+}
+
+#landingpage .btn-warning .fa {
+    color: #3b464f;
+}
+
 figure {
     margin: 0 0 0rem;
 }
