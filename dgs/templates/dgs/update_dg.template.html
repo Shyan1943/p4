@@ -13,24 +13,29 @@
     <h1 class="title ml-5">Updating your Q&A post</h1>
     <a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm btn-title">Explore all Public Q&A</a>
 
+    <!-- update_dg Form -->
     <form method="POST" enctype="multipart/form-data" id="form">
         {% csrf_token %}
         {{ form|crispy }}
+
+        <!-- Show image before & after -->
+        <div class="row mb-3">
+            <div class="col-3 card-img-top">{% cloudinary dg.image %}</div>
+            <div class="col-3 card-img-top uploaded_info_holder"></div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-3"><p>Original image</p></div>
+            <div class="col-3"><p>Change to <span class="status_value"></span></p></div>
+        </div>
+
+        <!-- Submit button -->
         <input type="submit" class="btn btn-info btn-sm"/> 
         <a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm">No</a>
     </form>
 
-    {% cloudinary dg.image %}
-    
-    <!-- Optional -->
-    <div class="status">
-		<h2>Status</h2>
-		<span class="status_value">Idle</span>
-	</div>
-	<div class="uploaded_info_holder"></div>
-
 {% endblock %}
 
+<!-- Javascript for cloudinary uploading/updating image -->
 {% block js %}
 	{% cloudinary_includes %}
 	{% cloudinary_js_config %}
@@ -58,7 +63,6 @@
                $('.status_value').text("Upload done");
 
                 var info = $('<div class="uploaded_info"/>');
-                        $(info).append($('<div class="data"/>').append(prettydump(data.result)));
                         $(info).append($('<div class="image"/>').append(
                         $.cloudinary.image(data.result.public_id, {
                         format: data.result.format, width: 150, height: 150, crop: "fill"

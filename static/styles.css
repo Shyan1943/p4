@@ -178,6 +178,13 @@ p.title {
     text-align: -webkit-center;
 }
 
+.card-img-top img{
+    height: 10rem;
+    text-align-last: center;
+    max-width: 16rem;
+    max-height: 14rem;
+}
+
 .line-clamp-6 {
     padding-top: 10px;
     height: 7.8rem;

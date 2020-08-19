@@ -16,7 +16,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-3">
-                    {% cloudinary dg.image %}
+                    <div class="card-img-top">{% cloudinary dg.image %}</div>
                     <h5 class="card-title center">{{dg.imdg_code}}</h5>
                 </div>
                 <div class="col-9">
@@ -49,6 +49,6 @@
         </div>
     </div>
     {% endfor %}
-    <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-create">Add a review</a>
+    <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-title">Add a review</a>
 </div>
 {% endblock %}
