@@ -7,6 +7,10 @@ body {
     background-color: aliceblue;
 }
 
+.title {
+    padding: 90px 0px 0px 15px;
+}
+
 a, a:hover{
     color: black;
 }
@@ -42,6 +46,11 @@ form {
 .btn {
     margin-bottom: 3px;
     align-self: center;
+}
+
+.btn:hover {
+    box-shadow: 20px 20px 40px 0px #f2d2ec;
+    font-size: 120%;
 }
 
 .btn-home {
@@ -95,10 +104,6 @@ td.right {
 }
 
 /* dgs/dg.template.html */
-.title {
-    padding: 90px 0px 0px 15px;
-}
-
 p.title {
     padding: 0px 0px 0px 15px;
 }
