@@ -13,9 +13,9 @@
         {% csrf_token %}
         <div class="card mt-3">
             <div class="card-body">
-                <h5 class="card-title">{{reivew.title}} for Dg "{{reivew.dg.topic}}"</h5>
-                <p class="card-text">{{reivew.content}}</p>
-                <div class="card-footer text-muted">by {{reivew.user}} on {{reivew.date}}</div>
+                <h5 class="card-title">{{review.title}} for Dg "{{review.dg.topic}}"</h5>
+                <p class="card-text">{{review.content}}</p>
+                <div class="card-footer text-muted">by {{review.user}} on {{review.date}}</div>
             </div>
         </div>
         <input type="submit" class="btn btn-danger btn-sm mt-3" value="Yes"/>    

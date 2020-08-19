@@ -11,7 +11,7 @@
 
     <!--Page title-->
     <h1 class="title ml-5">Updating your Q&A post</h1>
-    <a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm btn-title">Explore all Public Q&A</a>
+    <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-title">Back to "{{dg.topic}}" Q&A</a>
 
     <!-- update_dg Form -->
     <form method="POST" enctype="multipart/form-data" id="form">
