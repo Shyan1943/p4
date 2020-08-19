@@ -30,7 +30,9 @@ form {
 }
 
 .fa {
-    color: #3b464f;
+    color: #5bc0de;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 .fa:hover {
