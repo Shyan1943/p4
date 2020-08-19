@@ -207,8 +207,14 @@ p.title {
     justify-content: center;
 }
 
-#dgs .card-header {
-    height: 2.1rem;
+#programs .card {
+    width: 55rem;
+    height: fit-content;
+    margin: 1rem;
+}
+
+#programs .card-header {
+    height: 2.6rem;
 }
 
 /* programs/details_program.template.html */

@@ -14,29 +14,31 @@
     {%endif%}
 
     <acticle>
-        <div class="row" id="profile">
-            {% for p in programs %}
-            <div class="card-deck col-lg-2.5 mx-auto">
-                <div class="card mt-3">      
-                    <h6 class="card-header line-clamp-1">{{p.title}}</h6>
-                    <div class="card-body">
-                        <h6>Who should attend ? </h6>
-                        <p class="card-text line-clamp-1">{{p.who_should_attend}}</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm">Book</a>
-                        <a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-info btn-sm">Learn..</a>
-                        <!-- only allow superuser have the right to Update & Delete program -->
-                        {% if request.user.is_superuser %}
-                        <a href="{% url 'update_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Edit</a>
-                        <a href="{% url 'delete_program_route' program_id=p.id %}" class="btn btn-danger btn-sm">Del..</a>
-                        {% endif %}
-                    </div>
+        <div class="container mt-4">
+            <div class="row" id="programs">
+                {% for p in programs %}
+                <div class="card-deck col-lg-2.5 mx-auto">
+                    <div class="card">      
+                        <h6 class="card-header line-clamp-1">{{p.title}}</h6>
+                        <div class="card-body">
+                            <h6>Who should attend ? </h6>
+                            <p class="card-text line-clamp-1">{{p.who_should_attend}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm">Book</a>
+                            <a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-info btn-sm">Learn more</a>
+                            <!-- only allow superuser have the right to Update & Delete program -->
+                            {% if request.user.is_superuser %}
+                            <a href="{% url 'update_program_route' program_id=p.id %}" class="btn btn-primary btn-sm">Edit</a>
+                            <a href="{% url 'delete_program_route' program_id=p.id %}" class="btn btn-danger btn-sm">Delete</a>
+                            {% endif %}
+                        </div>
 
 
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </acticle>
                
