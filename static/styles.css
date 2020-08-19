@@ -245,6 +245,15 @@ p.title {
     margin-bottom: 40px;
 }
 
+/* view_cart page */
+#cart {
+    padding: 60px;
+}
+
+#cart form {
+    padding: 0px;
+}
+
 /* This swaps the position for create an event for mobile responsive */
 @media screen and (max-width:990px){
 .jumbotron .row{

@@ -9,25 +9,27 @@
     <h1 class="title ml-5">My Shopping cart</h1>
     <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm btn-title">Continue shopping...</a>
 
-    <h1></h1>
-    <ul>
-        {% for key, c in cart.items %}
-        <li>
-            {{c.title}} on {{c.date}} (${{c.fees}}) x {{c.qty}}<br/>
-            Total Cost: ${{c.total_fees}}  <br/>       
-            <form method="POST" action="{% url 'update_cart_quantity' program_id=c.id %}">
-                {% csrf_token %}
-                <a href="{% url 'remove_from_cart' program_id=c.id %}" class="btn btn-danger btn-sm">Remove from cart</a>
-                <input type="text" name="qty" value="{{c.qty}}" style="width:40px"/>
-                <input type="submit" value="Update quantity" class="btn btn-info btn-sm"/>
-            </form>
-        </li>
-        {%endfor%}
-    </ul>
-    <h3>Cart total: ${{total}}
-        <a href="{% url 'checkout' %}" target="_blank" class="btn btn-info btn-sm">Checkout</a>
-        <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm">View all programs</a>
-    </h3>
+    <div id="cart"> 
+        <ul>
+            {% for key, c in cart.items %}
+            <li class="mb-4">
+                Program : "{{c.title}}" <br>
+                Date : {{c.date}} <br>
+                (${{c.fees}}) x {{c.qty}} = Total Cost: ${{c.total_fees}} 
+                <form method="POST" action="{% url 'update_cart_quantity' program_id=c.id %}">
+                    {% csrf_token %}
+                    <a href="{% url 'remove_from_cart' program_id=c.id %}" class="btn btn-danger btn-sm">Remove from cart</a>
+                    <input type="text" name="qty" value="{{c.qty}}" style="width:40px"/>
+                    <input type="submit" value="Update quantity" class="btn btn-info btn-sm"/>
+                </form>
+            </li>
+            {%endfor%}
+        </ul>
+        <h3>Cart total: ${{total}}
+            <a href="{% url 'checkout' %}" target="_blank" class="btn btn-info btn-sm">Checkout</a>
+            <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm">View all programs</a>
+        </h3>
+    </div>
 
 
 {% endblock %}
