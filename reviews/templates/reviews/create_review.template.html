@@ -5,11 +5,15 @@
 {% block title %}Share Review{% endblock %}
 
 {% block content %}
-    <h1>Creating a new review for {{dg.topic}}</h1>
+
+    <!--Page title-->
+    <h1 class="title ml-5">Creating a new review for {{dg.topic}}</h1>
+    <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-title">Back to "{{dg.topic}}" Q&A</a>
+
     <form method="POST">
         {% csrf_token %}
         {{ form|crispy }}
-        <input type="submit" class="btn btn-primary btn-sm"/>
-        <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-primary btn-sm">No</a>
+        <input type="submit" class="btn btn-info btn-sm"/>
+        <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm">No</a>
     </form>
 {% endblock %}

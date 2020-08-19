@@ -4,7 +4,11 @@
 {% block title %}Delete reivew{% endblock %}
 
 {% block content %}
-    <p> Deleting..? Are you sure?</p>
+
+    <!--Page title-->
+    <h1 class="title ml-5">Confirm to delete your review :"{{review.title}}" ?</h1>
+    <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-title">Back to "{{dg.topic}}" Q&A</a>
+
     <form method="POST">
         {% csrf_token %}
         <div class="card mt-3">
@@ -14,7 +18,7 @@
                 <div class="card-footer text-muted">by {{reivew.user}} on {{reivew.date}}</div>
             </div>
         </div>
-        <input type="submit" class="btn btn-danger btn-sm" value="Yes"/>    
-        <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-primary btn-sm">No</a>
+        <input type="submit" class="btn btn-danger btn-sm mt-3" value="Yes"/>    
+        <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm mt-3">No, Thanks</a>
     </form>
 {% endblock %}
