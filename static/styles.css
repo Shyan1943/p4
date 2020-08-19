@@ -29,6 +29,14 @@ form {
     font-size: 120%;
 }
 
+.fa {
+    color: #3b464f;
+}
+
+.fa:hover {
+    font-size: 120%;
+}
+
 /* home.template.html */
 #landingpage { 
     height: 600px;
