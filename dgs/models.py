@@ -13,7 +13,7 @@ class IMDGCode(models.Model):
 
 
 class Dg(models.Model):
-    topic = models.CharField(blank=False, max_length=255)
+    topic = models.CharField(blank=False, max_length=70)
     description = models.TextField(blank=False)
     imdg_code = models.ForeignKey(IMDGCode,
                                   on_delete=models.SET_NULL, null=True)
