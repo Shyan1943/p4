@@ -6,13 +6,17 @@
 
 {% block content %}
     <main id="landingpage">
-        <div class="col">
+        <div class="row justify-content-center">
             <h1>Be the Dangerous Goods (DG) Expert</h1>
-
-                <a class="btn btn-info" href="{% url 'show_dg_route' %}" role="button">Explore</a>
-                <a class="btn btn-info" href="{% url 'all_programs_route' %}" role="button">Upgrade Skills</a>
-
-
+        </div>
+        <div class="row justify-content-center">
+            <a class="btn btn-info btn-home" href="{% url 'create_dg_route' %}" role="button">Create</a>
+            <a class="btn btn-secondary btn-home" href="{% url 'show_dg_route' %}" role="button">Explore</a>
+            
+        </div>
+        <div class="row justify-content-center">
+            <a class="btn btn-secondary btn-home" href="#search" role="button">Search</a>
+            <a class="btn btn-warning btn-home" href="{% url 'all_programs_route' %}" role="button">Upgrade</a>
         </div>
     </main>
 

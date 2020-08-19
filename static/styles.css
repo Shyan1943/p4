@@ -44,6 +44,13 @@ form {
     align-self: center;
 }
 
+.btn-home {
+    margin-right: 2rem;
+    height: 2.5rem;
+    width: 8rem;
+    text-transform: uppercase;
+}
+
 figure {
     margin: 0 0 0rem;
 }
