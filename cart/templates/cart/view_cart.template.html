@@ -4,7 +4,12 @@
 {% block title %}My Shopping cart{% endblock %}
 
 {% block content %}
-    <h1>My Shopping cart</h1>
+
+    <!--Page title-->
+    <h1 class="title ml-5">My Shopping cart</h1>
+    <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm btn-title">Continue shopping...</a>
+
+    <h1></h1>
     <ul>
         {% for key, c in cart.items %}
         <li>
@@ -14,14 +19,14 @@
                 {% csrf_token %}
                 <a href="{% url 'remove_from_cart' program_id=c.id %}" class="btn btn-danger btn-sm">Remove from cart</a>
                 <input type="text" name="qty" value="{{c.qty}}" style="width:40px"/>
-                <input type="submit" value="Update quantity" class="btn btn-primary btn-sm"/>
+                <input type="submit" value="Update quantity" class="btn btn-info btn-sm"/>
             </form>
         </li>
         {%endfor%}
     </ul>
     <h3>Cart total: ${{total}}
-        <a href="{% url 'checkout' %}" target="_blank" class="btn btn-primary btn-sm">Checkout</a>
-        <a href="{% url 'all_programs_route' %}" class="btn btn-primary btn-sm">View all programs</a>
+        <a href="{% url 'checkout' %}" target="_blank" class="btn btn-info btn-sm">Checkout</a>
+        <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm">View all programs</a>
     </h3>
 
 

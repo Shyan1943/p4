@@ -5,7 +5,11 @@
 {% block title %}Create New Program{% endblock %}
 
 {% block content %}
-    <h1>Create New Program</h1>
+
+    <!--Page title-->
+    <h1 class="title ml-5">Create a new program</h1>
+    <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm btn-title">Explore all Programs</a>
+
     <form method="POST">
         {% csrf_token %}
         {{ form|crispy }}

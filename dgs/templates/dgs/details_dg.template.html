@@ -3,13 +3,13 @@
 {% load crispy_forms_tags %}
 {% load cloudinary %}
 
-{% block title %}View DG{% endblock %}
+{% block title %}Q&A Details{% endblock %}
 
 {% block content %}
     
 <div id="details_dg">
     <h1 class="title ml-5">Public Q&A : "{{dg.topic}}"</h1>
-    <a href="{% url 'create_dg_route' %}" class="btn btn-info btn-sm btn-create">Create a post</a>
+    <a href="{% url 'create_dg_route' %}" class="btn btn-info btn-sm btn-title">Create a post</a>
 
     <!-- show that particular DG details  -->
     <div class="card">

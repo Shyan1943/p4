@@ -4,8 +4,11 @@
 {% block title %}Delete Program{% endblock %}
 
 {% block content %}
-    <h1>Deleting Program "{{program.title}}"... </h1>
-    <p> Are you sure?</p>
+
+    <!--Page title-->
+    <h1 class="title ml-5">Confirm to delete program "{{program.title}}"? </h1>
+    <a href="{% url 'all_programs_route' %}" class="btn btn-primary btn-sm btn-title">Explore all Programs</a>
+
     <form method="POST">
         {% csrf_token %}
         <div class="card mt-3">      

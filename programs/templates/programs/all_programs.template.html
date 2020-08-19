@@ -1,18 +1,17 @@
 <!doctype html>
 {% extends "base.template.html" %}
 
-{% block title %}Programs{% endblock %}
+{% block title %}All Programs{% endblock %}
 
 {% block content %}
-    <div class="jumbotron aliceblue all_programs">    
-        <div class="row programs"><h1>Upgrade your skill</h1></div>
-        <div class="row programs">
-            <!-- only allow superuser have the right to create new program -->
-            {% if request.user.is_superuser %}
-            <a href="{% url 'create_program_route' %}" class="btn btn-primary btn-sm">Create a new program</a>
-            {%endif%}
-        </div>
-    </div>
+
+    <!--Page title-->
+    <h1 class="title ml-5">Upgrate your skill? Let's explore all programs</h1>
+
+    <!-- only allow superuser have the right to create new program -->
+    {% if request.user.is_superuser %}
+    <a href="{% url 'create_program_route' %}" class="btn btn-primary btn-sm btn-title">Create a new program</a>
+    {%endif%}
 
     <acticle>
         <div class="row" id="profile">
