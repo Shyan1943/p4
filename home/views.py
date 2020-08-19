@@ -33,22 +33,6 @@ def index(request):
         # to reassign back to the query set
         dgs = dgs.filter(query)
 
-        # create a query that is always true
-        query = ~Q(pk__in=[])
-
-        # if the user fills in any keyword and its not an empty string
-        if "anykeyword" in request.GET and request.GET["anykeyword"]:
-            anykeyword = request.GET["anykeyword"]
-            query = query & Q(title__icontains=anykeyword) | Q(
-                who_should_attend__icontains=anykeyword) | Q(
-                outline__icontains=anykeyword) | Q(
-                objectives__icontains=anykeyword) | Q(
-                accreditation_and_examination__icontains=anykeyword) | Q(
-                fees__icontains=anykeyword)
-
-        # to reassign back to the query set
-        programs = programs.filter(query)
-
         return render(request, 'home/home.template.html', {
             "form": form,
             "dgs": dgs,
