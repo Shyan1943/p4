@@ -74,13 +74,13 @@
             <input class="btn btn-info" type="Submit" value="Search"/>
         </form>
 
-        <div class="table-responsive-lg">
+        <div class="table-responsive pl-5 pr-5">
             <table class="table table-striped table-bordered table-hover table-sm">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Date</th>
-                        <th scope="col"><a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm">Explore all Programs</a> Programs </th>
-                        <th></th>
+                        <th scope="col">Programs</th>
+                        <th class="right"><a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm">All Programs</a></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -88,26 +88,29 @@
                     <tr>
                         <td>{{p.date}}</td>
                         <td>{{p.title}}</td>
-                        <td class="right"><a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm mr-2">Book</a><a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-info btn-sm">Learn more</a></td>
+                        <td class="right"><a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm mr-2">Book</a><a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-info btn-sm">Learn</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
+        </div>
 
+        <div class="table-responsive-lg pl-5 pr-5">
             <table class="table table-striped table-bordered table-hover table-sm">
                 <thead class="thead-dark">
                     <tr>
-                        <th scope="col">IMDG Code</th>
-                        <th scope="col"><a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm ">Explore all Dg discussion</a> DG Discussion Topic </th>
-                        <th></th>
+                        <th scope="col"><a href="{% url 'show_dg_route' %}">IMDG Code</a></th>
+                        <th scope="col"><a href="{% url 'show_dg_route' %}"><i class="fa fa-eye" aria-hidden="true"></i> All Public Q&A Topic</a></th>
+                        <!-- <th class="right"><a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm">All Dg Public Q&A</a></th> -->
                     </tr>
                 </thead>
                 <tbody>
                     {% for d in dgs %}
                     <tr>
-                        <td>{{d.imdg_code.chemical_name}}</td>
-                        <td>{{d.topic}}</td>
-                        <td class="right"><a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Learn more</a></td>
+                        <td><a href="{% url 'view_dg_route' dg_id=d.id %}"><i class="fa fa-info-circle" aria-hidden="true"></i>{{d.imdg_code.chemical_name}}</a></td>
+                        <td><a href="{% url 'view_dg_route' dg_id=d.id %}">{{d.topic}}</a></td>
+                        <!-- <td class="right"><a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Learn</a></td> -->
+                        <!-- <td class="right"></td> -->
                     </tr>
                     {% endfor %}
                 </tbody>
