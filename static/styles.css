@@ -117,7 +117,7 @@ figure img:hover {
     margin-bottom: 2rem;
 }
 
-th.right, td.right {
+td.right {
     text-align: -webkit-right;
 }
 

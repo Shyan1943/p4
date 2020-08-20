@@ -79,16 +79,16 @@
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Date</th>
-                        <th scope="col">Programs</th>
-                        <th class="right"><a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm">All Programs</a></th>
+                        <th scope="col"><a href="{% url 'all_programs_route' %}"><i class="fa fa-eye" aria-hidden="true"></i> All Programs</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     {%for p in programs %}
                     <tr>
-                        <td>{{p.date}}</td>
-                        <td>{{p.title}}</td>
-                        <td class="right"><a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm mr-2">Book</a><a href="{% url 'view_program_route' program_id=p.id %}" class="btn btn-info btn-sm">Learn</a></td>
+                        <td><a href="{% url 'view_program_route' program_id=p.id %}"><i class="fa fa-info-circle" aria-hidden="true"></i>{{p.date}}</a></td>
+                        <td><a href="{% url 'view_program_route' program_id=p.id %}">{{p.title}}</a></td>
+                        <td class="right"><a href="{% url 'add_to_cart' program_id=p.id %}"><i class="fa fa-cart-plus mr-2" aria-hidden="true"></i>Add to cart</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -101,7 +101,6 @@
                     <tr>
                         <th scope="col"><a href="{% url 'show_dg_route' %}">IMDG Code</a></th>
                         <th scope="col"><a href="{% url 'show_dg_route' %}"><i class="fa fa-eye" aria-hidden="true"></i> All Public Q&A Topic</a></th>
-                        <!-- <th class="right"><a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm">All Dg Public Q&A</a></th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -109,8 +108,6 @@
                     <tr>
                         <td><a href="{% url 'view_dg_route' dg_id=d.id %}"><i class="fa fa-info-circle" aria-hidden="true"></i>{{d.imdg_code.chemical_name}}</a></td>
                         <td><a href="{% url 'view_dg_route' dg_id=d.id %}">{{d.topic}}</a></td>
-                        <!-- <td class="right"><a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Learn</a></td> -->
-                        <!-- <td class="right"></td> -->
                     </tr>
                     {% endfor %}
                 </tbody>
