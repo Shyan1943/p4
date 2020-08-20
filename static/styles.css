@@ -208,8 +208,9 @@ p.title {
     margin: 3rem;
 }
 
-#details_dg .col-3 {
+#details_dg .col-lg-3 {
     text-align: -webkit-center;
+    margin-bottom: 2rem;
 }
 
 .card-img-top img{
