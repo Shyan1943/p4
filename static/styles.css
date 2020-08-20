@@ -3,8 +3,8 @@
 /* base.template.htmlbase.template.html */
 body {
     font-family: "Open Sans", sans-serif;
-    /* padding-top: 90px; */
     background-color: aliceblue;
+    margin-bottom: 90px;
 }
 
 .title {
