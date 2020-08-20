@@ -272,3 +272,7 @@ p.title {
 h3 {
     font-size: 1.30rem;
 }
+
+.title {
+    font-size: large;
+}
