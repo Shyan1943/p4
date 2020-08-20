@@ -264,7 +264,7 @@ p.title {
   text-align: center;
 }
 
-.swap{
+.swap-cr {
   flex-direction: column-reverse;
   text-align: center;
 }
@@ -281,4 +281,9 @@ h3 {
     width: fit-content;
     height: fit-content;
     margin: 3rem;
+}
+
+.swap-c {
+  flex-direction: column;
+}
 }
