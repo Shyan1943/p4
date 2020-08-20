@@ -147,7 +147,7 @@ p.title {
 
 #all_dgs .card-img-top, #all_dgs .card-img-top img{
     height: 8rem;
-    text-align-last: center;
+    text-align: -webkit-center;
     max-width: 15rem;
     max-height: 8rem;
 }
@@ -215,7 +215,7 @@ p.title {
 
 .card-img-top img{
     height: 10rem;
-    text-align-last: center;
+    text-align: -webkit-center;
     max-width: 16rem;
     max-height: 14rem;
 }
