@@ -15,7 +15,7 @@
         {% csrf_token %}
         <div class="card">
             <div class="card-body">
-                {% cloudinary dg.image %}
+                <div class="card-img-top">{% cloudinary dg.image %}</div>
 				<h5 class="card-title">{{dg.topic}}</h5>
                 <p class="card-text">{{dg.description}}</p>
             </div>
