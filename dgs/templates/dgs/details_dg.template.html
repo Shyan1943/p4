@@ -20,7 +20,7 @@
                     <h5 class="card-title center">{{dg.imdg_code}}</h5>
                 </div>
                 <div class="col-9">
-                    <h5 class="card-title line-clamp-1">{{dg.topic}}</h5>
+                    <h5 class="card-title">{{dg.topic}}</h5>
                     <h6 class="card-text">{{dg.description}}</h6>
                     <div class="card-footer text-muted">Written by {{dg.user}} on {{dg.date}}</div>
                     <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-info btn-sm">Add a review</a>
