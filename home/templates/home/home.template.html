@@ -1,10 +1,12 @@
 <!doctype html>
 {% extends "base.template.html" %}
+{% load crispy_forms_tags %}
 {% load static %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
+    <!-- landing page -->
     <main id="landingpage">
         <div class="title row justify-content-center">
             <h1>Be the Dangerous Goods (DG) Expert</h1>
@@ -20,6 +22,7 @@
         </div>
     </main>
 
+    <!-- Web introduction -->
     <figure>
         <div class="jumbotron white">
             <a href="{% url 'create_dg_route' %}">
@@ -62,12 +65,13 @@
         </div>
     </figure>
 
+    <!-- Search Engine -->
     <section>
         <div class="jumbotron white table-responsive-lg">
             <div>
                 <form id="search" method="GET">
                     {% csrf_token %}
-                    {{ form }} 
+                    {{ form|crispy }} 
                     <i class="fa fa-search" aria-hidden="true"></i> 
                     <input class="btn btn-info" type="Submit" value="Search"/>
                 </form>
