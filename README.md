@@ -370,6 +370,14 @@ __pycache__
 * Import <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true">Google Font</a>
 * Added <a href="https://getbootstrap.com/docs/4.0/components/navbar/">Bootstrap fixed top navigation bar</a>
 
+### 41. Create a new Site_ID 
+* At Gitpod Terminal, enter : 
+    * `python3 manage.py shell`
+    * `from django.contrib.sites.models import Site`
+    * `print(Site.objects.get(name='example.com').id)`, it will return a new Site_ID 
+* At "settings.py", Change the 'SITE_ID' as what we can just now & save it 
+* Test run `python3 manage.py runserver 8080` & login to /admin.
+
 ## C) PUBLICATION
 ### Deploying to Heroku
 * Implement manual test procedures to assess functionality, usability, responsiveness and data management within the Full Stack web application before publication
