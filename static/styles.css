@@ -264,7 +264,7 @@ p.title {
   text-align: center;
 }
 
-#swap{
+.swap{
   flex-direction: column-reverse;
   text-align: center;
 }
@@ -275,4 +275,10 @@ h3 {
 
 .title {
     font-size: large;
+}
+
+#details_dg .card {
+    width: fit-content;
+    height: fit-content;
+    margin: 3rem;
 }
