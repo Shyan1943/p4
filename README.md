@@ -425,7 +425,9 @@ __pycache__
     * Add in a web hook with heroku app domain name for checkout.session.completed event. Make sure to set the signing key correctly.
 
 ### To update the Heroku deployed site
-* At Gitpod terminal, log into Heroku using  `heroku login`
+* At Gitpod terminal :
+    * log into Heroku using  `heroku login -i`
+    * enter the email address & password for login to heroku
 * Update environment variables key (if any)
     * Go to the <a href="https://www.heroku.com">Heroku</a> Site
     * click on your project 
@@ -437,6 +439,7 @@ __pycache__
     * `git add .`
     * commit everything `git commit -m "<Commit Message>"`
     * push to heroku using `git push heroku master`
+    * enter `python3 manage.py migrate` to migrate database (if we did update models.py before)
 * Done publication!!
 * Test to ensure it matches the development version
 * Ensure that ﬁnal deployed site has no broken internal links
