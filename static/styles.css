@@ -237,7 +237,7 @@ p.title {
 }
 
 #programs .card-header {
-    height: 2.6rem;
+    height: 2.2rem;
 }
 
 /* programs/details_program.template.html */
@@ -286,5 +286,9 @@ h3 {
 
 .swap-c {
   flex-direction: column;
+}
+
+#programs .card {
+    width: 20rem;
 }
 }
