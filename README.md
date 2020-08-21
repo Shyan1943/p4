@@ -34,6 +34,15 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
     ● which has a clear, well-deﬁned purpose addressing the needs of multiple related target audiences
 ```
 
+## 2) SCOPE
+### Identifying External Users:
+* The primary purpose of this site is to allow users to share their experience, problem facing or any inquire about handling of DG product. and benefit from having convenient access to the information provided by all other members. The person may be the <b><u>site owner, traveller, trader, people seek for career change, airport or seaport staff & Freight Forwarder</u></b> (hereafter known as <b><i>"USERS"</i></b>). 
+
+### Identifying Site Owner:
+* The site owner advances their own goals by providing this functionality, potentially by being a regular external user themselves. The site owner also benefit from the collection of the dataset as a whole and program training fee. 
+
+
+
 # DEPLOYMENT
 
 ## B) PRODUCTION
