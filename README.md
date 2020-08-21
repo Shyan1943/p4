@@ -1,3 +1,19 @@
+{% load static %}
+
+# DGExpect
+View the live project <a href="https://shyan-tgc-pro4.herokuapp.com/" target="_blank">here</a>.
+
+This is a Free Dangerous Goods "DG" Public Q&A site and we promote training program.  
+
+Purpose:
+* In this project, I build a full-stack site based around business logic used to control a centrally-owned dataset. I set up an authentication mechanism, provide a Free Public Q&A and paid access to the site's data for user to purchase training program through the site.
+
+Value provided:
+* By authenticating on the site, users can "Create, Read, Update & Delete" = (CRUD) Public Q&A and give review. To advance users' own goals, users paying for training program to upgrade their skill. Before authenticating, the site makes it clear how those goals would be furthered by the site. 
+* The site owner is able to make money by providing this set of services to the users. There is no way for a regular user to bypass the site's mechanisms and derive all of the value available to paid users without paying.
+
+<img src="{% static 'images/introduction.png' %}" alt="Ask or give Dangerous Goods Public Q&A or review site. Or you can choose to upgrade your skill by signup our training programs."/>
+
 # DEPLOYMENT
 
 ## B) PRODUCTION
