@@ -12,6 +12,28 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
 
 <a href="https://shyan-tgc-pro4.herokuapp.com/" target="_blank"><img src="static/images/introduction.png" alt="Ask or give Dangerous Goods Public Q&A or review site. Or you can choose to upgrade your skill by signup our training programs."/></a>
 
+
+# User Experience - User Interface (UX-UI)
+## 1) STRATEGY
+* <strong>External user’s goal: </strong>To join a DG Public Q&A community and purchase training program
+
+* <strong>Site owner's goal : </strong>
+    * Build an active community discusssion site around the product based on site admin or users free signup to CRUD Q&A and review 
+    * Sell DG Training program 
+
+* <strong>Target audience : </strong>
+    * Consumer-to-business 
+    * Traveller, Trader, Career change, airport or seaport staff & Freight Forwarder
+
+* <strong>Therefore, the site should focus on :</strong>
+```
+    ● Design a front end for a full stack application following the principles of UX design which meets accessibility guidelines, is easy to navigate and allows the user to ﬁnd information and resources intuitively
+    ● Design a full stack application that lets the user initiate and full control actions and gives immediate and full feedback on information
+    ● Implement a full stack application whose purpose is immediately evident to a new user and which provides a good solution to the user’s demands and expectations
+    ● All CRUC actions are immediately reﬂected in the user interface
+    ● which has a clear, well-deﬁned purpose addressing the needs of multiple related target audiences
+```
+
 # DEPLOYMENT
 
 ## B) PRODUCTION
