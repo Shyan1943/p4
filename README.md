@@ -36,12 +36,26 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
 
 ## 2) SCOPE
 ### Identifying External Users:
-* The primary purpose of this site is to allow users to share their experience, problem facing or any inquire about handling of DG product. and benefit from having convenient access to the information provided by all other members. The person may be the <b><u>site owner, traveller, trader, people seek for career change, airport or seaport staff & Freight Forwarder</u></b> (hereafter known as <b><i>"USERS"</i></b>). 
+* The primary purpose of this site is to allow users to share their experience, problem facing or any inquire about handling of DG product. and benefit from having convenient access to the information provided by all other members. The person may be the <b><u>site owner, traveller, trader, people seek for career change, airport or seaport staff & Freight Forwarder</u></b> (hereafter known as <b><i>"EXTERNAL USERS"</i></b>). 
 
 ### Identifying Site Owner:
 * The site owner advances their own goals by providing this functionality, potentially by being a regular external user themselves. The site owner also benefit from the collection of the dataset as a whole and program training fee. 
 
-
+### 2a) User Stories 
+```
+    ● US1. As an external user, I want to get the information easily within few clicks, so that I get what I wanted as soon as possible. 
+    ● US2. As an external user, I want to visit a responsive website, so that I can surt the net at anytime anywhere easily without rely on computers.
+    ● US3. As an external user, I want to visit a good user interactive website, so that i feel it is a trustworthy website to fish information. 
+    ● US4. As an external user, I want to get the information easily within a particular domain, so that it save my memory & time. 
+    ● US5. As an external user (Traveller), I want to have more information or suggestion on certain product, so that I know whether should I buy it during travelling.  
+    ● US6. As an external user (Trader), I want to have more information or suggestion on how to handling certain DG product, so that I can deliver products safely to my customers.
+    ● US7. As an external user, I want to share my experience, problem facing or any inquire about handling of DG product within the particular domain, so that I have a clear picture what to do next.
+    ● US8. As an external user, I want to share my knowledge for those who needs by giving reviews, so that I can improve myself at the same time. 
+    ● US9. As an external user, I want my post or review can be updated or deleted anytime by myself, so that I can do any adjustment immediately. 
+    ● US10. As an external user, I want to upgrade my DG knowledge & handling skill, so that I can reach next level in my career path or career change. 
+    ● US11. As an Site Onwer, I want to collect data information through this site, so that I can develop it to other businesses in future. 
+    ● US12. As an Site Onwer, I want to have a program sign up section, so that I can sell my program and the payment transaction complete through the site.
+```
 
 # DEPLOYMENT
 
