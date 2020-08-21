@@ -12,7 +12,7 @@ Value provided:
 * By authenticating on the site, users can "Create, Read, Update & Delete" = (CRUD) Public Q&A and give review. To advance users' own goals, users paying for training program to upgrade their skill. Before authenticating, the site makes it clear how those goals would be furthered by the site. 
 * The site owner is able to make money by providing this set of services to the users. There is no way for a regular user to bypass the site's mechanisms and derive all of the value available to paid users without paying.
 
-<img src="{% static 'images/introduction.png' %}" alt="Ask or give Dangerous Goods Public Q&A or review site. Or you can choose to upgrade your skill by signup our training programs."/>
+<a href="https://shyan-tgc-pro4.herokuapp.com/" target="_blank"><img src="static/images/introduction.png" alt="Ask or give Dangerous Goods Public Q&A or review site. Or you can choose to upgrade your skill by signup our training programs."/></a>
 
 # DEPLOYMENT
 
