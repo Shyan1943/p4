@@ -26,14 +26,20 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
     * Traveller, Trader, Career change, airport or seaport staff & Freight Forwarder
 
 * <strong>Therefore, the site should focus on :</strong>
-```
-    ● Design a front end for a full stack application following the principles of UX design which meets accessibility guidelines, is easy to navigate and allows the user to ﬁnd information and resources intuitively
-    ● Design a full stack application that lets the user initiate and full control actions and gives immediate and full feedback on information
-    ● Implement a full stack application whose purpose is immediately evident to a new user and which provides a good solution to the user’s demands and expectations
-    ● which has a clear, well-deﬁned purpose addressing the needs of multiple related target audiences
-    ● All CRUC actions are immediately reﬂected in the user interface
-    ● A complete payments site
-```
+    * Community
+        ```
+            ● Design a front end for a full stack application following the principles of UX design which meets accessibility guidelines, is easy to navigate and allows the user to ﬁnd information and resources intuitively
+            ● Design a full stack application that lets the user initiate and full control actions and gives immediate and full feedback on information
+            ● Implement a full stack application whose purpose is immediately evident to a new user and which provides a good solution to the user’s demands and expectations
+            ● which has a clear, well-deﬁned purpose addressing the needs of multiple related target audiences
+            ● Free Public Q&A & reviews 
+            ● All CRUD actions are immediately reﬂected in the user interface
+        ``` 
+    * E-commerce
+        ```
+            ● Authentication and authorisation mechanism for user and administrators
+            ● A puchase payment model
+        ```
 
 ## 2) SCOPE
 ### Identifying External Users:
@@ -82,6 +88,7 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
 | US11 |	CR8 |	Authentication and authorisation mechanism for users and administrators section |	
 | US12 |	CR9 |	Shopping cart & payment section   |	
 
+CI page 38 (Potential features)
 
 # DEPLOYMENT
 
