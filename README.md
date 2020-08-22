@@ -49,7 +49,7 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
     ● US3. As an external user, I want to visit a good user interactive website, so that i feel it is a trustworthy website to fish information. 
     ● US4. As an external user, I want to get the information easily within a particular domain, so that it save my memory & time. 
     ● US5. As an external user (Traveller), I want to have more information or suggestion on certain product, so that I know whether should I buy it during travelling.  
-    ● US6. As an external user (Trader), I want to have more information or suggestion on how to handling certain DG product, so that I can deliver products safely to my customers.
+    ● US6. As an external user, I want to have a "any keyword" search engine, so that I can find the information easily.
     ● US7. As an external user, I want to share my experience, problem facing or any inquire about handling of DG product within the particular domain, so that I have a clear picture what to do next.
     ● US8. As an external user, I want to share my knowledge for those who needs by giving reviews, so that I can improve myself at the same time. 
     ● US9. As an external user, I want my post or review can be updated or deleted anytime by myself, so that I can do any adjustment immediately. 
@@ -57,6 +57,30 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
     ● US11. As an Site Onwer, I want to collect data information through this site, so that I can develop it to other businesses in future. 
     ● US12. As an Site Onwer, I want to have a program sign up section, so that I can sell my program and the payment transaction complete through the site.
 ```
+
+### 2b) Functional Requirement (FR)					
+| User Stories | FR |	Functional Requirement (FR)  |			
+|     :---:    |     :---: |:---       |					
+| US1 |	FR1 |	FixedTop Navigation that all resources are easy to find, allowing users to navigate the layout of the site intuitively.   |	
+| US2 |	FR2 |	Responsive design  |	
+| US6 |	FR3 |	Search Engine by input any keyword   |	
+| US7 & 9 |	FR4 |	Allow users to CRUD Public Q&A to share their experience, problem facing or any inquire about handling of DG product & related image |	
+| US8 & 9 |	FR5 |	Allow users to CRUD Review to share their knowledge & experience for giving help to those who needs |	
+| US11 | FR6 |	Allow users to free sign up for Site Onwer to collect user data information |	
+| US12 | FR7 |	Allow users to purchase training program on site |  
+
+### 2c) Content Requirement (CR)			
+| User Stories | CR |	Content Requirement (CR)  |			
+|     :---:    |     :---: |:---       |			
+| US3 |	CR1 |	User interactions design  |	
+| US4 |	CR2 |	A short & quick introduction to attract more users to CRUD their experience, inquiry & review  |	
+| US5 |	CR3 |	View Public Q&A & image section |	
+| US6 |	CR4 |	Search Engine section |	
+| US7 & 9 |	CR5 |	CRUD Public Q&A section  |	
+| US8 & 9 |	CR6 |	CRUD Review Section  |	
+| US10 |	CR7 |	View program section   |	
+| US11 |	CR8 |	Authentication and authorisation mechanism for users and administrators section |	
+| US12 |	CR9 |	Shopping cart & payment section   |	
 
 
 # DEPLOYMENT
