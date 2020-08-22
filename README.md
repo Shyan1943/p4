@@ -30,8 +30,9 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
     ● Design a front end for a full stack application following the principles of UX design which meets accessibility guidelines, is easy to navigate and allows the user to ﬁnd information and resources intuitively
     ● Design a full stack application that lets the user initiate and full control actions and gives immediate and full feedback on information
     ● Implement a full stack application whose purpose is immediately evident to a new user and which provides a good solution to the user’s demands and expectations
-    ● All CRUC actions are immediately reﬂected in the user interface
     ● which has a clear, well-deﬁned purpose addressing the needs of multiple related target audiences
+    ● All CRUC actions are immediately reﬂected in the user interface
+    ● A complete payments site
 ```
 
 ## 2) SCOPE
@@ -56,6 +57,7 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
     ● US11. As an Site Onwer, I want to collect data information through this site, so that I can develop it to other businesses in future. 
     ● US12. As an Site Onwer, I want to have a program sign up section, so that I can sell my program and the payment transaction complete through the site.
 ```
+
 
 # DEPLOYMENT
 
