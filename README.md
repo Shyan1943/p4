@@ -69,18 +69,20 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
 |     :---:    |     :---: |:---       |					
 | US1 |	FR1 |	FixedTop Navigation that all resources are easy to find, allowing users to navigate the layout of the site intuitively.   |	
 | US2 |	FR2 |	Responsive design  |	
-| US6 |	FR3 |	Search Engine by input any keyword   |	
-| US7 & 9 |	FR4 |	Allow users to CRUD Public Q&A to share their experience, problem facing or any inquire about handling of DG product & related image |	
-| US8 & 9 |	FR5 |	Allow users to CRUD Review to share their knowledge & experience for giving help to those who needs |	
-| US11 | FR6 |	Allow users to free sign up for Site Onwer to collect user data information |	
-| US12 | FR7 |	Allow users to purchase training program on site |  
+| US6 |	FR3 |	Search Engine by input any keyword or IMDG Code category  |	
+| US7 & 9 |	FR4 |	Allow users to CR Public Q&A to share their experience, problem facing or any inquire about handling of DG product & related image |	
+| US8 & 9 |	FR5 |	Allow users to CR Review to share their knowledge & experience for giving help to those who needs |	
+| US7 ~ 9 |	FR6 |	Only allow the same users to UD their Public Q&A & Review |	
+| US10 |	FR7 |	Only allow the Site admin to access CUD programs site |	
+| US11 | FR8 |	Allow users to free sign up, identify and apply authorisation, authentication and permission features for Site Onwer to collect user data information |	
+| US12 | FR9 |	Allow users to purchase training program on site |  
 
 ### 2c) Content Requirement (CR)			
 | User Stories | CR |	Content Requirement (CR)  |			
 |     :---:    |     :---: |:---       |			
 | US3 |	CR1 |	User interactions design  |	
 | US4 |	CR2 |	A short & quick introduction to attract more users to CRUD their experience, inquiry & review  |	
-| US5 |	CR3 |	View Public Q&A & image section |	
+| US5 |	CR3 |	View Public Q&A + image & review section |	
 | US6 |	CR4 |	Search Engine section |	
 | US7 & 9 |	CR5 |	CRUD Public Q&A section  |	
 | US8 & 9 |	CR6 |	CRUD Review Section  |	
@@ -88,7 +90,31 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
 | US11 |	CR8 |	Authentication and authorisation mechanism for users and administrators section |	
 | US12 |	CR9 |	Shopping cart & payment section   |	
 
-CI page 38 (Potential features)
+
+## 3) STRUCTURE				
+### 3a) Information Architecture				
+#### Image required				
+Image required on the website to fulfill the content requirements.				
+| US |	CR |	CI |	Content Inventory (CI)  |	
+|     :---:    |     :---: |     :---:    |:---       |	
+| US4 |	CR2 |	CI1 |	Site introduction image  |	
+				
+#### Content Inventory (CI)				
+Information required on the website to fulfill the content requirements.				
+				
+| US |	CR |	CI |	Content Inventory (CI)  |	
+|     :---:    |     :---: |     :---:    |:---       |	
+| US4 |	CR2 |	CI2 |	A nice & short sentences to introduce the site  |	
+| US5 |	CR3 |	CI3 |	"R" View all Public Q&A with image section |	
+| US5 |	CR3 |	CI4 |	"R" View a Public Q&A details with image & its' reviews section |	
+| US6 |	CR4 |	CI5 |	Search (Any keyword & IMDG Code category) Engine section  |	
+| US6 |	CR4 |	CI6 |	Result section for Search Engine to show all programs & related Public Q&A Topic  |	
+| US7 & 9 |	CR5 |	CI7 |	"CUD" Public Q&A & image section  |	
+| US8 & 9 |	CR6 |	CI8 |	"CUD" Review section  |
+| US10 | CR7 |	CI9 |	"R" View all programs section  |	
+| US10 | CR7 |	CI10 |	"R" View a program with full details section  |	
+| US11 | CR8 |	CI11 |	Sign up section  |
+| US12 | CR9 |	CI12 |	"R" View Shopping cart & payment section  |
 
 # DEPLOYMENT
 
