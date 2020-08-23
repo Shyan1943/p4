@@ -10,4 +10,4 @@ class Purchase(models.Model):
     purchase_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Purchase made for program title {self.program_id} by user#{self.user_id} on {self.purchase_date}"
+        return f"Purchase made for program title {self.program_id} by user  # {self.user_id} on {self.purchase_date}"

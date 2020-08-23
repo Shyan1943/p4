@@ -72,10 +72,10 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
 | US6 |	FR3 |	Search Engine by input any keyword or IMDG Code category  |	
 | US7 & 9 |	FR4 |	Allow users to CR Public Q&A to share their experience, problem facing or any inquire about handling of DG product & related image |	
 | US8 & 9 |	FR5 |	Allow users to CR Review to share their knowledge & experience for giving help to those who needs |	
-| US7 ~ 9 |	FR6 |	Only allow the same users to UD their Public Q&A & Review |	
-| US10 |	FR7 |	Only allow the Site admin to access CUD programs site |	
-| US11 | FR8 |	Allow users to free sign up, identify and apply authorisation, authentication and permission features for Site Onwer to collect user data information |	
-| US12 | FR9 |	Allow users to purchase training program on site |  
+| US7 ~ 9 |	FR6 |	Only allow the same users to see, click & access UD button for their own Public Q&A & Review |	
+| US11 | FR7 |	Allow users to free sign up, identify and apply authorisation, authentication and permission features for Site Onwer to collect user data information |	
+| US12 | FR8 |	Allow users to purchase training program on site |  
+| US12 | FR9 |	Only allow the Site admin to see, click & access CUD button for programs site |	
 
 ### 2c) Content Requirement (CR)			
 | User Stories | CR |	Content Requirement (CR)  |			
@@ -86,9 +86,10 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
 | US6 |	CR4 |	Search Engine section |	
 | US7 & 9 |	CR5 |	CRUD Public Q&A section  |	
 | US8 & 9 |	CR6 |	CRUD Review Section  |	
-| US10 |	CR7 |	View program section   |	
+| US10 |	CR7 |	"R" View program section   |	
 | US11 |	CR8 |	Authentication and authorisation mechanism for users and administrators section |	
 | US12 |	CR9 |	Shopping cart & payment section   |	
+| US12 |	CR10 |	CUD program section   |
 
 
 ## 3) STRUCTURE				
@@ -115,6 +116,9 @@ Information required on the website to fulfill the content requirements.
 | US10 | CR7 |	CI10 |	"R" View a program with full details section  |	
 | US11 | CR8 |	CI11 |	Sign up section  |
 | US12 | CR9 |	CI12 |	"R" View Shopping cart & payment section  |
+| US12 | CR10 |	CI13 |	Site admin to CUD a program details section  |	
+
+
 
 # DEPLOYMENT
 
