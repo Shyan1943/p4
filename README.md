@@ -149,7 +149,15 @@ CI6.    Search Engine result section will return related Public Q&A Topic or ret
 This ERD  is relevant on this particular domain, consisting of Six Django models (User, Dg, IMDGCode, Review, Program, Purchase).
 <img src="static/images/data_erd.png">
 
-
+#### Data model
+##### Logical Diagram
+There are 5 set of forms with validation that will allow users to records in the database (in addition to the authentication mechanism).
+* Search form for all visitors to search (Any keyword & IMDG Code category) at the Search Engine section
+* accounts SignupForm for user to register account with the Site
+* CUD Dgs (Public Q&A) forms for user to share their experience, problem facing or any Dg inquire
+* CUD Review forms for user to give review to a particular Dgs (Public Q&A) post 
+* CUD Program forms ONLY allow Site admin access to CUD program
+<img src="static/images/data_logicaldiagram.png">
 
 
 
