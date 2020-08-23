@@ -144,6 +144,16 @@ CI6.    Search Engine result section will return related Public Q&A Topic or ret
 #### IA Sitemap (Overall)
 <img src="static/images/iasitemap_overall.png" width="900px" height="500px"/>
 
+#### Database Structure
+##### Entity Relationship Diagram (ERD)
+This ERD  is relevant on this particular domain, consisting of Six Django models (User, Dg, IMDGCode, Review, Program, Purchase).
+<img src="static/images/data_erd.png">
+
+
+
+
+
+
 # DEPLOYMENT
 
 ## B) PRODUCTION
