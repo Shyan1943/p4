@@ -141,6 +141,9 @@ CI6.    Search Engine result section will always return all programs to promote 
 CI6.    Search Engine result section will return related Public Q&A Topic or return all when Search Engine leave blank	
 ```
 
+#### IA Sitemap (Overall)
+<img src="static/images/iasitemap_overall.png" width="900px" height="500px"/>
+
 # DEPLOYMENT
 
 ## B) PRODUCTION
