@@ -107,7 +107,7 @@ WSGI_APPLICATION = 'DGReviewsProject.wsgi.application'
 
 TEST_EMAIL = os.environ.get("TEST_EMAIL")
 
-if TEST_EMAIL == "1":
+if TEST_EMAIL == 1:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
