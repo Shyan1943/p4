@@ -10,7 +10,7 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
 * By authenticating on the site, users can enjoy the free <b><u>Create, Read, Update & Delete</u></b>, (hereafter known as <b><i>"CRUD"</i></b>) Public Q&A and give review. To advance users' own goals, users paying for training program to upgrade their skill. Before authenticating, the site makes it clear how those goals would be furthered by the site. 
 * The site owner is able to make money by providing this set of services to the users. There is no way for a regular user to bypass the site's mechanisms and derive all of the value available to paid users without singup or paying.
 
-<a href="https://shyan-tgc-pro4.herokuapp.com/" target="_blank"><img src="static/images/introduction.png" alt="Ask or give Dangerous Goods Public Q&A or review site. Or you can choose to upgrade your skill by signup our training programs."/></a>
+<a href="https://shyan-tgc-pro4.herokuapp.com/" target="_blank"><img src="static/images/introduction.png"  width="550px" height="500px" alt="Ask or give Dangerous Goods Public Q&A or review site. Or you can choose to upgrade your skill by signup our training programs."/></a>
 
 
 # User Experience - User Interface (UX-UI)
@@ -118,7 +118,28 @@ Information required on the website to fulfill the content requirements.
 | US12 | CR9 |	CI12 |	"R" View Shopping cart & payment section  |
 | US12 | CR10 |	CI13 |	Site admin to CUD a program details section  |	
 
+#### Content Structure (CS)
+In these modern days, users are constantly bombarded with too much content, people love simplicity. With this, we design it as a "One-page websites" offer a fast and clear reading experience. The contents will be regroup into a sequential structure as below IA Sitemap for landing Page & overall. 
 
+<img src="static/images/iasitemap_landingpage.png" align="left" width="130px" height="420px"/>
+
+##### Landing Page :
+```
+CI2.	The landing page starts with a nice & short sentences allow visitor perceive briefly of what is the site related to 
+FR1.    as well as clickable buttons at the center of the landing page allowing users to navigate the layout of the site intuitively	
+```			
+##### Introduction section :  			
+```			
+CI1.    Site introduction image allow visitor insight into the site functionality
+CI2.    Short Introduction are given to each image allow visitor to more understand the site a little better
+	
+```			
+##### Search Engine section :  			
+```			
+CI5.	Search Engine section	
+CI6.    Search Engine result section will always return all programs to promote Site owner product
+CI6.    Search Engine result section will return related Public Q&A Topic or return all when Search Engine leave blank	
+```
 
 # DEPLOYMENT
 
