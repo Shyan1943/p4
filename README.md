@@ -879,3 +879,12 @@ __pycache__
 10. Refer to <a href="https://docs.djangoproject.com/en/3.1/topics/forms/" target="_blank">Django Documentation</a> to change the form display at the same row
 11. Refer to <a href="https://css-tricks.com/almanac/properties/l/line-clamp/" target="_blank">The line-clamp property truncates</a> text at a specific number of lines.
 12. Refer to <a href="https://docs.djangoproject.com/en/3.1/ref/forms/fields/" target="_blank"> the empty_label attribute</a> to change the dropdown default text label from "---------" to what you like, or can disable the empty label entirely by setting empty_label to None  
+
+
+# ACKNOWLEDGEMENTS 
+I received inspiration for this project from : 
+
+      1) Stackoverflow https://stackoverflow.com/ - on project idea
+      2) Mr Paul Chor - Mentor of my course
+      3) Mr John - Consultant of my project 
+      4) Mr Donovan Lo - My classmate – on the Readme report  
