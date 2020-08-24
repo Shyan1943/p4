@@ -336,6 +336,16 @@ stripe==2.50.0
 whitenoise==5.2.0
 ```
 
+## Technologies, Frameworks, Libraries & Programs Used 
+### Preparation
+1) <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true" target="_blank">Google Font</a> to making the web more beautiful, fast, and open through great typography 
+2) <a href="https://www.sessions.edu/color-calculator/" target="_blank">Sessions College color calculator</a> to find the perfect color scheme 
+3) <a href="https://www.freepik.com/" target="_blank">Freepik</a> to get an high resolution image
+4) <a href="https://pencil.evolus.vn/" target="_blank">Pencil Project </a>was used to create the wireframes during the design process.
+5) <a href="https://erdplus.com/" target="_blank">ERDPlus </a> to design the database structure, Entity Relationship Diagram (ERD)
+6) <a href="https://sqldbm.com/Home/" target="_blank">SQLDbm</a> to design the data model, Logical Diagram
+
+
 # DEPLOYMENT
 
 ## B) PRODUCTION
