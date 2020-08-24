@@ -11,7 +11,7 @@
 
     <!--Page title-->
     <h1 class="title ml-5">Updating your Q&A post</h1>
-    <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-title">Back to "{{dg.topic}}" Q&A</a>
+    <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-warning btn-sm btn-title">Back to "{{dg.topic}}" Q&A</a>
 
     <!-- update_dg Form -->
     <form method="POST" enctype="multipart/form-data" id="form">
@@ -29,8 +29,8 @@
         </div>
 
         <!-- Submit button -->
-        <input type="submit" class="btn btn-info btn-sm"/> 
-        <a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm">No</a>
+        <input type="submit" class="btn btn-warning btn-sm"/> 
+        <a href="{% url 'show_dg_route' %}" class="btn btn-warning btn-sm">No</a>
     </form>
 
 {% endblock %}

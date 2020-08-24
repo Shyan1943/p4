@@ -8,7 +8,7 @@
 
     <!--Page title-->
     <h1 class="title ml-5">Confirm to delete your post "{{dg.topic}}"? </h1>
-    <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-title">Back to "{{dg.topic}}" Q&A</a>
+    <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-warning btn-sm btn-title">Back to "{{dg.topic}}" Q&A</a>
 
     <!--Deleting Q&A Form-->
     <form method="POST">
@@ -21,6 +21,6 @@
             </div>
         </div>
         <input type="submit" class="btn btn-danger btn-sm mt-5" value="Yes"/>    
-        <a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm mt-5">No, thanks</a>
+        <a href="{% url 'show_dg_route' %}" class="btn btn-warning btn-sm mt-5">No, thanks</a>
     </form>
 {% endblock %}

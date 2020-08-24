@@ -7,7 +7,7 @@
 
     <!--Page title-->
     <h1 class="title ml-5">My Shopping cart</h1>
-    <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm btn-title">Continue shopping...</a>
+    <a href="{% url 'all_programs_route' %}" class="btn btn-warning btn-sm btn-title">Continue shopping...</a>
 
     <div id="cart"> 
         <ul>
@@ -20,7 +20,7 @@
                     {% csrf_token %}
                     <a href="{% url 'remove_from_cart' program_id=c.id %}" class="btn btn-danger btn-sm">Remove from cart</a>
                     <input type="text" name="qty" value="{{c.qty}}" style="width:40px"/>
-                    <input type="submit" value="Update quantity" class="btn btn-info btn-sm"/>
+                    <input type="submit" value="Update quantity" class="btn btn-warning btn-sm"/>
                 </form>
             </li>
             {%endfor%}
@@ -28,10 +28,10 @@
 
         <div class="row ml-4">
             <h3>Cart total: ${{total|floatformat:2}}</h3>
-            <a href="{% url 'checkout' %}" target="_blank" class="btn btn-info btn-sm ml-3">Checkout</a>
+            <a href="{% url 'checkout' %}" target="_blank" class="btn btn-warning btn-sm ml-3">Checkout</a>
         </div>
 
-        <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm mt-5">View all programs</a>
+        <a href="{% url 'all_programs_route' %}" class="btn btn-warning btn-sm mt-5">View all programs</a>
     </div>
 
 

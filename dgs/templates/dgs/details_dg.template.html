@@ -9,7 +9,7 @@
     
 <div id="details_dg">
     <h1 class="title ml-5">Public Q&A : "{{dg.topic}}"</h1>
-    <a href="{% url 'create_dg_route' %}" class="btn btn-info btn-sm btn-title">Create a post</a>
+    <a href="{% url 'create_dg_route' %}" class="btn btn-warning btn-sm btn-title">Create a post</a>
 
     <!-- show that particular DG details  -->
     <div class="card">
@@ -23,10 +23,10 @@
                     <h5 class="card-title">{{dg.topic}}</h5>
                     <h6 class="card-text">{{dg.description}}</h6>
                     <div class="card-footer text-muted">Written by {{dg.user}} on {{dg.date}}</div>
-                    <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-info btn-sm">Add a review</a>
-                    <a href="{% url 'show_dg_route' %}" class="btn btn-info btn-sm">Explore all Public Q&A</a>
+                    <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-warning btn-sm">Add a review</a>
+                    <a href="{% url 'show_dg_route' %}" class="btn btn-warning btn-sm">Explore all Public Q&A</a>
                     {% if request.user == dg.user %}
-                    <a href="{% url 'update_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm">Edit</a>
+                    <a href="{% url 'update_dg_route' dg_id=dg.id %}" class="btn btn-warning btn-sm">Edit</a>
                     <a href="{% url 'delete_dg_route' dg_id=dg.id %}" class="btn btn-danger btn-sm">Delete</a>
                     {% endif %}    
                 </div>
@@ -43,12 +43,12 @@
             <h6 class="card-text">{{r.content}}</h6>
             <div class="card-footer text-muted">Written by {{r.user}} on {{r.date}}</div>
             {% if request.user == r.user %}
-            <a href="{% url 'update_review_route' review_id=r.id dg_id=r.dg_id %}" class="btn btn-info btn-sm">Edit</a>
+            <a href="{% url 'update_review_route' review_id=r.id dg_id=r.dg_id %}" class="btn btn-warning btn-sm">Edit</a>
             <a href="{% url 'delete_review_route' review_id=r.id dg_id=r.dg_id %}" class="btn btn-danger btn-sm">Delete</a>
             {% endif %}
         </div>
     </div>
     {% endfor %}
-    <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-title">Add a review</a>
+    <a href="{% url 'create_review_route' dg_id=dg.id %}" class="btn btn-warning btn-sm btn-title">Add a review</a>
 </div>
 {% endblock %}

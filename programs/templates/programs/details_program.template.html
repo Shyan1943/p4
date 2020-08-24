@@ -42,8 +42,8 @@
             <h5><strong>Fees : USD </strong>{{p.fees}}</h5>
         </div>
         <div>
-            <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-info btn-sm">Book</a>
-            <a href="{% url 'all_programs_route' %}" class="btn btn-info btn-sm">View All Programs</a> 
+            <a href="{% url 'add_to_cart' program_id=p.id %}" class="btn btn-warning btn-sm">Book</a>
+            <a href="{% url 'all_programs_route' %}" class="btn btn-warning btn-sm">View All Programs</a> 
         </div>
     </div>
 {% endblock %}

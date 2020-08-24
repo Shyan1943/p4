@@ -256,11 +256,10 @@ A brand is the set of expectations, memories, stories and relationships that, ta
       (5. Surface Image) A modern & energetic aesthetic image 
 
 ## 5) SURFACE
-<!-- <img src="/static/images/surfacecolorpalette.png" align="left" width="370px" height="210px"/>  -->
 <img src="/static/images/surfacecolorpalette.png"> 
 
 ### Colour
-The color palette keep at simple, with only 1–3 primary colors. In this website, the site logo is dark blue #3b464f, so I will choose Green and light blue to neutral it. 
+The color palette keep at simple, with only 1–3 primary colors. In this website, the site logo is dark blue #3b464f, so I will choose Yellow and light blue to neutral it. 
 
 ### Typography
 Font-Family <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true" target="_blank">“Sans serif”</a> are chosen as the most famous fonts are recognizable even when taken out of context. A single primary typeface to lead the brand identity design, and it also work well with the branding and color palette. And giving the image of being modern, approachable, and clean. 
@@ -383,6 +382,15 @@ whitenoise==5.2.0
 ### Documentary	
 37) <a href="https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md" target="_blank">Code Institute Readme.md template</a> for Readme file report guideline 	
 
+
+# TESTING
+## Tested with no error
+| Testing on   | Result |
+|:--|:--|
+| <a href="https://www.seoptimer.com/alt-tag-checker" target="_blank">Image</a> | "You do not have any images missing ALT attributes on your page"|
+| <a href="https://color.a11y.com/Contrast/"  target="_blank">Color</a> | "Congratulations! No automated color contrast issues found on the webpage tested"|
+
+
 # DEPLOYMENT
 ## A) PREPARATION	
 ### 1. Design	
@@ -415,7 +423,7 @@ whitenoise==5.2.0
 ### 2. Launch a workspace container at Gitpod
     i. Go https://www.gitpod.io/docs/browser-extension/, click to install Gitpod Browser Extension on browser in you are using Chrome or Firefox for convenient
     ii. Use `Ctrl+F5` on your Github Repository Page to refresh the browser
-    iii. You will see a Gitpod button (Green color) is added to GitHub that does the prefixing for your convenience. And click on that button 
+    iii. You will see a Gitpod button (Yellow color) is added to GitHub that does the prefixing for your convenience. And click on that button 
     iv. A workspace is creating as easy as prefixing any GitHub URL with gitpod.io/#.
 
 ### Take note to commit often for each individual feature/ﬁx, ensuring that commits are small, well-deﬁned and have clear descriptive messages

@@ -8,14 +8,14 @@
 
     <!--Page title-->
     <h1 class="title ml-5">Updating your review "{{review.title}}" on Q&A :"{{review.dg.topic}}"</h1>
-    <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm btn-title">Back to "{{dg.topic}}" Q&A</a>
+    <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-warning btn-sm btn-title">Back to "{{dg.topic}}" Q&A</a>
 
     <h1></h1>
     <form method="POST">
         {% csrf_token %}
         {{ form|crispy }}
-        <input type="submit" class="btn btn-info btn-sm"/>
-        <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-info btn-sm">No, Thanks</a>
+        <input type="submit" class="btn btn-warning btn-sm"/>
+        <a href="{% url 'view_dg_route' dg_id=dg.id %}" class="btn btn-warning btn-sm">No, Thanks</a>
     </form>
 
 {% endblock %}

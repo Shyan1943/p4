@@ -9,7 +9,7 @@
 
         <!--Page title-->
         <h1 class="title ml-5">All Public Q&A</h1>
-        <a href="{% url 'create_dg_route' %}" class="btn btn-info btn-sm btn-title">Create a post</a>
+        <a href="{% url 'create_dg_route' %}" class="btn btn-warning btn-sm btn-title">Create a post</a>
 
         <!--All Q&A cards-->
         <acticle>
@@ -32,11 +32,11 @@
 
                         <!--Card footer-->
                         <div class="card-footer">
-                            <a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Learn..</a>
+                            <a href="{% url 'view_dg_route' dg_id=d.id %}" class="btn btn-warning btn-sm">Learn..</a>
 
                             <!--Only allow same user to "UD"-->
                             {% if request.user == d.user %} 
-                            <a href="{% url 'update_dg_route' dg_id=d.id %}" class="btn btn-info btn-sm">Edit</a>
+                            <a href="{% url 'update_dg_route' dg_id=d.id %}" class="btn btn-warning btn-sm">Edit</a>
                             <a href="{% url 'delete_dg_route' dg_id=d.id %}" class="btn btn-danger btn-sm">Del..</a>
                             {% endif %}
                         </div>
