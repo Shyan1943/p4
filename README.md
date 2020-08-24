@@ -874,3 +874,8 @@ __pycache__
 5. Refer to <a href="https://bootstrap-table.com/docs/getting-started/introduction/" target="_blank">bootstrap-Table</a> for An extended table to the integration with some of the most widely used CSS frameworks. 
 6. Refer to <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Github Markdown</a> to lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.
 7. Refer to <a href="https://github.com/twbs/bootstrap/issues/21885" target="_blank">style .card-deck to display: block</a> to fix the Bootstrap card display properly on Internet Explorer
+8. Refer to <a href="https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page" target="_blank">Stackoverflow</a> to fix the error msg at browser inspect console “GET /favicon.ico HTTP/1.1" 404 2674”
+9. Refer to <a href="https://www.w3schools.com/html/html_formatting.asp" target="_blank">w3school HTML Text Formatting</a> to format the appearance of the text on web page
+10. Refer to <a href="https://docs.djangoproject.com/en/3.1/topics/forms/" target="_blank">Django Documentation</a> to change the form display at the same row
+11. Refer to <a href="https://css-tricks.com/almanac/properties/l/line-clamp/" target="_blank">The line-clamp property truncates</a> text at a specific number of lines.
+12. Refer to <a href="https://docs.djangoproject.com/en/3.1/ref/forms/fields/" target="_blank"> the empty_label attribute</a> to change the dropdown default text label from "---------" to what you like, or can disable the empty label entirely by setting empty_label to None  
