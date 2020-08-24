@@ -202,8 +202,21 @@ There are 5 set of forms with validation that will allow users to records in the
 
 <br>
 
-### Sitemap (Landing Page)
+### Skeleton (Landing Page)
 <img src="/static/images/skeleton_landingpage.png">
+
+### Skeleton CI3 (All dgs Public Q&A) 
+<img src="/static/images/skeleton_ci3_all_dgs.png">
+
+### Skeleton CI4 (details for a dgs Public Q&A) 
+<img src="/static/images/skeleton_ci4_details_dg.jpg">
+
+### Skeleton CI10 (details for a program) 
+<img src="/static/images/skeleton_ci10_a_program.png">
+
+### Skeleton (CUD & other forms) 
+<img src="/static/images/skeleton_form.jpg">
+
 
 
 # DEPLOYMENT
