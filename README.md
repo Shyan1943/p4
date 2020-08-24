@@ -387,6 +387,7 @@ whitenoise==5.2.0
 ## Tested with no error
 | Testing on   | Result |
 |:--|:--|
+| <a href="http://validator.w3.org/" target="_blank">HTML Checker</a> | "Document checking completed. No errors or warnings to show."|
 | <a href="https://www.seoptimer.com/alt-tag-checker" target="_blank">Image</a> | "You do not have any images missing ALT attributes on your page"|
 | <a href="https://color.a11y.com/Contrast/"  target="_blank">Color</a> | "Congratulations! No automated color contrast issues found on the webpage tested"|
 | <a href="https://www.webfx.com/tools/read-able/" target="_blank">Readability</a> | "Your page has an average grade level of about 9. It should be easily understood by 14 to 15 year olds."|
@@ -401,6 +402,13 @@ whitenoise==5.2.0
 | US11 Collect date | Site Owner manage to collect data at the backend POSTGRES Database |
 | US12 CUD Program | Only Site Owner able to CUD program on the site | 
 
+## Tested with errors result
+```
+1. Error message at browser inspect console
+    Error found :  “GET /favicon.ico HTTP/1.1" 404 2674
+    Corrective action : Insert `<link href="data:image/x-icon;base64,YourBase64StringHere" rel="icon" type="image/x-icon">`  in HTML head section
+    Result : Every page checking completed. No errors or warnings to show on inspect console
+```
 # DEPLOYMENT
 ## A) PREPARATION	
 ### 1. Design	
