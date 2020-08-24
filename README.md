@@ -388,6 +388,7 @@ whitenoise==5.2.0
 | Testing on   | Result |
 |:--|:--|
 | <a href="http://validator.w3.org/" target="_blank">HTML Checker</a> | "Document checking completed. No errors or warnings to show."|
+| <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a> | "TextArea (CSS level 3 + SVG). Congratulations! No Error Found."|
 | <a href="https://www.seoptimer.com/alt-tag-checker" target="_blank">Image</a> | "You do not have any images missing ALT attributes on your page"|
 | <a href="https://color.a11y.com/Contrast/"  target="_blank">Color</a> | "Congratulations! No automated color contrast issues found on the webpage tested"|
 | <a href="https://www.webfx.com/tools/read-able/" target="_blank">Readability</a> | "Your page has an average grade level of about 9. It should be easily understood by 14 to 15 year olds."|
