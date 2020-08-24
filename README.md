@@ -358,6 +358,18 @@ whitenoise==5.2.0
 15) <a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a> to CRUD Cloudinary profile as image 
 16) `pip3 install stripe` to install <a href="https://stripe.com/en-sg" target="_blank">Stripe Payment</a> to implement Django app containing e-commerce functionality online payment processing system. We use the single payments method on this Site. 
 
+### Production (Styling)	
+19) <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" target="_blank">Bootstrap 4.4.1</a> was used to assist with the responsiveness and styling of the website.	
+20) <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">CSS3</a> to style HTML contents	
+21) <a href="https://getbootstrap.com/docs/4.4/components/navbar/" target="_blank">BootStrap </a>to fix top & responsive navigation bar
+22) <a href="https://getbootstrap.com/docs/4.0/utilities/flex/#justify-content" target="_blank">Bootstrap ml-auto or mr-auto</a> to fix navigation menu to the right or left
+23) <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Semantic Elements</a> use in HTML to clearly describes its meaning to both the browser and the developer.
+24) Hover.css was used on all clickable icons while being hovered over.	
+25) <a href="https://getbootstrap.com/docs/4.4/components/jumbotron/" target="_blank">Jumbotron </a>to extend the entire viewport at profile advertisement section
+26) <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/" target="_blank">`mx-auto`</a> and <a href=https://getbootstrap.com/docs/4.3/components/card/ target="_blank">Bootscrap Card</a> to fix Ads Profile Card responsive	
+27) <a href="https://bootstrap-table.com/docs/getting-started/introduction/" target="_blank">bootstrap-Table</a> for An extended table to the integration with some of the most widely used CSS frameworks. 	
+28) `target="_blank"`to improve the UX, when user click on any link out (to another web site or social site), that opens a new window. 	
+29) <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">Font Awesome Icons </a>are used on all pages throughout the website to add icons for aesthetic and UX purposes to represent accessibility standards
 
 # DEPLOYMENT
 
