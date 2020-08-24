@@ -859,3 +859,9 @@ __pycache__
 * Done publication!!
 * Test to ensure it matches the development version
 * Ensure that ﬁnal deployed site has no broken internal links
+
+
+# CREDITS
+## Content
+1. Refer to <a href="https://github.com/Code-Institute-Solutions/SampleREADME#" target="_blank">Code Institute Readme.md sample</a> for Readme file report guidelines
+2. All images are downloaded from <a href="https://www.freepik.com/" target="_blank">Freepik</a>.
