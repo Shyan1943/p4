@@ -390,7 +390,16 @@ whitenoise==5.2.0
 | <a href="https://www.seoptimer.com/alt-tag-checker" target="_blank">Image</a> | "You do not have any images missing ALT attributes on your page"|
 | <a href="https://color.a11y.com/Contrast/"  target="_blank">Color</a> | "Congratulations! No automated color contrast issues found on the webpage tested"|
 | <a href="https://www.webfx.com/tools/read-able/" target="_blank">Readability</a> | "Your page has an average grade level of about 9. It should be easily understood by 14 to 15 year olds."|
-
+| Python PEP& Style | No underline error message on gitpod | 
+| Different browers | The website was tested on Google Chrome, Microsoft Edge and Safari browsers. | 
+| US1 Navigation | Clicked on each of the navigation on every page and all pages were linking correctly. |
+| US2 Responsiveness | The site can be viewed and used on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX and resolutions size from (1920x1200) till (320x480)|
+| US6 Search function | Return with the right answer, no error found |
+| US7 & 9 CRUD Public Q&A | Users able to CRUD their own Public Q&A. There are present and working |
+| US8 & 9 CRUD Review | Users able to CRUD their own reviews. There are present and working |
+| US10 Purchase | Users able to purchase a program & payment done within the Site |
+| US11 Collect date | Site Owner manage to collect data at the backend POSTGRES Database |
+| US12 CUD Program | Only Site Owner able to CUD program on the site | 
 
 # DEPLOYMENT
 ## A) PREPARATION	
