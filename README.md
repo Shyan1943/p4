@@ -146,7 +146,7 @@ CI6.    Search Engine result section will return related Public Q&A Topic or ret
 
 #### Database Structure
 ##### Entity Relationship Diagram (ERD)
-This ERD  is relevant on this particular domain, consisting of Six Django models (User, Dg, IMDGCode, Review, Program, Purchase).
+This ERD  is relevant on this particular domain, consisting of Six Django models (User, Dg, IMDGCode, Review, Program, Purchase), where build a Django ﬁle structure that is consistent and logical, following the Django conventions
 <img src="static/images/data_erd.png">
 
 #### Data model
@@ -256,8 +256,7 @@ A brand is the set of expectations, memories, stories and relationships that, ta
       (5. Surface Image) A modern & energetic aesthetic image 
 
 ## 5) SURFACE
-<!-- <img src="/static/images/surfacecolorpalette.png" align="left" width="450px" height="300px"/>  -->
-<img src="/static/images/surfacecolorpalette.png" align="left"> 
+<img src="/static/images/surfacecolorpalette.png" align="left" width="370px" height="210px"/> 
 
 ### Colour
 The color palette keep at simple, with only 1–3 primary colors. In this website, the site logo is dark blue #3b464f, so I will choose Green and light blue to neutral it. 
@@ -389,6 +388,8 @@ __pycache__
                     ]
                     ```
     v. Test Run Django server by adding `/dg` at the end of the browser url link
+
+### Take note to deﬁne application URLs in a consistent manner
 
 ### 11. Create Templates  
     i. Create a templates folder in the <dgs> app.
