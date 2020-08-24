@@ -1,4 +1,4 @@
-# DGExpecttarget="_blank"
+# DGExpect
 View the live project <a href="https://shyan-tgc-pro4.herokuapp.com/" >here</a>.
 
 This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i></b>) Public Q&A site and we promote training program.  
@@ -310,7 +310,7 @@ The 3 "Site introduction" images selected aims to build an emotional connection 
 
 ### Security Features
       Feature 16. The <.gitignore> file was created for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
-
+        
 ## Features Left to Implement
       Feature 17. Allow external users to choose whether update image or not 
       Feature 18. Show purchase receipt after payment successfully
@@ -821,6 +821,7 @@ __pycache__
     * Enter `heroku config`
     * Copy down the DATABASE_URL & save it in `.env` file
 * At "settings.py", import `import dj_database_url`. NOTE : after set the database to POSTGRES, We won't have access to old database unless revert the changes to orignal database setting
+    * Configure the project efficiently through well-kept Procfile, requirements.txt file, settings files, keep the data store configuration in a single location where it can be changed easily.
 * At Gitpod terminal : 
     * enter `python3 manage.py migrate` to migrate database
     * enter `python3 manage.py createsuperuser`to create a superuser as we have switched to a new POSTGRES database
