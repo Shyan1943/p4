@@ -159,7 +159,37 @@ There are 5 set of forms with validation that will allow users to records in the
 * CUD Program forms ONLY allow Site admin access to CUD program
 <img src="static/images/data_logicaldiagram.png">
 
+### 3b) Interaction Design      	
+#### Learnability	
+      i.	Different navigation are positions at the familiar location a web surfer, and throughout the website to enhance familiarity and consistency. (FR1)
+            a.	Logo that leads back to the home page
+            b.	navigation system in the all pages of site map allowing visitor to view all the sections at a glance
+            c.  a clear and unambiguous navigation structures to <a href="http://www.flaskboilerplate.com/" target="_blank">fixed at the top</a>
+            d.	all resources on the site are easy to ﬁnd, allowing users to navigate the layout of the site intuitively
+            e.  4 clear navigation buttons at the right of the landing page center 
+      ii.	Button with hover effect will be used to indicate there's a link to the working project to increase the predictability.
+#### Understandability	
+      i.	Content are group into logical order with short word or phrase title easily understandable 
+      ii.	Readability (Flesch Kincaid Reading Ease Test = 73.7, Flesch-Kincaid Grade Level Score = 4.5)       
 
+#### Operability	
+      i.	The visitors can simply key in any word or choose a related IMDG Code at the Search Engine to search for the related Public Q&A without encountering any issues. (FR3)
+      ii.	Allow users to CR Public Q&A to share their experience, problem facing or any inquire about handling of DG product & related image (FR4)
+      iii.	Allow users to CR Review to share their knowledge & experience for giving help to those who needs (FR5)
+      iv.   Allow users to purchase training program on site (FR8)
+#### Attractiveness	
+      i.	Responsive design to take into consideration how it looks when on viewed on a desktop browsers as well as smaller screens like mobile phone. The layout will change to cater for different size of the device. (FR2)
+      ii.	Utilization of negative space between different sections and components of the page to increase readability
+      iii.  Allow users to free sign up, identify and apply authorisation, authentication and permission features for Site Onwer to collect user data information (FR7)
+#### Usability compliance	
+      i.	Semantic HTML to enhance code readability 
+      ii.	Rearrangement of the component 
+      iii.	Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/messages/" target="_blank">Django flash message framework</a> allows us to temporarily store messages in one request and retrieve them for display  a one-time notification message to the user after processing a form or some other types of user input.
+#### Accessibility	
+      i.	there is clear conformity to accessibility guidelines across all pages/sections and in all interactivity
+      ii.	The <a href="https://v4-alpha.getbootstrap.com/getting-started/accessibility/">aria-label attribute</a> is used to define a string that labels the current element, in cases where a text label is not visible on the screen. 
+      iii.  Only allow the same users to see the UD clickable button & access UD for their own Public Q&A & Review (FR6)
+      iv.   Only allow the Site admin to see, click & access CUD button for programs site (FR9)
 
 
 # DEPLOYMENT
