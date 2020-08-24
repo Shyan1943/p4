@@ -256,7 +256,8 @@ A brand is the set of expectations, memories, stories and relationships that, ta
       (5. Surface Image) A modern & energetic aesthetic image 
 
 ## 5) SURFACE
-<img src="/static/images/surfacecolorpalette.png" align="left" width="370px" height="210px"/> 
+<!-- <img src="/static/images/surfacecolorpalette.png" align="left" width="370px" height="210px"/>  -->
+<img src="/static/images/surfacecolorpalette.png"> 
 
 ### Colour
 The color palette keep at simple, with only 1–3 primary colors. In this website, the site logo is dark blue #3b464f, so I will choose Green and light blue to neutral it. 
@@ -344,6 +345,18 @@ whitenoise==5.2.0
 4) <a href="https://pencil.evolus.vn/" target="_blank">Pencil Project </a>was used to create the wireframes during the design process.
 5) <a href="https://erdplus.com/" target="_blank">ERDPlus </a> to design the database structure, Entity Relationship Diagram (ERD)
 6) <a href="https://sqldbm.com/Home/" target="_blank">SQLDbm</a> to design the data model, Logical Diagram
+
+### Production (Coding)
+7) Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+8) <a href="https://github.com/" target="_blank">Github</a> for Versioning Control System and GitHub for repositories to store the projects code after being pushed from Git.
+9) <a href="https://www.gitpod.io/" target="_blank">Gitpod</a> for code editor redefined and optimized for building and debugging modern web 
+10) <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTM5</a> to structure the webpages
+11) `.gitignore` file is used for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
+12) <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/messages/" target="_blank">Django flash message</a>  framework allows us to temporarily store messages in one request and retrieve them for display  a one-time notification message to the user after processing a form or some other types of user input.
+13) `pip3 install cloudinary` to install <a href="https://cloudinary.com/" target="_blank">Cloudinary</a>, which use to efficiently create, manage, and deliver images, personalized and optimized for every device and channel.
+14) `pip3 install python-dotenv` -- allows the use of `.env` files for environment variables
+15) <a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a> to CRUD Cloudinary profile as image 
+16) `pip3 install stripe` to install <a href="https://stripe.com/en-sg" target="_blank">Stripe Payment</a> to implement Django app containing e-commerce functionality online payment processing system. We use the single payments method on this Site. 
 
 
 # DEPLOYMENT
