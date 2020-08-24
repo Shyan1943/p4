@@ -410,6 +410,7 @@ whitenoise==5.2.0
     Corrective action : Insert `<link href="data:image/x-icon;base64,YourBase64StringHere" rel="icon" type="image/x-icon">`  in HTML head section
     Result : Every page checking completed. No errors or warnings to show on inspect console
 ```
+
 # DEPLOYMENT
 ## A) PREPARATION	
 ### 1. Design	

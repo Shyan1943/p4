@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib.sites.models import Site
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.conf import settings
 import stripe
@@ -9,6 +10,7 @@ from .models import Purchase
 from django.contrib.auth.models import User
 
 
+@login_required
 def checkout(request):
     stripe.api_key = settings.STRIPE_SECRET_KEY
     cart = request.session.get('shopping_cart', {})
@@ -46,16 +48,20 @@ def checkout(request):
     })
 
 
+@login_required
 def checkout_success(request):
     request.session["shopping_cart"] = {}
     messages.success(request, "Your purchases been completed")
     return redirect(reverse('all_programs_route'))
 
 
+@login_required
 def checkout_cancelled(request):
-    return HttpResponse("checkout cancelled")
+    messages.error(request, "Payment has been cancelled.")
+    return redirect(reverse('all_programs_route'))
 
 
+@login_required
 @csrf_exempt
 def payment_completed(request):
     payload = request.body
@@ -78,6 +84,7 @@ def payment_completed(request):
     return HttpResponse(status=200)
 
 
+@login_required
 def handle_payment(session):
     user = get_object_or_404(User, pk=session["client_reference_id"])
     all_program_ids = session['metadata']['all_programs_id'].split(",")
