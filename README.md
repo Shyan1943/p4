@@ -193,12 +193,18 @@ There are 5 set of forms with validation that will allow users to records in the
 
 ## 4) SKELETON
 ### 4a) Interface design
-<img src="/static/images/skeleton_mainlayout.png" align="left" width="200px" height="100px">
+<img src="/static/images/skeleton_mainlayout.png" align="left" width="200px" height="130px">
 
 1. Each page will include two parts - header and main content to keep the consistency
 2. Header include sections that will be repeated all the pages to improve predictability and consistency.
 3. Fixed-top Header will include a logo and the main navigation 
 4. The main content section will display content related to the page.
+
+<br>
+
+### Sitemap (Landing Page)
+<img src="/static/images/skeleton_landingpage.png">
+
 
 # DEPLOYMENT
 
