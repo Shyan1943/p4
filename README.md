@@ -384,6 +384,27 @@ whitenoise==5.2.0
 37) <a href="https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md" target="_blank">Code Institute Readme.md template</a> for Readme file report guideline 	
 
 # DEPLOYMENT
+## A) PREPARATION	
+### 1. Design	
+* 	Design a good UI UX
+* 	Design a database structure, Entity Relationship Diagram that is relevant for that particular domain, consisting of Six Django models (User, Dg, IMDGCode, Review, Program, Purchase) by using <a href="https://erdplus.com/" target="_blank">ERDPlus </a>
+*	Design an assess functionality, usability and data management within the Full Stack web application by keep reference back to the user stories, functional & content requirement.
+*	Design a data model, a logical diagram that ﬁts the purpose of the project by using <a href="https://sqldbm.com/Home/" target="_blank">SQLDbm</a> 
+*   Design 5 set of forms with validation that will allow users to records in the database (in addition to the authentication mechanism).
+
+### 2. Content	
+* 	Choose font to be used 
+* 	Fix color palette to be used 
+* 	Find good images to be used 
+* 	Find a suitable Font Awesome Icon 
+* 	ensured file & name ﬁles consistently and descriptively, without spaces or capitalization to allow for cross-platform compatibility.
+
+### 3. Before coding 	
+*   Fixed Functional Requirement (FR)
+*   Fixed Content Requirement (CR)
+*	Fixed features 
+* 	Understand the PEP8 style guide to ensure the use Python code that is consistent in style and conforms to the PEP8 style guide and validated HTML and CSS code.
+*	Fixed Technologies to be used 
 
 ## B) PRODUCTION
 
