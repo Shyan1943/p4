@@ -380,6 +380,8 @@ whitenoise==5.2.0
 35) `pip3 install dj_database_url` to install <a href="https://pypi.org/project/dj-database-url/" target="_blank">dj_database_url</a> which returns a Django database connection dictionary, populated with all the data specified in URL.
 36) <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django Postgres</a> database, which has the richest feature set of the supported databases so its users have the most to gain. 
 
+### Documentary	
+37) <a href="https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md" target="_blank">Code Institute Readme.md template</a> for Readme file report guideline 	
 
 # DEPLOYMENT
 
