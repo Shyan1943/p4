@@ -407,7 +407,6 @@ whitenoise==5.2.0
 *	Fixed Technologies to be used 
 
 ## B) PRODUCTION
-
 ### 1. Setting up Github Pages
     i. Sign up Github at https://github.com/
     ii. Log in to GitHub
@@ -798,7 +797,8 @@ __pycache__
     * `pip3 install dj_database_url` 
 * Update ".gitignore" file content as per this link http://gitignore.io/api/django
 * At Gitpod terminal : 
-    * log into Heroku using  `heroku login`
+    * log into Heroku using  `heroku login -i`
+    * enter the email address & password for login to heroku
     * create a new app  `heroku create <app_name>` 
     * add new remote `git remote -v`
 * Go to the <a href="https://www.heroku.com">Heroku</a> Site :
