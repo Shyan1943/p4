@@ -202,19 +202,19 @@ There are 5 set of forms with validation that will allow users to records in the
 
 <br>
 
-#### Skeleton (Landing Page)
+#### <u>Skeleton (Landing Page)</u>
 <img src="/static/images/skeleton_landingpage.png">
 
-#### Skeleton CI3 (All dgs Public Q&A) 
+#### <u>Skeleton CI3 (All dgs Public Q&A)</u>
 <img src="/static/images/skeleton_ci3_all_dgs.png">
 
-#### Skeleton CI4 (details for a dgs Public Q&A) 
+#### <u>Skeleton CI4 (details for a dgs Public Q&A)</u>
 <img src="/static/images/skeleton_ci4_details_dg.jpg">
 
-#### Skeleton CI10 (details for a program) 
+#### <u>Skeleton CI10 (details for a program)</u>
 <img src="/static/images/skeleton_ci10_a_program.png">
 
-#### Skeleton (CUD & other forms) 
+#### <u>Skeleton (CUD & other forms)</u>
 <img src="/static/images/skeleton_form.jpg">
 
 ### 4b) Navigation design 
@@ -254,6 +254,20 @@ A brand is the set of expectations, memories, stories and relationships that, ta
       (5. Surface Color) Attractive color palette 
       (5. Surface Font) Professional typography 
       (5. Surface Image) A modern & energetic aesthetic image 
+
+## 5) SURFACE
+<img src="/static/images/surfacecolorpalette.png" align="left" width="450px" height="300px"/> 
+
+### Colour
+The color palette keep at simple, with only 1–3 primary colors. In this website, the site logo is dark blue #3b464f, so I will choose Green and light blue to neutral it. 
+
+### Typography
+Font-Family <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true" target="_blank">“Sans serif”</a> are chosen as the most famous fonts are recognizable even when taken out of context. A single primary typeface to lead the brand identity design, and it also work well with the branding and color palette. And giving the image of being modern, approachable, and clean. 
+CSS rules to specify families font-family: 'Open Sans', sans-serif;
+Open Sans Semi-bold 600 `<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">`
+
+### Imagery
+The 3 "Site introduction" images selected aims to build an emotional connection with External User, tell them what can they do with the site, as well as Illustrations strengthen the branding.
 
 # DEPLOYMENT
 
