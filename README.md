@@ -238,6 +238,23 @@ Button for "Update", "Delete" & "CUD program"
 ● CUD program icon will be showed on every id object, but only the Site admin able to see, click & access it. 
 ```
 
+#### 4c) Information Design
+##### Site Branding
+A brand is the set of expectations, memories, stories and relationships that, taken together, account for a consumer's decision to choose one product or service over another. Here are the key design elements we use to create a brand identity that is strong, consistent, and attractive. 
+
+      (CI1) Site introduction images to be displayed at the landing page, which can build an emotional connection with the External User.
+      (CI2) Clear brand purpose and positioning
+      (CI2) Memorable brand "DGExpect" also is created to make an impression.
+      (FR1) Good navigation is key to attracting the External User, show them we care about their feeling, even just a single movement on the webpage. We do not want them to get lost. 
+      (FR2) A Modern Responsive Web Design will tell External User that the platform is ahead of others, a free flexible and free advertisement Shipping platform
+            (CS) One-page websites
+            (FR2) Responsive design
+            (FR3) Search Engine function
+            (FR4~FR7) CRUD for any members at zero cost
+      (5. Surface Color) Attractive color palette 
+      (5. Surface Font) Professional typography 
+      (5. Surface Image) A modern & energetic aesthetic image 
+
 # DEPLOYMENT
 
 ## B) PRODUCTION
