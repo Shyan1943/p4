@@ -10,7 +10,7 @@ This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i>
 * By authenticating on the site, users can enjoy the free <b><u>Create, Read, Update & Delete</u></b>, (hereafter known as <b><i>"CRUD"</i></b>) Public Q&A and give review. To advance users' own goals, users paying for training program to upgrade their skill. Before authenticating, the site makes it clear how those goals would be furthered by the site. 
 * The site owner is able to make money by providing this set of services to the users. There is no way for a regular user to bypass the site's mechanisms and derive all of the value available to paid users without singup or paying.
 
-<a href="https://shyan-tgc-pro4.herokuapp.com/" target="_blank"><img src="static/images/introduction.png"  width="550px" height="500px" alt="Ask or give Dangerous Goods Public Q&A or review site. Or you can choose to upgrade your skill by signup our training programs."/></a>
+<a href="https://shyan-tgc-pro4.herokuapp.com/" target="_blank"><img src="static/images/introduction.png" alt="Ask or give Dangerous Goods Public Q&A or review site. Or you can choose to upgrade your skill by signup our training programs."/></a>
 
 
 # User Experience - User Interface (UX-UI)
@@ -142,7 +142,7 @@ CI6.    Search Engine result section will return related Public Q&A Topic or ret
 ```
 
 #### IA Sitemap (Overall)
-<img src="static/images/iasitemap_overall.png" width="900px" height="500px"/>
+<img src="static/images/iasitemap_overall.png">
 
 #### Database Structure
 ##### Entity Relationship Diagram (ERD)
@@ -191,6 +191,14 @@ There are 5 set of forms with validation that will allow users to records in the
       iii.  Only allow the same users to see the UD clickable button & access UD for their own Public Q&A & Review (FR6)
       iv.   Only allow the Site admin to see, click & access CUD button for programs site (FR9)
 
+## 4) SKELETON
+### 4a) Interface design
+<img src="/static/images/skeleton_mainlayout.png" align="left" width="200px" height="100px">
+
+1. Each page will include two parts - header and main content to keep the consistency
+2. Header include sections that will be repeated all the pages to improve predictability and consistency.
+3. Fixed-top Header will include a logo and the main navigation 
+4. The main content section will display content related to the page.
 
 # DEPLOYMENT
 
