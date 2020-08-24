@@ -865,3 +865,12 @@ __pycache__
 ## Content
 1. Refer to <a href="https://github.com/Code-Institute-Solutions/SampleREADME#" target="_blank">Code Institute Readme.md sample</a> for Readme file report guidelines
 2. All images are downloaded from <a href="https://www.freepik.com/" target="_blank">Freepik</a>.
+
+## Code
+1. Fixed font is chosed from <a href="https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif&selection.family=Open+Sans:wght@600&sidebar.open=true" target="_blank">Google Font</a> to making the web more beautiful, fast, and open through great typography 
+2. Refer to the notes took down during the lesson for coding
+3. Refer to <a href=https://getbootstrap.com/docs/4.4/components/jumbotron/ target="_blank">Jumbotron</a> to extend the entire viewport at profile advertisement section
+4. Refer to <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/" target="_blank">`mx-auto`</a> and <a href=https://getbootstrap.com/docs/4.3/components/card/ target="_blank">Bootscrap Card</a> to fix Ads Profile Card responsive
+5. Refer to <a href="https://bootstrap-table.com/docs/getting-started/introduction/" target="_blank">bootstrap-Table</a> for An extended table to the integration with some of the most widely used CSS frameworks. 
+6. Refer to <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Github Markdown</a> to lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.
+7. Refer to <a href="https://github.com/twbs/bootstrap/issues/21885" target="_blank">style .card-deck to display: block</a> to fix the Bootstrap card display properly on Internet Explorer
