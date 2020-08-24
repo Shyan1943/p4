@@ -371,6 +371,16 @@ whitenoise==5.2.0
 28) `target="_blank"`to improve the UX, when user click on any link out (to another web site or social site), that opens a new window. 	
 29) <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">Font Awesome Icons </a>are used on all pages throughout the website to add icons for aesthetic and UX purposes to represent accessibility standards
 
+### Publication 	
+30) <a href="https://heroku.com/" target="_blank">Heroku</a> to deploy, manage, and scale modern apps, to getting our apps to market.	
+31) `pip3 install gunicorn` to install <a href="https://gunicorn.org/" target="_blank">Gunicorn</a> to run Python application concurrently by running multiple Python processes within a single dyno	
+32) `pip3 install psycopg2` to install <a href="https://pypi.org/project/psycopg2/" target="_blank">psycopg2 driver</a>, which is a popular PostgreSQL driver developed for use with the Python programming language
+33) `pip3 install Pillow` to install <a href="https://pypi.org/project/Pillow/" target="_blank">Pillow</a>, which is the Python Imaging Library
+34) `pip3 install whitenoise` to install <a href="https://pypi.org/project/whitenoise/" target="_blank">whitenoise</a>, which allows web app to serve its own static files, making it a self-contained unit that can be deployed anywhere without relying on nginx, Amazon S3 or any other external service.
+35) `pip3 install dj_database_url` to install <a href="https://pypi.org/project/dj-database-url/" target="_blank">dj_database_url</a> which returns a Django database connection dictionary, populated with all the data specified in URL.
+36) <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django Postgres</a> database, which has the richest feature set of the supported databases so its users have the most to gain. 
+
+
 # DEPLOYMENT
 
 ## B) PRODUCTION
