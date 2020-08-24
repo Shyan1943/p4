@@ -1,5 +1,5 @@
-# DGExpect
-View the live project <a href="https://shyan-tgc-pro4.herokuapp.com/" target="_blank">here</a>.
+# DGExpecttarget="_blank"
+View the live project <a href="https://shyan-tgc-pro4.herokuapp.com/" >here</a>.
 
 This is a Free <b><u>Dangerous Goods</u></b>, (hereafter known as <b><i>"DG"</i></b>) Public Q&A site and we promote training program.  
 
@@ -256,7 +256,8 @@ A brand is the set of expectations, memories, stories and relationships that, ta
       (5. Surface Image) A modern & energetic aesthetic image 
 
 ## 5) SURFACE
-<img src="/static/images/surfacecolorpalette.png" align="left" width="450px" height="300px"/> 
+<!-- <img src="/static/images/surfacecolorpalette.png" align="left" width="450px" height="300px"/>  -->
+<img src="/static/images/surfacecolorpalette.png" align="left"> 
 
 ### Colour
 The color palette keep at simple, with only 1–3 primary colors. In this website, the site logo is dark blue #3b464f, so I will choose Green and light blue to neutral it. 
@@ -268,6 +269,51 @@ Open Sans Semi-bold 600 `<link href="https://fonts.googleapis.com/css2?family=Op
 
 ### Imagery
 The 3 "Site introduction" images selected aims to build an emotional connection with External User, tell them what can they do with the site, as well as Illustrations strengthen the branding.
+
+
+# FEATURES
+### Ease of navigation (FR1)
+      Feature 1. Allow the External User to view all the sections at a glance and from one page to another easily by having the fixed-top position navigation system (FR1)
+      Feature 2. Allow the External User to search by any keyword or IMDG Code category straightaway, by having “Search” button at the Center of the Landing page and hyperlink it to “Search Engine & Result” section directly. (FR3, CI5 & CI6) 
+
+### Responsiveness (FR2)
+      Feature 3. Allow the External User to view the platform with all devices, like desktop, laptop, tablets and smart mobile phones. It can be view in both portrait and landscape orientation as well by implement the responsive design. (FR2) 
+
+### User interactions design (CR1)
+      Feature 4. Hover effect "enlarge & shadow of button" on all the clickable button/hyperlinks to provide results in a manner that is visually appealing and user friendly
+      Feature 5. Graphical elements like images, typography and icons are used to replace the words to communicate information to users 
+      Feature 6. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/messages/" target="_blank">Django flash message</a>  framework allows us to temporarily store messages in one request and retrieve them for display a one-time notification message to the user after processing a form or some other types of user input.
+    
+### Consistency and predictability (CR1)
+      Feature 7. Allow the External User to stay clear and easy find the same components position at the same place regardless of which page they are at by having the header and theme stay consistent throughout the site. 
+
+### Before Signup --> View all Dg Public Q&A, reivews & programs section (CR
+      Feature 8. Allow the External User to know the current popular Public Q&A topic (CI3)
+      Feature 9. Allow the External User to know more about how to handling DG goods (CI4) 
+
+### Signup at Zero cost 
+      Feature 10. Allow users to free sign up, identify and apply authorisation, authentication and permission features for Site Onwer to collect user data information (FR7)
+
+#### CR Public Q&A & Review section
+      Feature 11. Create the back-end code and front-end form(s), which allow external users to create & display Public Q&A records. (FR4)
+      Feature 12. Create the back-end code and front-end form(s), which allow external users to create & display review records. (FR5)
+
+#### Purchase program section 
+      Feature 13. Allow users to purchase training program on site. (FR8)
+
+#### Authentication mechanism 
+      Feature 14. Only allow the same users to see, click & access UD button for their own Public Q&A & Review (FR6)
+      Feature 15. Only allow the Site admin to see, click & access CUD button for programs site (FR9)
+
+#### Backend Data Collection (FR7)
+      Feature 15. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django postgres </a> to collect data information through this site "Backend" (FR7) 
+
+### Security Features
+      Feature 16. The <.gitignore> file was created for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
+
+## Features Left to Implement
+      Feature 17. Allow external users to choose whether update image or not 
+      Feature 18. Show purchase receipt after payment successfully
 
 # DEPLOYMENT
 
