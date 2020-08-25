@@ -302,17 +302,18 @@ The 3 "Site introduction" images selected aims to build an emotional connection 
 
 #### Authentication mechanism 
       Feature 14. Only allow the same users to see, click & access UD button for their own Public Q&A & Review (FR6)
-      Feature 15. Only allow the Site admin to see, click & access CUD button for programs site (FR9)
+      Feature 15. Block different users to access others' UD Public Q&A & Review site if they try to access it by through url (FR6)
+      Feature 16. Only allow the Site admin to see, click & access CUD button for programs site (FR9)
 
 #### Backend Data Collection (FR7)
-      Feature 15. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django postgres </a> to collect data information through this site "Backend" (FR7) 
+      Feature 18. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django postgres </a> to collect data information through this site "Backend" (FR7) 
 
 ### Security Features
-      Feature 16. The <.gitignore> file was created for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
+      Feature 19. The <.gitignore> file was created for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
         
 ## Features Left to Implement
-      Feature 17. Allow external users to choose whether update image or not 
-      Feature 18. Show purchase receipt after payment successfully
+      Feature 20. Allow external users to choose whether update image or not 
+      Feature 21. Show purchase receipt after payment successfully
 
 
 # TECHNOLOGIES USED  
