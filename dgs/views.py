@@ -54,14 +54,21 @@ def create_dg(request):
         # variable
         create_form = DgForm()
         return render(request, "dgs/create_dg.template.html", {
-                "form": create_form
+            "form": create_form
         })
 
 
 @login_required
 def update_dg(request, dg_id):
+
     # retrieve the dg which we going to update
     dg_being_updated = get_object_or_404(Dg, pk=dg_id)
+
+    # Only the same user who created the post, can access to update post
+    if request.user != dg_being_updated.user:
+        messages.error(
+            request, "Sorry, You Are Not Allowed to Access This Page")
+        return redirect(reverse(all_dg))
 
     # if the user has submitted the form
     if request.method == "POST":
@@ -92,12 +99,18 @@ def delete_dg(request, dg_id):
     # retrieve the dg which we going to delete
     dg_to_delete = get_object_or_404(Dg, pk=dg_id)
 
+    # Only the same user who created the post, can access to delete post
+    if request.user != dg_to_delete.user:
+        messages.error(
+            request, "Sorry, You Are Not Allowed to Access This Page")
+        return redirect(reverse(all_dg))
+
     # if the form is submitted
     if request.method == "POST":
         dg_to_delete.delete()
         messages.success(
-                request,
-                f'Post "{dg_to_delete.topic}" has been deleted')
+            request,
+            f'Post "{dg_to_delete.topic}" has been deleted')
         return redirect(reverse(all_dg))
     else:
         # if no form is submitted (that is, just to see the confirmation
