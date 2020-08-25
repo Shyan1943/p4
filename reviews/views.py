@@ -56,6 +56,15 @@ def update_review(request, dg_id, review_id):
     review_being_updated = get_object_or_404(Review, pk=review_id)
     dg_being_view = get_object_or_404(Dg, pk=dg_id)
 
+    # Only the same user who created the review, can access to update review
+    if request.user != review_being_updated.user:
+        messages.error(
+            request, "Sorry, You Are Not Allowed to Access This Page")
+        # redirect back to that DG details page function
+        return render(request, "dgs/details_dg.template.html", {
+            "dg": dg_being_view
+        })
+
     # if the user has submitted the form, process the update
     if request.method == "POST":
 
