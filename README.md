@@ -304,6 +304,7 @@ The 3 "Site introduction" images selected aims to build an emotional connection 
       Feature 14. Only allow the same users to see, click & access UD button for their own Public Q&A & Review (FR6)
       Feature 15. Block different users to access others' UD Public Q&A & Review site if they try to access it by through url (FR6)
       Feature 16. Only allow the Site admin to see, click & access CUD button for programs site (FR9)
+      Feature 17. Block users to access CUD Program site if they try to access it by through url (FR9)
 
 #### Backend Data Collection (FR7)
       Feature 18. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django postgres </a> to collect data information through this site "Backend" (FR7) 
