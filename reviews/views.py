@@ -105,6 +105,15 @@ def delete_review(request, dg_id, review_id):
     review = get_object_or_404(Review, pk=review_id)
     dg_being_view = get_object_or_404(Dg, pk=dg_id)
 
+    # Only the same user who created the review, can access to update review
+    if request.user != review.user:
+        messages.error(
+            request, "Sorry, You Are Not Allowed to Access This Page")
+        # redirect back to that DG details page function
+        return render(request, "dgs/details_dg.template.html", {
+            "dg": dg_being_view
+        })
+
     # if the form is submitted
     if request.method == "POST":
         review.delete()
