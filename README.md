@@ -191,6 +191,10 @@ There are 5 set of forms with validation that will allow users to records in the
       iii.  Only allow the same users to see the UD clickable button & access UD for their own Public Q&A & Review (FR6)
       iv.   Only allow the Site admin to see, click & access CUD button for programs site (FR9)
 
+### 3c) Defensive design
+* Only allow the same users to see, click & access UD button for their own Public Q&A & Review (FR6)
+* Only allow the Site admin to see, click & access CUD button for programs site (FR9)
+
 ## 4) SKELETON
 ### 4a) Interface design
 <img src="/static/images/skeleton_mainlayout.png" align="left" width="200px" height="130px">
