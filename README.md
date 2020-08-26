@@ -196,6 +196,9 @@ There are 5 set of forms with validation that will allow users to records in the
 ### 3c) Defensive design
 * Only allow the same users to see, click & access UD button for their own Public Q&A & Review (FR6)
 * Only allow the Site admin to see, click & access CUD button for programs site (FR9)
+* All input data is validated 
+* Internal errors are handled gracefully 
+* Users are notiﬁed of the problem where appropriate
 
 ## 4) SKELETON
 ### 4a) Interface design
@@ -371,8 +374,8 @@ whitenoise==5.2.0
 19) <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" target="_blank">Bootstrap 4.4.1</a> was used to assist with the responsiveness and styling of the website.	
 20) <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">CSS3</a> to style HTML contents	
 21) <a href="https://getbootstrap.com/docs/4.4/components/navbar/" target="_blank">BootStrap </a>to fix top & responsive navigation bar
-22) <a href="https://getbootstrap.com/docs/4.0/utilities/flex/#justify-content" target="_blank">Bootstrap ml-auto or mr-auto</a> to fix navigation menu to the right or left
-23) <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Semantic Elements</a> use in HTML to clearly describes its meaning to both the browser and the developer.
+22) <a href="https://getbootstrap.com/docs/4.0/utilities/flex/#justify-content" target="_blank">Bootstrap ml-auto or mr-auto</a> to fix navigation menu to the right or left
+23) <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Semantic Elements</a> use in HTML to clearly describes its meaning to both the browser and the developer.
 24) Hover.css was used on all clickable icons while being hovered over.	
 25) <a href="https://getbootstrap.com/docs/4.4/components/jumbotron/" target="_blank">Jumbotron </a>to extend the entire viewport at profile advertisement section
 26) <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/" target="_blank">`mx-auto`</a> and <a href=https://getbootstrap.com/docs/4.3/components/card/ target="_blank">Bootscrap Card</a> to fix Ads Profile Card responsive	
