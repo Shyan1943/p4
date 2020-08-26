@@ -27,7 +27,7 @@ SECRET_KEY = '$a*t@r97k0)u_zx)_n5*z_)&p4k5*=crg(b7-ugy0o83m5ddh-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["shyan-tgc-pro4.herokuapp.com"]
+ALLOWED_HOSTS = ["*", "shyan-tgc-pro4.herokuapp.com"]
 
 
 # Application definition
@@ -120,14 +120,14 @@ else:
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
-DATABASES = {'default': dj_database_url.parse(os.environ["DATABASE_URL"])}
+# DATABASES = {'default': dj_database_url.parse(os.environ["DATABASE_URL"])}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -167,11 +167,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
-]
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
