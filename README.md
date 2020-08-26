@@ -286,7 +286,7 @@ The 3 "Site introduction" images selected aims to build an emotional connection 
       Feature 4. Hover effect "enlarge & shadow of button" on all the clickable button/hyperlinks to provide results in a manner that is visually appealing and user friendly
       Feature 5. Graphical elements like images, typography and icons are used to replace the words to communicate information to users 
       Feature 6. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/messages/" target="_blank">Django flash message</a>  framework allows us to temporarily store messages in one request and retrieve them for display a one-time notification message to the user after processing a form or some other types of user input.
-    
+     
 ### Consistency and predictability (CR1)
       Feature 7. Allow the External User to stay clear and easy find the same components position at the same place regardless of which page they are at by having the header and theme stay consistent throughout the site. 
 
@@ -303,22 +303,23 @@ The 3 "Site introduction" images selected aims to build an emotional connection 
 
 #### Purchase program section 
       Feature 13. Allow users to purchase training program on site. (FR8)
+      Feature 14. Implemented a feedback system that reports successful and unsuccessful purchases to the user, with a helpful message. And redirect users back to shopping all programs page.
 
 #### Authentication mechanism 
-      Feature 14. Only allow the same users to see, click & access UD button for their own Public Q&A & Review (FR6)
-      Feature 15. Block different users to access others' UD Public Q&A & Review site if they try to access it by through url (FR6)
-      Feature 16. Only allow the Site admin to see, click & access CUD button for programs site (FR9)
-      Feature 17. Block users to access CUD Program site if they try to access it by through url (FR9)
+      Feature 15. Only allow the same users to see, click & access UD button for their own Public Q&A & Review (FR6)
+      Feature 16. Block different users to access others' UD Public Q&A & Review site if they try to access it by through url (FR6)
+      Feature 17. Only allow the Site admin to see, click & access CUD button for programs site (FR9)
+      Feature 18. Block users to access CUD Program site if they try to access it by through url (FR9)
 
 #### Backend Data Collection (FR7)
-      Feature 18. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django postgres </a> to collect data information through this site "Backend" (FR7) 
+      Feature 19. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django postgres </a> to collect data information through this site "Backend" (FR7) 
 
 ### Security Features
-      Feature 19. The <.gitignore> file was created for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
+      Feature 20. The <.gitignore> file was created for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
         
 ## Features Left to Implement
-      Feature 20. Allow external users to choose whether update image or not 
-      Feature 21. Show purchase receipt after payment successfully
+      Feature 21. Allow external users to choose whether update image or not 
+      Feature 22. Show purchase receipt after payment successfully
 
 
 # TECHNOLOGIES USED  
