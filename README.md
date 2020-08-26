@@ -359,7 +359,7 @@ whitenoise==5.2.0
 7) Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 8) <a href="https://github.com/" target="_blank">Github</a> for Versioning Control System and GitHub for repositories to store the projects code after being pushed from Git.
 9) <a href="https://www.gitpod.io/" target="_blank">Gitpod</a> for code editor redefined and optimized for building and debugging modern web 
-10) <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTM5</a> to structure the webpages
+10) <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTML</a> to structure the webpages
 11) `.gitignore` file is used for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
 12) <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/messages/" target="_blank">Django flash message</a>  framework allows us to temporarily store messages in one request and retrieve them for display  a one-time notification message to the user after processing a form or some other types of user input.
 13) `pip3 install cloudinary` to install <a href="https://cloudinary.com/" target="_blank">Cloudinary</a>, which use to efficiently create, manage, and deliver images, personalized and optimized for every device and channel.
