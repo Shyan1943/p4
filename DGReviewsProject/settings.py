@@ -26,6 +26,7 @@ SECRET_KEY = '$a*t@r97k0)u_zx)_n5*z_)&p4k5*=crg(b7-ugy0o83m5ddh-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False
 
 ALLOWED_HOSTS = ["*", "shyan-tgc-pro4.herokuapp.com"]
 # ALLOWED_HOSTS = ["shyan-tgc-pro4.herokuapp.com"]

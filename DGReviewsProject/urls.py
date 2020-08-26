@@ -26,3 +26,6 @@ urlpatterns = [
     path('cart/', include('cart.urls')),
     path('checkout/', include('checkout.urls')),
 ]
+
+# tell Django where is the handler404 view function
+handler404 = "home.views.error_404_view"

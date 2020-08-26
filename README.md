@@ -168,6 +168,8 @@ There are 5 set of forms with validation that will allow users to records in the
             d.	all resources on the site are easy to ﬁnd, allowing users to navigate the layout of the site intuitively
             e.  4 clear navigation buttons at the right of the landing page center 
       ii.	Button with hover effect will be used to indicate there's a link to the working project to increase the predictability.
+      iii.  Users who direct to a non-existent page or resource are redirected back to the main page without having to use the browser navigation buttons
+
 #### Understandability	
       i.	Content are group into logical order with short word or phrase title easily understandable 
       ii.	Readability (Flesch Kincaid Reading Ease Test = 73.7, Flesch-Kincaid Grade Level Score = 4.5)       
@@ -278,48 +280,49 @@ The 3 "Site introduction" images selected aims to build an emotional connection 
 ### Ease of navigation (FR1)
       Feature 1. Allow the External User to view all the sections at a glance and from one page to another easily by having the fixed-top position navigation system (FR1)
       Feature 2. Allow the External User to search by any keyword or IMDG Code category straightaway, by having “Search” button at the Center of the Landing page and hyperlink it to “Search Engine & Result” section directly. (FR3, CI5 & CI6) 
+      Feature 3. Users who direct to a non-existent page or resource are redirected back to the main page without having to use the browser navigation buttons and error notification message given. 
 
 ### Responsiveness (FR2)
-      Feature 3. Allow the External User to view the platform with all devices, like desktop, laptop, tablets and smart mobile phones. It can be view in both portrait and landscape orientation as well by implement the responsive design. (FR2) 
+      Feature 4. Allow the External User to view the platform with all devices, like desktop, laptop, tablets and smart mobile phones. It can be view in both portrait and landscape orientation as well by implement the responsive design. (FR2) 
 
 ### User interactions design (CR1)
-      Feature 4. Hover effect "enlarge & shadow of button" on all the clickable button/hyperlinks to provide results in a manner that is visually appealing and user friendly
-      Feature 5. Graphical elements like images, typography and icons are used to replace the words to communicate information to users 
-      Feature 6. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/messages/" target="_blank">Django flash message</a>  framework allows us to temporarily store messages in one request and retrieve them for display a one-time notification message to the user after processing a form or some other types of user input.
-     
+      Feature 5. Hover effect "enlarge & shadow of button" on all the clickable button/hyperlinks to provide results in a manner that is visually appealing and user friendly
+      Feature 6. Graphical elements like images, typography and icons are used to replace the words to communicate information to users 
+      Feature 7. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/messages/" target="_blank">Django flash message</a>  framework allows us to temporarily store messages in one request and retrieve them for display a one-time notification message to the user after processing a form or some other types of user input.
+
 ### Consistency and predictability (CR1)
-      Feature 7. Allow the External User to stay clear and easy find the same components position at the same place regardless of which page they are at by having the header and theme stay consistent throughout the site. 
+      Feature 8. Allow the External User to stay clear and easy find the same components position at the same place regardless of which page they are at by having the header and theme stay consistent throughout the site. 
 
 ### Before Signup --> View all Dg Public Q&A, reivews & programs section (CR
-      Feature 8. Allow the External User to know the current popular Public Q&A topic (CI3)
-      Feature 9. Allow the External User to know more about how to handling DG goods (CI4) 
+      Feature 9. Allow the External User to know the current popular Public Q&A topic (CI3)
+      Feature 10. Allow the External User to know more about how to handling DG goods (CI4) 
 
 ### Signup at Zero cost 
-      Feature 10. Allow users to free sign up, identify and apply authorisation, authentication and permission features for Site Onwer to collect user data information (FR7)
+      Feature 11. Allow users to free sign up, identify and apply authorisation, authentication and permission features for Site Onwer to collect user data information (FR7)
 
 #### CR Public Q&A & Review section
-      Feature 11. Create the back-end code and front-end form(s), which allow external users to create & display Public Q&A records. (FR4)
-      Feature 12. Create the back-end code and front-end form(s), which allow external users to create & display review records. (FR5)
+      Feature 12. Create the back-end code and front-end form(s), which allow external users to create & display Public Q&A records. (FR4)
+      Feature 13. Create the back-end code and front-end form(s), which allow external users to create & display review records. (FR5)
 
 #### Purchase program section 
-      Feature 13. Allow users to purchase training program on site. (FR8)
-      Feature 14. Implemented a feedback system that reports successful and unsuccessful purchases to the user, with a helpful message. And redirect users back to shopping all programs page.
+      Feature 14. Allow users to purchase training program on site. (FR8)
+      Feature 15. Implemented a feedback system that reports successful and unsuccessful purchases to the user, with a helpful message. And redirect users back to shopping all programs page.
 
 #### Authentication mechanism 
-      Feature 15. Only allow the same users to see, click & access UD button for their own Public Q&A & Review (FR6)
-      Feature 16. Block different users to access others' UD Public Q&A & Review site if they try to access it by through url (FR6)
-      Feature 17. Only allow the Site admin to see, click & access CUD button for programs site (FR9)
-      Feature 18. Block users to access CUD Program site if they try to access it by through url (FR9)
+      Feature 16. Only allow the same users to see, click & access UD button for their own Public Q&A & Review (FR6)
+      Feature 17. Block different users to access others' UD Public Q&A & Review site if they try to access it by through url (FR6)
+      Feature 18. Only allow the Site admin to see, click & access CUD button for programs site (FR9)
+      Feature 19. Block users to access CUD Program site if they try to access it by through url (FR9)
 
 #### Backend Data Collection (FR7)
-      Feature 19. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django postgres </a> to collect data information through this site "Backend" (FR7) 
+      Feature 20. Used of <a href="https://docs.djangoproject.com/en/3.1/ref/contrib/postgres/" target="_blank">Django postgres </a> to collect data information through this site "Backend" (FR7) 
 
 ### Security Features
-      Feature 20. The <.gitignore> file was created for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
+      Feature 21. The <.gitignore> file was created for the purpose of preventing files, environment variables, any passwords or security sensitive information, from being uploaded without needing to explicitly exclude them. Any file added to the gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded. 
         
 ## Features Left to Implement
-      Feature 21. Allow external users to choose whether update image or not 
-      Feature 22. Show purchase receipt after payment successfully
+      Feature 22. Allow external users to choose whether update image or not 
+      Feature 23. Show purchase receipt after payment successfully
 
 
 # TECHNOLOGIES USED  
@@ -820,6 +823,12 @@ __pycache__
 * At "settings.py", Change the 'SITE_ID' as what we can just now & save it 
 * Test run `python3 manage.py runserver 8080` & login to /admin.
 
+### 42. Handle error 404 
+* At "home/views.py", create a error_404_view view function to handle 404 
+* At "DGReviewsProject/urls.py", outside the urlpatterns, tell Django where is the handler404 view function
+* At "DGReviewsProject/settings.py", change the DEBUG mode to False
+* At Gitpod terminal, enter `python3 manage.py runserver 8080` to test run Django server 
+
 ## C) PUBLICATION
 ### Deploying to Heroku
 * Implement manual test procedures to assess functionality, usability, responsiveness and data management within the Full Stack web application before publication
@@ -914,8 +923,8 @@ __pycache__
 9. Refer to <a href="https://www.w3schools.com/html/html_formatting.asp" target="_blank">w3school HTML Text Formatting</a> to format the appearance of the text on web page
 10. Refer to <a href="https://docs.djangoproject.com/en/3.1/topics/forms/" target="_blank">Django Documentation</a> to change the form display at the same row
 11. Refer to <a href="https://css-tricks.com/almanac/properties/l/line-clamp/" target="_blank">The line-clamp property truncates</a> text at a specific number of lines.
-12. Refer to <a href="https://docs.djangoproject.com/en/3.1/ref/forms/fields/" target="_blank"> the empty_label attribute</a> to change the dropdown default text label from "---------" to what you like, or can disable the empty label entirely by setting empty_label to None  
-
+12. Refer to <a href="https://docs.djangoproject.com/en/3.1/ref/forms/fields/" target="_blank">the empty_label attribute</a> to change the dropdown default text label from "---------" to what you like, or can disable the empty label entirely by setting empty_label to None  
+13. Refer to <a href="https://docs.djangoproject.com/en/3.1/topics/http/views/" target="_blank">Django Returning errors 404 </a> to redirect error 404 back to the homepage & error notification message is given.  
 
 # ACKNOWLEDGEMENTS 
 I received inspiration for this project from : 
