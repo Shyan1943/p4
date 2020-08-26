@@ -76,6 +76,7 @@ def checkout(request):
 
 @login_required
 def checkout_success(request):
+    # reset the shopping cart
     request.session["shopping_cart"] = {}
     messages.success(request, "Your purchases been completed")
     return redirect(reverse('all_programs_route'))
@@ -112,7 +113,7 @@ def payment_completed(request):
         # invalid signature
         return HttpResponse(status=400)
 
-    # handle the payment proper
+    # Handle the checkout.session.completed event
     if event["type"] == "checkout.session.completed":
         # retrieve the session data
         session = event['data']['object']
